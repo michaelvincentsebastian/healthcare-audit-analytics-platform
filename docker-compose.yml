@@ -1,0 +1,30 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: metadata-catalog
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    volumes:
+      - ${POSTGRES_DATA_DIR}
+
+  minio:
+    image: minio/minio:latest
+    container_name: object-storage
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ACCESS_KEY}
+      MINIO_ROOT_PASSWORD: ${MINIO_SECRET_KEY}
+      MINIO_API_CORS_ALLOW_ORIGIN: "*"
+    command: server /data --console-address ":9001"
+    ports:
+      - "${MINIO_PORT}:9000"
+      - "${MINIO_BROWSER_PORT}:9001"
+    volumes:
+      - ${MINIO_DATA_DIR}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "${MINIO_HEALTHCHECK_URL}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5

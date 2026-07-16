@@ -1,0 +1,44 @@
+gateways:
+  duckdb:
+    connection:
+      type: duckdb
+      catalogs:
+        lakehouse:
+          type: ducklake
+          # Untuk connection string di bawah ini, karena berada di dalam satu string besar, Anda bisa menggunakan Jinja:
+          path: "postgres:host={{ env_var('POSTGRES_HOST') }} port={{ env_var('POSTGRES_PORT') }} dbname={{ env_var('TABULAR_METADATA_DB_NAME') }} user={{ env_var('POSTGRES_USER') }} password={{ env_var('POSTGRES_PASSWORD') }}"
+          data_path: "s3://{{ env_var('TABULAR_BUCKET') }}/"
+      extensions:
+        - ducklake
+        - httpfs
+        - postgres
+      secrets:
+        - type: s3
+          key_id: "{{ env_var('MINIO_ACCESS_KEY') }}"
+          secret: "{{ env_var('MINIO_SECRET_KEY') }}"
+          endpoint: "localhost:9000"
+          url_style: "path"
+          use_ssl: false
+          region: "us-east-1"
+
+    state_connection:
+      type: postgres
+      host: "{{ env_var('POSTGRES_HOST') }}"
+      port: {{ env_var('POSTGRES_PORT') | int }}  # Berhasil diconvert ke integer
+      user: "{{ env_var('POSTGRES_USER') }}"
+      password: "{{ env_var('POSTGRES_PASSWORD') }}"
+      database: "{{ env_var('SQLMESH_STATE_DB_NAME') }}"
+
+default_gateway: duckdb
+
+model_defaults:
+  dialect: duckdb
+  start: 2025-12-18
+  cron: '@daily'
+
+linter:
+  enabled: true
+  rules:
+    - ambiguousorinvalidcolumn
+    - invalidselectstarexpansion
+    - noambiguousprojections
