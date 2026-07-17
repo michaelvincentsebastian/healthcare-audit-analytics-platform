@@ -1,15 +1,12 @@
+# models_dependencies/extractors/master_data/practitioner.py
 from models_dependencies.clients.frappe_client import FrappeClient
 from models_dependencies.config import get_settings
-from models_dependencies.utils import normalize
+from models_dependencies.utils import fetch_bulk
 
 
-def fetch_practitioners(client: FrappeClient) -> list[dict]:
+def fetch_practitioners(client: FrappeClient, start=None, end=None) -> list[dict]:
+    """Bulk fetch -- terbukti fields=["*"] untuk Practitioner tidak
+    menyertakan child table (practitioner_schedules, accounts), jadi aman
+    full-bulk tanpa detail call sama sekali."""
     settings = get_settings()
-    res = client.get(settings.practitioner_endpoint)
-    practitioner_list = res.get("data", [])
-
-    records = []
-    for p in practitioner_list:
-        detail = client.get(f"{settings.practitioner_endpoint}/{p['name']}")["data"]
-        records.append({key: normalize(value) for key, value in detail.items()})
-    return records
+    return fetch_bulk(client, settings.practitioner_endpoint, start=start, end=end)

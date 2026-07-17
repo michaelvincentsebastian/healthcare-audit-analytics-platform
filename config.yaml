@@ -33,7 +33,7 @@ default_gateway: duckdb
 
 model_defaults:
   dialect: duckdb
-  start: 2025-12-18
+  start: 2026-07-02
   cron: '@daily'
 
 linter:

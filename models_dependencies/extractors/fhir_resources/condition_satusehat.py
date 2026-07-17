@@ -1,15 +1,11 @@
+# models_dependencies/extractors/fhir_resources/condition_satusehat.py
 from models_dependencies.clients.frappe_client import FrappeClient
 from models_dependencies.config import get_settings
-from models_dependencies.utils import normalize
+from models_dependencies.utils import fetch_bulk
 
 
-def fetch_condition_satusehat(client: FrappeClient) -> list[dict]:
+def fetch_condition_satusehat(client: FrappeClient, start=None, end=None) -> list[dict]:
+    """Bulk fetch -- api_response & payload_json muncul sebagai text biasa
+    (bukan child table), jadi ikut kebawa lewat fields=["*"] tanpa masalah."""
     settings = get_settings()
-    res = client.get(settings.condition_satusehat_endpoint)
-    condition_list = res.get("data", [])
-
-    records = []
-    for c in condition_list:
-        detail = client.get(f"{settings.condition_satusehat_endpoint}/{c['name']}")["data"]
-        records.append({key: normalize(value) for key, value in detail.items()})
-    return records
+    return fetch_bulk(client, settings.condition_satusehat_endpoint, start=start, end=end)

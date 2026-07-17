@@ -26,8 +26,8 @@ try:
     table_list = con.sql("SHOW ALL TABLES;")
     print(f"Table List\n{table_list}")
     
-    patient_data = con.sql("SELECT name, patient_relation FROM lakehouse.bronze__dev.patient_data;")
-    print(f"Patient Data\n{patient_data}")
+    patient_data = con.sql("SELECT name, modified FROM lakehouse.bronze__dev.patient_data;")
+    print(f"Before\n{patient_data}")
     
 except Exception as e:
     print(f"Error: {e}")
