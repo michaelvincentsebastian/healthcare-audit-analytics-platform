@@ -1,0 +1,17 @@
+[Unit]
+Description=Analytics dashboard backend (Quack client / FastAPI)
+After=network.target quack-server.service
+Requires=quack-server.service
+
+[Service]
+Type=simple
+User=playground-magang
+WorkingDirectory=/home/playground-magang/lakehouse/services
+EnvironmentFile=/home/playground-magang/lakehouse/.env
+Environment=BACKEND_API_TOKEN=CHANGE_ME_SET_VIA_SECRET_MANAGER
+ExecStart=/home/playground-magang/lakehouse/.venv/bin/uvicorn analytics_backend:app --host 0.0.0.0 --port 8000
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

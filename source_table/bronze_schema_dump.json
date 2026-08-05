@@ -1,0 +1,2478 @@
+{
+  "master_data/item_data": {
+    "view": "tabitem",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "naming_series",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "item_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "item_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "item_group",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "stock_uom",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "disabled",
+        "type": "INTEGER"
+      },
+      {
+        "name": "allow_alternative_item",
+        "type": "INTEGER"
+      },
+      {
+        "name": "is_stock_item",
+        "type": "INTEGER"
+      },
+      {
+        "name": "has_variants",
+        "type": "INTEGER"
+      },
+      {
+        "name": "opening_stock",
+        "type": "DECIMAL(21,9)"
+      },
+      {
+        "name": "valuation_rate",
+        "type": "DECIMAL(21,9)"
+      },
+      {
+        "name": "standard_rate",
+        "type": "DECIMAL(21,9)"
+      },
+      {
+        "name": "is_fixed_asset",
+        "type": "INTEGER"
+      },
+      {
+        "name": "auto_create_assets",
+        "type": "INTEGER"
+      },
+      {
+        "name": "is_grouped_asset",
+        "type": "INTEGER"
+      },
+      {
+        "name": "asset_category",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "asset_naming_series",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "over_delivery_receipt_allowance",
+        "type": "DECIMAL(21,9)"
+      },
+      {
+        "name": "over_billing_allowance",
+        "type": "DECIMAL(21,9)"
+      },
+      {
+        "name": "image",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "description",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "brand",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "shelf_life_in_days",
+        "type": "INTEGER"
+      },
+      {
+        "name": "end_of_life",
+        "type": "DATE"
+      },
+      {
+        "name": "default_material_request_type",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "valuation_method",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "warranty_period",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "weight_per_unit",
+        "type": "DECIMAL(21,9)"
+      },
+      {
+        "name": "weight_uom",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "allow_negative_stock",
+        "type": "INTEGER"
+      },
+      {
+        "name": "has_batch_no",
+        "type": "INTEGER"
+      },
+      {
+        "name": "create_new_batch",
+        "type": "INTEGER"
+      },
+      {
+        "name": "batch_number_series",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "has_expiry_date",
+        "type": "INTEGER"
+      },
+      {
+        "name": "retain_sample",
+        "type": "INTEGER"
+      },
+      {
+        "name": "sample_quantity",
+        "type": "INTEGER"
+      },
+      {
+        "name": "has_serial_no",
+        "type": "INTEGER"
+      },
+      {
+        "name": "serial_no_series",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "variant_of",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "variant_based_on",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "enable_deferred_expense",
+        "type": "INTEGER"
+      },
+      {
+        "name": "no_of_months_exp",
+        "type": "INTEGER"
+      },
+      {
+        "name": "enable_deferred_revenue",
+        "type": "INTEGER"
+      },
+      {
+        "name": "no_of_months",
+        "type": "INTEGER"
+      },
+      {
+        "name": "purchase_uom",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "min_order_qty",
+        "type": "DECIMAL(21,9)"
+      },
+      {
+        "name": "safety_stock",
+        "type": "DECIMAL(21,9)"
+      },
+      {
+        "name": "is_purchase_item",
+        "type": "INTEGER"
+      },
+      {
+        "name": "lead_time_days",
+        "type": "INTEGER"
+      },
+      {
+        "name": "last_purchase_rate",
+        "type": "DECIMAL(21,9)"
+      },
+      {
+        "name": "is_customer_provided_item",
+        "type": "INTEGER"
+      },
+      {
+        "name": "customer",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "delivered_by_supplier",
+        "type": "INTEGER"
+      },
+      {
+        "name": "country_of_origin",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "customs_tariff_number",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "sales_uom",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "grant_commission",
+        "type": "INTEGER"
+      },
+      {
+        "name": "is_sales_item",
+        "type": "INTEGER"
+      },
+      {
+        "name": "max_discount",
+        "type": "DECIMAL(21,9)"
+      },
+      {
+        "name": "inspection_required_before_purchase",
+        "type": "INTEGER"
+      },
+      {
+        "name": "quality_inspection_template",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "inspection_required_before_delivery",
+        "type": "INTEGER"
+      },
+      {
+        "name": "include_item_in_manufacturing",
+        "type": "INTEGER"
+      },
+      {
+        "name": "is_sub_contracted_item",
+        "type": "INTEGER"
+      },
+      {
+        "name": "default_bom",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "customer_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "default_item_manufacturer",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "default_manufacturer_part_no",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "total_projected_qty",
+        "type": "DECIMAL(21,9)"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "kfa_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "kfa_display",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "master_data/patient_data": {
+    "view": "tabpatient",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "naming_series",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "first_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "middle_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "last_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "sex",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "blood_group",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "dob",
+        "type": "DATE"
+      },
+      {
+        "name": "image",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "uid",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "inpatient_record",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "inpatient_status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "report_preference",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "mobile",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "phone",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "invite_user",
+        "type": "INTEGER"
+      },
+      {
+        "name": "user_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "customer",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "customer_group",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "territory",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "default_currency",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "default_price_list",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "language",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_details",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "occupation",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "marital_status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "allergies",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "medication",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "medical_history",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "surgical_history",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "tobacco_past_use",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "tobacco_current_use",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "alcohol_past_use",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "alcohol_current_use",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "surrounding_factors",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "other_risk_factors",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_resource_type",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "fhir_status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_resource_id",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "master_data/practitioner_data": {
+    "view": "tabhealthcare_practitioner",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "naming_series",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "first_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "middle_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "last_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "gender",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "image",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "mobile_phone",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "residence_phone",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "office_phone",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_type",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "employee",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "supplier",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "department",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "designation",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "user_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "hospital",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "google_calendar",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "op_consulting_charge_item",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "op_consulting_charge",
+        "type": "DECIMAL(21,9)"
+      },
+      {
+        "name": "inpatient_visit_charge_item",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "inpatient_visit_charge",
+        "type": "DECIMAL(21,9)"
+      },
+      {
+        "name": "default_currency",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_primary_contact",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "mobile_no",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "email_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_primary_address",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "primary_address",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_resource_type",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "nik",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "fhir_status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_resource_id",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "encounter/patient_encounter_data": {
+    "view": "tabpatient_encounter",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "naming_series",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "appointment",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "appointment_type",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_sex",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_age",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "inpatient_record",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "inpatient_status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "company",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "encounter_date",
+        "type": "DATE"
+      },
+      {
+        "name": "encounter_time",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "medical_department",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "google_meet_link",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "invoiced",
+        "type": "INTEGER"
+      },
+      {
+        "name": "submit_orders_on_save",
+        "type": "INTEGER"
+      },
+      {
+        "name": "symptoms_in_print",
+        "type": "INTEGER"
+      },
+      {
+        "name": "diagnosis_in_print",
+        "type": "INTEGER"
+      },
+      {
+        "name": "therapy_plan",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "encounter_comment",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "amended_from",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_seen",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_resource_type",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "fhir_status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_resource_id",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/allergy_intolerance_satusehat_data": {
+    "view": "taballergyintolerance_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "encounter_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_encounter_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "clinical_status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "verification_status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "category",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "snomed_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "snomed_display",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "allergy_text",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/careplan_satusehat_data": {
+    "view": "tabcareplan_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "encounter_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_encounter_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "title",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "description",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/composition_satusehat_data": {
+    "view": "tabcomposition_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "encounter_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "composition_title",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_encounter_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/condition_satusehat_data": {
+    "view": "tabcondition_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "encounter_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_encounter",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_encounter_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "icd_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "diagnosis_display",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "validation_status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/diagnostic_report_satusehat_data": {
+    "view": "tabdiagnosticreport_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "encounter_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "servicerequest_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "specimen_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "observation_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "report_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "report_display",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "conclusion_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "conclusion_display",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/encounter_satusehat_data": {
+    "view": "tabencounter_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "patient_encounter",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "start_time",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "organization_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "location_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/episode_of_care_satusehat_data": {
+    "view": "tabepisodeofcare_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "encounter_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "identifier_value",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "type_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "type_display",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "start_date",
+        "type": "DATE"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/imaging_study_satusehat_data": {
+    "view": "tabimagingstudy_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "servicerequest_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_encounter_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_servicerequest_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "modality_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "modality_display",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "dicom_uid",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/immunization_satusehat_data": {
+    "view": "tabimmunization_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "encounter_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_encounter_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "vaccine_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "vaccine_display",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "occurrence_datetime",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "lot_number",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "expiration_date",
+        "type": "DATE"
+      },
+      {
+        "name": "dose_number",
+        "type": "INTEGER"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/medication_dispense_satusehat_data": {
+    "view": "tabmedicationdispense_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "medication_request_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_encounter_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/medication_statement_satusehat_data": {
+    "view": "tabmedicationstatement_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "encounter_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_encounter_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "item_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "medication_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "medication_display",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "date_asserted",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "note",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/observation_satusehat_data": {
+    "view": "tabobservation_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "encounter_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "vital_signs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_encounter_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "validation_status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_ids",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/procedure_satusehat_data": {
+    "view": "tabprocedure_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "encounter_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "clinical_procedure",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_encounter_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "procedure_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "procedure_display",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/questionnaire_response_satusehat_data": {
+    "view": "tabquestionnaireresponse_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "encounter_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_encounter_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "questionnaire_url",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "authored_datetime",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "keluhan_utama",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "riwayat_alergi",
+        "type": "INTEGER"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/service_request_satusehat_data": {
+    "view": "tabservicerequest_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "encounter_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_encounter_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "loinc_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "loinc_display",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "request_text",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      }
+    ]
+  },
+  "send_to_satusehat/specimen_satusehat_data": {
+    "view": "tabspecimen_satusehat",
+    "columns": [
+      {
+        "name": "name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "creation",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "modified_by",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "owner",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "docstatus",
+        "type": "INTEGER"
+      },
+      {
+        "name": "idx",
+        "type": "INTEGER"
+      },
+      {
+        "name": "encounter_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "servicerequest_satusehat",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_name",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "patient_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "practitioner_ihs",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "specimen_identifier",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "specimen_code",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "specimen_display",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "collected_datetime",
+        "type": "TIMESTAMP"
+      },
+      {
+        "name": "status",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "satusehat_id",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "api_response",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "payload_json",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_user_tags",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_comments",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_assign",
+        "type": "VARCHAR"
+      },
+      {
+        "name": "_liked_by",
+        "type": "VARCHAR"
+      }
+    ]
+  }
+}

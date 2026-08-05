@@ -1,0 +1,19 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "procedure_flat",
+  "resource": "Procedure",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "status", "path": "status" },
+        { "name": "category_code", "path": "category.coding.first().code" },
+        { "name": "code", "path": "code.coding.first().code" },
+        { "name": "code_display", "path": "code.coding.first().display" },
+        { "name": "subject_ref", "path": "subject.reference" },
+        { "name": "encounter_ref", "path": "encounter.reference" },
+        { "name": "performer_ref", "path": "performer.first().actor.reference" }
+      ]
+    }
+  ]
+}

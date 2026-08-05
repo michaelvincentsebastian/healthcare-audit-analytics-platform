@@ -1,0 +1,21 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "medication_statement_flat",
+  "resource": "MedicationStatement",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "status", "path": "status" },
+        { "name": "category_code", "path": "category.coding.first().code" },
+        { "name": "medication_code", "path": "medicationCodeableConcept.coding.first().code" },
+        { "name": "medication_display", "path": "medicationCodeableConcept.coding.first().display" },
+        { "name": "subject_ref", "path": "subject.reference" },
+        { "name": "context_ref", "path": "context.reference" },
+        { "name": "date_asserted", "path": "dateAsserted" },
+        { "name": "information_source_ref", "path": "informationSource.reference" },
+        { "name": "note_text", "path": "note.first().text" }
+      ]
+    }
+  ]
+}

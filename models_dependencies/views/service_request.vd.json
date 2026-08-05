@@ -1,0 +1,23 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "service_request_flat",
+  "resource": "ServiceRequest",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "identifier_value", "path": "identifier.first().value" },
+        { "name": "status", "path": "status" },
+        { "name": "intent", "path": "intent" },
+        { "name": "category_code", "path": "category.first().coding.first().code" },
+        { "name": "code", "path": "code.coding.first().code" },
+        { "name": "code_display", "path": "code.coding.first().display" },
+        { "name": "subject_ref", "path": "subject.reference" },
+        { "name": "encounter_ref", "path": "encounter.reference" },
+        { "name": "authored_on", "path": "authoredOn" },
+        { "name": "requester_ref", "path": "requester.reference" },
+        { "name": "performer_ref", "path": "performer.first().reference" }
+      ]
+    }
+  ]
+}

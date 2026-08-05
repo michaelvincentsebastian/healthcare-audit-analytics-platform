@@ -1,6 +1,7 @@
 import duckdb
 import os
 from dotenv import load_dotenv
+import pandas as pd
 
 load_dotenv()
 
@@ -23,11 +24,16 @@ try:
     
     con.execute(f"ATTACH 'ducklake:{POSTGRES_CONNECTION}' as lakehouse;")
     
-    table_list = con.sql("SHOW ALL TABLES;")
-    print(f"Table List\n{table_list}")
+    print(con.sql("SHOW ALL TABLES;"))
     
-    patient_data = con.sql("SELECT name, modified FROM lakehouse.bronze__dev.patient_data;")
-    print(f"Before\n{patient_data}")
+    encounter_raw = con.sql("SELECT * FROM lakehouse.bronze__dev.tabcondition_satusehat;").to_df()
+    encounter_fhir = con.sql("SELECT * FROM lakehouse.silver__dev.condition_fhir_resource;").to_df()
+    
+    df1 = pd.DataFrame(encounter_raw)
+    df1.to_csv('checks/output/condition_raw.csv', index=False)
+    
+    df2 = pd.DataFrame(encounter_fhir)
+    df2.to_csv('checks/output/conditon_fhir.csv', index=False)
     
 except Exception as e:
     print(f"Error: {e}")

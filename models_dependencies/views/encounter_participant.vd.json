@@ -1,0 +1,21 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "encounter_participant_flat",
+  "resource": "Encounter",
+  "select": [
+    {
+      "column": [
+        { "name": "encounter_id", "path": "id" }
+      ]
+    },
+    {
+      "forEach": "participant",
+      "column": [
+        { "name": "participant_type_code", "path": "type.first().coding.first().code" },
+        { "name": "participant_type_display", "path": "type.first().coding.first().display" },
+        { "name": "individual_ref", "path": "individual.reference" },
+        { "name": "individual_display", "path": "individual.display" }
+      ]
+    }
+  ]
+}

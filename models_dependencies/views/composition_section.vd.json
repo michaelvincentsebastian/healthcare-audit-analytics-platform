@@ -1,0 +1,19 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "composition_section_flat",
+  "resource": "Composition",
+  "select": [
+    {
+      "column": [
+        { "name": "composition_id", "path": "id" }
+      ]
+    },
+    {
+      "forEach": "section",
+      "column": [
+        { "name": "section_title", "path": "title" },
+        { "name": "section_code", "path": "code.coding.first().code" }
+      ]
+    }
+  ]
+}

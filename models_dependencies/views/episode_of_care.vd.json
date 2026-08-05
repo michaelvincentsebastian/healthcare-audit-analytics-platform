@@ -1,0 +1,18 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "episode_of_care_flat",
+  "resource": "EpisodeOfCare",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "status", "path": "status" },
+        { "name": "identifier_value", "path": "identifier.first().value" },
+        { "name": "type_code", "path": "type.first().coding.first().code" },
+        { "name": "patient_ref", "path": "patient.reference" },
+        { "name": "managing_organization_ref", "path": "managingOrganization.reference" },
+        { "name": "period_start", "path": "period.start" }
+      ]
+    }
+  ]
+}

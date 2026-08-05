@@ -1,0 +1,21 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "questionnaire_response_item_flat",
+  "resource": "QuestionnaireResponse",
+  "select": [
+    {
+      "column": [
+        { "name": "questionnaire_response_id", "path": "id" }
+      ]
+    },
+    {
+      "forEach": "item",
+      "column": [
+        { "name": "link_id", "path": "linkId" },
+        { "name": "question_text", "path": "text" },
+        { "name": "answer_string", "path": "answer.first().valueString" },
+        { "name": "answer_boolean", "path": "answer.first().valueBoolean" }
+      ]
+    }
+  ]
+}

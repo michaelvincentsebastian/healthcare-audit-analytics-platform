@@ -1,0 +1,23 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "diagnostic_report_flat",
+  "resource": "DiagnosticReport",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "status", "path": "status" },
+        { "name": "category_code", "path": "category.first().coding.first().code" },
+        { "name": "code", "path": "code.coding.first().code" },
+        { "name": "code_display", "path": "code.coding.first().display" },
+        { "name": "subject_ref", "path": "subject.reference" },
+        { "name": "encounter_ref", "path": "encounter.reference" },
+        { "name": "effective_datetime", "path": "effectiveDateTime" },
+        { "name": "issued", "path": "issued" },
+        { "name": "performer_ref", "path": "performer.first().reference" },
+        { "name": "based_on_ref", "path": "basedOn.first().reference" },
+        { "name": "conclusion_code", "path": "conclusionCode.first().coding.first().code" }
+      ]
+    }
+  ]
+}

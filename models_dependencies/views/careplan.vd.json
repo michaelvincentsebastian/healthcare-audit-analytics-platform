@@ -1,0 +1,20 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "careplan_flat",
+  "resource": "CarePlan",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "status", "path": "status" },
+        { "name": "intent", "path": "intent" },
+        { "name": "title", "path": "title" },
+        { "name": "description", "path": "description" },
+        { "name": "category_code", "path": "category.first().coding.first().code" },
+        { "name": "subject_ref", "path": "subject.reference" },
+        { "name": "encounter_ref", "path": "encounter.reference" },
+        { "name": "author_ref", "path": "author.reference" }
+      ]
+    }
+  ]
+}

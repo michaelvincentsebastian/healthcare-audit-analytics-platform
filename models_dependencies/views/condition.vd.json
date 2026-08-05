@@ -1,0 +1,19 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "condition_flat",
+  "resource": "Condition",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "clinical_status", "path": "clinicalStatus.coding.first().code" },
+        { "name": "category_code", "path": "category.first().coding.first().code" },
+        { "name": "code", "path": "code.coding.first().code" },
+        { "name": "code_display", "path": "code.coding.first().display" },
+        { "name": "subject_ref", "path": "subject.reference" },
+        { "name": "subject_display", "path": "subject.display" },
+        { "name": "encounter_ref", "path": "encounter.reference" }
+      ]
+    }
+  ]
+}

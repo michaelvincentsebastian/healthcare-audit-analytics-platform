@@ -1,0 +1,18 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "diagnostic_report_result_flat",
+  "resource": "DiagnosticReport",
+  "select": [
+    {
+      "column": [
+        { "name": "report_id", "path": "id" }
+      ]
+    },
+    {
+      "forEach": "result",
+      "column": [
+        { "name": "result_observation_ref", "path": "reference" }
+      ]
+    }
+  ]
+}

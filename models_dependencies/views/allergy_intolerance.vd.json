@@ -1,0 +1,22 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "allergy_intolerance_flat",
+  "resource": "AllergyIntolerance",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "identifier_value", "path": "identifier.where(use='official').value.first()" },
+        { "name": "clinical_status", "path": "clinicalStatus.coding.first().code" },
+        { "name": "verification_status", "path": "verificationStatus.coding.first().code" },
+        { "name": "category", "path": "category.first()" },
+        { "name": "code", "path": "code.coding.first().code" },
+        { "name": "code_display", "path": "code.coding.first().display" },
+        { "name": "code_text", "path": "code.text" },
+        { "name": "patient_ref", "path": "patient.reference" },
+        { "name": "encounter_ref", "path": "encounter.reference" },
+        { "name": "recorder_ref", "path": "recorder.reference" }
+      ]
+    }
+  ]
+}

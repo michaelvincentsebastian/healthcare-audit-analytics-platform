@@ -1,0 +1,20 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "composition_flat",
+  "resource": "Composition",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "status", "path": "status" },
+        { "name": "type_code", "path": "type.coding.first().code" },
+        { "name": "type_display", "path": "type.coding.first().display" },
+        { "name": "subject_ref", "path": "subject.reference" },
+        { "name": "encounter_ref", "path": "encounter.reference" },
+        { "name": "date", "path": "date" },
+        { "name": "author_ref", "path": "author.first().reference" },
+        { "name": "title", "path": "title" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "specimen_flat",
+  "resource": "Specimen",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "identifier_value", "path": "identifier.where(use='official').value.first()" },
+        { "name": "status", "path": "status" },
+        { "name": "type_code", "path": "type.coding.first().code" },
+        { "name": "subject_ref", "path": "subject.reference" },
+        { "name": "request_ref", "path": "request.first().reference" },
+        { "name": "collected_datetime", "path": "collection.collectedDateTime" },
+        { "name": "collector_ref", "path": "collection.collector.reference" }
+      ]
+    }
+  ]
+}

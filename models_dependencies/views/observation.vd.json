@@ -1,0 +1,22 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "observation_flat",
+  "resource": "Observation",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "status", "path": "status" },
+        { "name": "category_code", "path": "category.first().coding.first().code" },
+        { "name": "code", "path": "code.coding.first().code" },
+        { "name": "code_display", "path": "code.coding.first().display" },
+        { "name": "subject_ref", "path": "subject.reference" },
+        { "name": "encounter_ref", "path": "encounter.reference" },
+        { "name": "performer_ref", "path": "performer.first().reference" },
+        { "name": "effective_datetime", "path": "effectiveDateTime" },
+        { "name": "value", "path": "valueQuantity.value" },
+        { "name": "unit", "path": "valueQuantity.unit" }
+      ]
+    }
+  ]
+}

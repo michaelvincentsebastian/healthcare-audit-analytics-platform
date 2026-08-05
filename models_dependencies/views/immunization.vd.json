@@ -1,0 +1,23 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "immunization_flat",
+  "resource": "Immunization",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "status", "path": "status" },
+        { "name": "vaccine_code", "path": "vaccineCode.coding.first().code" },
+        { "name": "vaccine_display", "path": "vaccineCode.coding.first().display" },
+        { "name": "patient_ref", "path": "patient.reference" },
+        { "name": "encounter_ref", "path": "encounter.reference" },
+        { "name": "occurrence_datetime", "path": "occurrenceDateTime" },
+        { "name": "primary_source", "path": "primarySource" },
+        { "name": "lot_number", "path": "lotNumber" },
+        { "name": "expiration_date", "path": "expirationDate" },
+        { "name": "performer_ref", "path": "performer.first().actor.reference" },
+        { "name": "reason_code", "path": "reasonCode.first().coding.first().code" }
+      ]
+    }
+  ]
+}

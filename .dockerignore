@@ -2,4 +2,5 @@
 /.cache
 /.venv
 /logs
-/seeds
+/checks
+/

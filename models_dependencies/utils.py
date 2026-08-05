@@ -1,15 +1,12 @@
-import json
+# models_dependencies/utils.py
+#
+# Helper teknis generik yang tidak mengandung business logic dan tidak
+# melakukan HTTP call. Transformasi data (flatten/normalize) ada di
+# transformers/, dan fetch pattern (bulk / 1+N) ada di extractors/common.py.
 from datetime import datetime
 
 FRAPPE_DT_FORMAT = "%Y-%m-%d %H:%M:%S"
-
-
-def normalize(value):
-    """Frappe child table (list) atau nested dict tidak bisa disimpan langsung
-    sebagai kolom flat — diserialize jadi JSON string supaya aman untuk Bronze."""
-    if isinstance(value, (list, dict)):
-        return json.dumps(value, default=str)
-    return value
+DEFAULT_DETAIL_WORKERS = 5
 
 
 def to_frappe_dt_str(value) -> str:
@@ -21,23 +18,3 @@ def to_frappe_dt_str(value) -> str:
     if isinstance(value, datetime) or hasattr(value, "strftime"):
         return value.strftime(FRAPPE_DT_FORMAT)
     return str(value)
-
-
-def fetch_bulk(client, endpoint: str, start=None, end=None) -> list[dict]:
-    """Bulk fetch generik: 1 HTTP request, fields=["*"], limit_page_length=0,
-    filter `modified` server-side kalau start/end diisi.
-
-    HANYA aman dipakai untuk doctype yang SUDAH DIBUKTIKAN lewat test manual
-    (lihat list_output_bulk_all.txt) tidak punya child table esensial yang
-    hilang saat pakai fields=["*"] -- kalau ada child table yang wajib
-    dibawa ke Bronze, jangan pakai helper ini, perlu detail call terpisah.
-    """
-    params = {"fields": json.dumps(["*"]), "limit_page_length": 0}
-    if start and end:
-        start_str = to_frappe_dt_str(start)
-        end_str = to_frappe_dt_str(end)
-        params["filters"] = json.dumps([["modified", "between", [start_str, end_str]]])
-
-    res = client.get(endpoint, params=params)
-    rows = res.get("data", [])
-    return [{key: normalize(value) for key, value in row.items()} for row in rows]

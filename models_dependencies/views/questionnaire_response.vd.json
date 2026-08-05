@@ -1,0 +1,19 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "questionnaire_response_flat",
+  "resource": "QuestionnaireResponse",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "status", "path": "status" },
+        { "name": "questionnaire", "path": "questionnaire" },
+        { "name": "subject_ref", "path": "subject.reference" },
+        { "name": "encounter_ref", "path": "encounter.reference" },
+        { "name": "authored", "path": "authored" },
+        { "name": "author_ref", "path": "author.reference" },
+        { "name": "source_ref", "path": "source.reference" }
+      ]
+    }
+  ]
+}

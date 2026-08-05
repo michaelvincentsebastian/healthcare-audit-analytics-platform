@@ -1,0 +1,20 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "medication_dispense_flat",
+  "resource": "MedicationDispense",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "identifier_value", "path": "identifier.where(use='official').value.first()" },
+        { "name": "status", "path": "status" },
+        { "name": "medication_ref", "path": "medicationReference.reference" },
+        { "name": "subject_ref", "path": "subject.reference" },
+        { "name": "context_ref", "path": "context.reference" },
+        { "name": "when_handed_over", "path": "whenHandedOver" },
+        { "name": "authorizing_prescription_ref", "path": "authorizingPrescription.first().reference" },
+        { "name": "dosage_text", "path": "dosageInstruction.first().text" }
+      ]
+    }
+  ]
+}

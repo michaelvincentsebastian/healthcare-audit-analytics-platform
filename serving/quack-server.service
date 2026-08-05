@@ -1,0 +1,22 @@
+[Unit]
+Description=Quack server - DuckLake gateway (Postgres + MinIO)
+After=network.target docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+User=playground-magang
+WorkingDirectory=/home/playground-magang/lakehouse/services
+EnvironmentFile=/home/playground-magang/lakehouse/.env
+EnvironmentFile=/home/playground-magang/lakehouse/services/.env.quack
+ExecStart=/home/playground-magang/lakehouse/.venv/bin/python quack_server.py
+Restart=on-failure
+RestartSec=5
+# quack_server memegang koneksi ke Postgres + MinIO -- restart otomatis
+# kalau proses mati tak terduga, tapi jangan restart-loop tanpa jeda kalau
+# Postgres/MinIO sendiri yang sedang down.
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

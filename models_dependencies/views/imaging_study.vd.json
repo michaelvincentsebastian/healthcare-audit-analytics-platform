@@ -1,0 +1,21 @@
+{
+  "resourceType": "ViewDefinition",
+  "name": "imaging_study_flat",
+  "resource": "ImagingStudy",
+  "select": [
+    {
+      "column": [
+        { "name": "id", "path": "id" },
+        { "name": "identifier_value", "path": "identifier.first().value" },
+        { "name": "status", "path": "status" },
+        { "name": "subject_ref", "path": "subject.reference" },
+        { "name": "encounter_ref", "path": "encounter.reference" },
+        { "name": "started", "path": "started" },
+        { "name": "based_on_ref", "path": "basedOn.first().reference" },
+        { "name": "modality_code", "path": "modality.first().code" },
+        { "name": "number_of_series", "path": "numberOfSeries" },
+        { "name": "number_of_instances", "path": "numberOfInstances" }
+      ]
+    }
+  ]
+}
