@@ -31,4 +31,4 @@ SELECT
     NULLIF(TRIM(dicom_uid), '') AS dicom_uid,
     NULLIF(TRIM(status), '') AS status,
     NULLIF(TRIM(satusehat_id), '') AS satusehat_id
-FROM bronze.imaging_study_satusehat_data
+FROM bronze.tabImagingStudy_SatuSehat

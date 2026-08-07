@@ -34,4 +34,4 @@ SELECT
     NULLIF(TRIM(conclusion_display), '') AS conclusion_display,
     NULLIF(TRIM(status), '') AS status,
     NULLIF(TRIM(satusehat_id), '') AS satusehat_id
-FROM bronze.diagnostic_report_satusehat_data
+FROM bronze.tabDiagnosticReport_SatuSehat

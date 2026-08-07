@@ -34,4 +34,4 @@ SELECT
     dose_number,
     NULLIF(TRIM(status), '') AS status,
     NULLIF(TRIM(satusehat_id), '') AS satusehat_id
-FROM bronze.immunization_satusehat_data
+FROM bronze.tabImmunization_SatuSehat

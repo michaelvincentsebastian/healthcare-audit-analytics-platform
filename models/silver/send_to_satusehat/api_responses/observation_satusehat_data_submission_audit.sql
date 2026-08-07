@@ -23,7 +23,7 @@ WITH unwrapped AS (
         b.* EXCLUDE (payload_json),
         elem.key::INT AS response_idx,
         elem.value::VARCHAR AS response_element
-    FROM bronze.observation_satusehat_data AS b, json_each(TRY_CAST(b.api_response AS JSON)) AS elem
+    FROM bronze.tabObservation_SatuSehat AS b, json_each(TRY_CAST(b.api_response AS JSON)) AS elem
     WHERE b.api_response IS NOT NULL
       AND json_valid(b.api_response)
 ),

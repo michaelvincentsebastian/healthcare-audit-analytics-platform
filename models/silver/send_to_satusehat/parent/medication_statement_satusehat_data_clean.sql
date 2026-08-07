@@ -32,4 +32,4 @@ SELECT
     NULLIF(TRIM(note), '') AS note,
     NULLIF(TRIM(status), '') AS status,
     NULLIF(TRIM(satusehat_id), '') AS satusehat_id
-FROM bronze.medication_statement_satusehat_data
+FROM bronze.tabMedicationStatement_SatuSehat

@@ -33,4 +33,4 @@ SELECT
     NULLIF(TRIM(location_id), '') AS location_id,
     NULLIF(TRIM(satusehat_id), '') AS satusehat_id,
     NULLIF(TRIM(status), '') AS status
-FROM bronze.encounter_satusehat_data
+FROM bronze.tabEncounter_SatuSehat

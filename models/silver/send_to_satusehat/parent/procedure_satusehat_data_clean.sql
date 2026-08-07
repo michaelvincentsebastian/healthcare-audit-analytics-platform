@@ -32,4 +32,4 @@ SELECT
     NULLIF(TRIM(procedure_display), '') AS procedure_display,
     NULLIF(TRIM(status), '') AS status,
     NULLIF(TRIM(satusehat_id), '') AS satusehat_id
-FROM bronze.procedure_satusehat_data
+FROM bronze.tabProcedure_SatuSehat

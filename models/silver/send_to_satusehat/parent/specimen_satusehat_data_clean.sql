@@ -32,4 +32,4 @@ SELECT
     collected_datetime,
     NULLIF(TRIM(status), '') AS status,
     NULLIF(TRIM(satusehat_id), '') AS satusehat_id
-FROM bronze.specimen_satusehat_data
+FROM bronze.tabSpecimen_SatuSehat

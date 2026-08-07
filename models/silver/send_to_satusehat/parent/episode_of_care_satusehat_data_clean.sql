@@ -30,4 +30,4 @@ SELECT
     start_date,
     NULLIF(TRIM(status), '') AS status,
     NULLIF(TRIM(satusehat_id), '') AS satusehat_id
-FROM bronze.episode_of_care_satusehat_data
+FROM bronze.tabEpisodeOfCare_SatuSehat

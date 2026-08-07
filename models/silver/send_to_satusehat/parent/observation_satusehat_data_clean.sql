@@ -30,4 +30,4 @@ SELECT
     NULLIF(TRIM(satusehat_encounter_id), '') AS satusehat_encounter_id,
     NULLIF(TRIM(validation_status), '') AS validation_status,
     NULLIF(TRIM(satusehat_ids), '') AS satusehat_ids
-FROM bronze.observation_satusehat_data
+FROM bronze.tabObservation_SatuSehat

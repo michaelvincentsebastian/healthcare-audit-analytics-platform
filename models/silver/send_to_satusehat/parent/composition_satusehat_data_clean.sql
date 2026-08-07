@@ -28,4 +28,4 @@ SELECT
     NULLIF(TRIM(satusehat_encounter_id), '') AS satusehat_encounter_id,
     NULLIF(TRIM(status), '') AS status,
     NULLIF(TRIM(satusehat_id), '') AS satusehat_id
-FROM bronze.composition_satusehat_data
+FROM bronze.tabComposition_SatuSehat

@@ -48,3 +48,9 @@ node_modules/
 # =========================
 .DS_Store
 Thumbs.db
+
+# =========================
+# Checks
+# =========================
+checks/source_table_schema
+checks/output/

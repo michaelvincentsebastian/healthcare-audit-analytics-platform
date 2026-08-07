@@ -32,4 +32,4 @@ SELECT
     riwayat_alergi,
     NULLIF(TRIM(status), '') AS status,
     NULLIF(TRIM(satusehat_id), '') AS satusehat_id
-FROM bronze.questionnaire_response_satusehat_data
+FROM bronze.tabQuestionnaireResponse_SatuSehat

@@ -27,4 +27,4 @@ SELECT
     NULLIF(TRIM(practitioner_ihs), '') AS practitioner_ihs,
     NULLIF(TRIM(satusehat_encounter_id), '') AS satusehat_encounter_id,
     NULLIF(TRIM(status), '') AS status
-FROM bronze.medication_dispense_satusehat_data
+FROM bronze.tabMedicationDispense_SatuSehat

@@ -34,4 +34,4 @@ SELECT
     NULLIF(TRIM(allergy_text), '') AS allergy_text,
     NULLIF(TRIM(status), '') AS status,
     NULLIF(TRIM(satusehat_id), '') AS satusehat_id
-FROM bronze.allergy_intolerance_satusehat_data
+FROM bronze.tabAllergyIntolerance_SatuSehat

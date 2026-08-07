@@ -39,7 +39,7 @@ WITH parsed AS (
             THEN TRY_CAST(json_extract(api_response, '$.status_code') AS INT)
         ELSE NULL
     END AS submission_http_status
-    FROM bronze.questionnaire_response_satusehat_data
+    FROM bronze.tabQuestionnaireResponse_SatuSehat
     WHERE api_response IS NOT NULL
 )
 SELECT

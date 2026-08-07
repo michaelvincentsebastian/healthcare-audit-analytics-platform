@@ -31,4 +31,4 @@ SELECT
     NULLIF(TRIM(request_text), '') AS request_text,
     NULLIF(TRIM(status), '') AS status,
     NULLIF(TRIM(satusehat_id), '') AS satusehat_id
-FROM bronze.service_request_satusehat_data
+FROM bronze.tabServiceRequest_SatuSehat
