@@ -81,3 +81,4 @@ SELECT
     NULLIF(TRIM(satusehat_resource_id), '') AS satusehat_resource_id
 FROM bronze.tabPatient
 QUALIFY ROW_NUMBER() OVER (PARTITION BY name ORDER BY modified DESC) = 1
+

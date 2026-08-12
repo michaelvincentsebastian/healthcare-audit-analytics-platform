@@ -52,5 +52,10 @@ Thumbs.db
 # =========================
 # Checks
 # =========================
-checks/source_table_schema
+checks/source_table_schema/
 checks/output/
+
+# =========================
+# Credentials
+# =========================
+/credentials

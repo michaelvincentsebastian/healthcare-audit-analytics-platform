@@ -1,0 +1,883 @@
+CODE,DISPLAY,VERSION
+A,ANTEPARTUM DEATH,
+A1,"Congenital malformations, deformations and chromosomal abnormalities",
+Q00,Anencephaly and similar malformations,ICD_PM
+Q01,Encephalocele,ICD_PM
+Q02,Microcephaly,ICD_PM
+Q03,Congenital hydrocephalus,ICD_PM
+Q04,Other congenital malformations of brain,ICD_PM
+Q05,Spina bifida,ICD_PM
+Q06,Other congenital malformations of spinal cord,ICD_PM
+Q07,Other congenital malformations of nervous system,ICD_PM
+Q10,"Congenital malformations of eyelid, lacrimal apparatus and orbit",ICD_PM
+Q11,"Anophthalmos, microphthalmos and macrophthalmos",ICD_PM
+Q12,Congenital lens malformations,ICD_PM
+Q13,Congenital malformations of anterior segment of eye,ICD_PM
+Q14,Congenital malformations of posterior segment of eye,ICD_PM
+Q15,Other congenital malformations of eye,ICD_PM
+Q16,Congenital malformations of ear causing impairment of hearing,ICD_PM
+Q17,Other congenital malformations of ear,ICD_PM
+Q18,Other congenital malformations of face and neck,ICD_PM
+Q20,Congenital malformations of cardiac chambers and connections,ICD_PM
+Q21,Congenital malformations of cardiac septa,ICD_PM
+Q22,Congenital malformations of pulmonary and tricuspid valves,ICD_PM
+Q23,Congenital malformations of aortic and mitral valves,ICD_PM
+Q24,Other congenital malformations of heart,ICD_PM
+Q25,Congenital malformations of great arteries,ICD_PM
+Q26,Congenital malformations of great veins,ICD_PM
+Q27,Other congenital malformations of peripheral vascular system,ICD_PM
+Q28,Other congenital malformations of circulatory system,ICD_PM
+Q30,Congenital malformations of nose,ICD_PM
+Q31,Congenital malformations of larynx,ICD_PM
+Q32,Congenital malformations of trachea and bronchus,ICD_PM
+Q33,Congenital malformations of lung,ICD_PM
+Q34,Other congenital malformations of respiratory system,ICD_PM
+Q36,Cleft lip,ICD_PM
+Q37,Cleft palate with cleft lip,ICD_PM
+Q38,"Other congenital malformations of tongue, mouth and pharynx",ICD_PM
+Q39,Congenital malformations of oesophagus,ICD_PM
+Q40,Other congenital malformations of upper alimentary tract,ICD_PM
+Q41,"Congenital absence, atresia and stenosis of small intestine",ICD_PM
+Q42,"Congenital absence, atresia and stenosis of large intestine",ICD_PM
+Q43,Other congenital malformations of intestine,ICD_PM
+Q44,"Congenital malformations of gallbladder, bile ducts and liver",ICD_PM
+Q45,Other congenital malformations of digestive system,ICD_PM
+Q50,"Congenital malformations of ovaries, fallopian tubes and broad ligame",ICD_PM
+Q51,Congenital malformations of uterus and cervix,ICD_PM
+Q52,Other congenital malformations of female genitalia,ICD_PM
+Q53,Undescended testicle,ICD_PM
+Q54,Hypospadias,ICD_PM
+Q55,Other congenital malformations of male genital organs,ICD_PM
+Q56,Indeterminate sex and pseudohermaphroditism,ICD_PM
+Q60,Renal agenesis and other reduction defects of kidney,ICD_PM
+Q61,Cystic kidney disease,ICD_PM
+Q62,Congenital obstructive defects of renal pelvis and congenital malform,ICD_PM
+Q63,Other congenital malformations of kidney,ICD_PM
+Q64,Other congenital malformations of urinary system,ICD_PM
+Q65,Congenital deformities of hip,ICD_PM
+Q66,Congenital deformities of feet,ICD_PM
+Q67,"Congenital musculoskeletal deformities of head, face, spine and chest",ICD_PM
+Q68,Other congenital musculoskeletal deformities,ICD_PM
+Q69,Polydactyly,ICD_PM
+Q70,Syndactyly,ICD_PM
+Q71,Reduction defects of upper limb,ICD_PM
+Q72,Reduction defects of lower limb,ICD_PM
+Q73,Reduction defects of unspecified limb,ICD_PM
+Q74,Other congenital malformations of limb(s),ICD_PM
+Q75,Other congenital malformations of skull and face bones,ICD_PM
+Q76,Congenital malformations of spine and bony thorax,ICD_PM
+Q77,Osteochondrodysplasia with defects of growth of tubular bones and spi,ICD_PM
+Q78,Other osteochondrodysplasias,ICD_PM
+Q79,"Congenital malformations of the musculoskeletal system, not elsewhere",ICD_PM
+Q80,Congenital ichthyosis,ICD_PM
+Q81,Epidermolysis bullosa,ICD_PM
+Q82,Other congenital malformations of skin,ICD_PM
+Q83,Congenital malformations of breast,ICD_PM
+Q84,Other congenital malformations of integument,ICD_PM
+Q85,"Phakomatoses, not elsewhere classified",ICD_PM
+Q86,"Congenital malformation syndromes due to known exogenous causes, not",ICD_PM
+Q87,Other specified congenital malformation syndromes affecting multiple,ICD_PM
+Q89,"Other congenital malformations, not elsewhere classified",ICD_PM
+Q90,Down syndrome,ICD_PM
+Q91,Edwards syndrome and Patau syndrome,ICD_PM
+Q92,"Other trisomies and partial trisomies of the autosomes, not elsewhere",ICD_PM
+Q93,"Monosomies and deletions from the autosomes, not elsewhere classified",ICD_PM
+Q95,"Balanced rearrangements and structural markers, not elsewhere classif",ICD_PM
+Q96,Turner syndrome,ICD_PM
+Q97,"Other sex chromosome abnormalities, female phenotype, not elsewhere classified",ICD_PM
+Q98,"Other sex chromosome abnormalities, male phenotype, not elsewhere classified",ICD_PM
+Q99,"Other chromosome abnormalities, not elsewhere classified",ICD_PM
+A2,Infection,
+A50,Congenital syphilis,ICD_PM
+A50.0,"Early congenital syphilis, symptomatic",ICD_PM
+A50.1,"Early congenital syphilis, latent",ICD_PM
+A50.2,"Early congenital syphilis, unspecified",ICD_PM
+A50.9,"Congenital syphilis, unspecified",ICD_PM
+P35,Congenital viral diseases,ICD_PM
+P35.0,Congenital rubella syndrome,ICD_PM
+P35.1,Congenital cytomegalovirus infection,ICD_PM
+P35.2,Congenital herpesviral [herpes simplex] infection,ICD_PM
+P35.3,Congenital viral hepatitis,ICD_PM
+P35.8,Other congenital viral diseases,ICD_PM
+P35.9,"Congenital viral disease, unspecified",ICD_PM
+P37,Other congenital infectious and parasitic diseases,ICD_PM
+P37.0,Congenital tuberculosis,ICD_PM
+P37.1,Congenital toxoplasmosis,ICD_PM
+P37.3,Congenital falciparum malaria,ICD_PM
+P37.4,Other congenital malaria,ICD_PM
+P37.8,Other specified congenital infectious and parasitic diseases,ICD_PM
+P37.9,"Congenital infectious and parasitic disease, unspecified",ICD_PM
+P39,Other infections specific to the perinatal period,ICD_PM
+P39.2,"Intra-amniotic infection of fetus, not elsewhere classified",ICD_PM
+P39.8,Other specified infections specific to the perinatal period,ICD_PM
+P39.9,"Infection specific to the perinatal period, unspecified",ICD_PM
+A3,Antepartum hypoxia / Acute antepartum event,
+P20,Intrauterine hypoxia,ICD_PM
+P20.0,Intrauterine hypoxia first noted before onset of labour,ICD_PM
+P20.9,"Intrauterine hypoxia, unspecified",ICD_PM
+A4,Other specified antepartum disorder,
+P50,Fetal blood loss,ICD_PM
+P50.0,Fetal blood loss from vasa praevia,ICD_PM
+P50.1,Fetal blood loss from ruptured cord,ICD_PM
+P50.2,Fetal blood loss from placenta,ICD_PM
+P50.3,Haemorrhage into co-twin,ICD_PM
+P50.4,Haemorrhage into maternal circulation,ICD_PM
+P50.5,Fetal blood loss from cut end of co-twin’s cord,ICD_PM
+P50.8,Other fetal blood loss,ICD_PM
+P50.9,"Fetal blood loss, unspecified",ICD_PM
+P52,Intracranial nontraumatic haemorrhage of fetus and newborn,ICD_PM
+P52.0,"Intraventricular (nontraumatic) haemorrhage, grade 1, of fetus and newborn",ICD_PM
+P52.1,"Intraventricular (nontraumatic) haemorrhage, grade 2, of fetus and newborn",ICD_PM
+P52.2,"Intraventricular (nontraumatic) haemorrhage, grade 3 and grade 4, of fetus and newborn",ICD_PM
+P52.3,Unspecified intraventricular (nontraumatic) haemorrhage of fetus and newborn,ICD_PM
+P52.4,Intracerebral (nontraumatic) haemorrhage of fetus and newborn,ICD_PM
+P52.5,Subarachnoid (nontraumatic) haemorrhage of fetus and newborn,ICD_PM
+P52.6,Cerebellar (nontraumatic) and posterior fossa haemorrhage of fetus and newborn,ICD_PM
+P52.8,Other intracranial (nontraumatic) haemorrhages of fetus and newborn,ICD_PM
+P52.9,"Intracranial (nontraumatic) haemorrhage of fetus and newborn, unspecified",ICD_PM
+P55,Haemolytic disease of fetus and newborn,ICD_PM
+P55.0,Rhesus isoimmunization of fetus and newborn,ICD_PM
+P55.1,ABO isoimmunization of fetus and newborn,ICD_PM
+P55.8,Other haemolytic diseases of fetus and newborn,ICD_PM
+P55.9,"Haemolytic disease of fetus and newborn, unspecified",ICD_PM
+P56,Hydrops fetalis due to haemolytic disease,ICD_PM
+P56.0,Hydrops fetalis due to isoimmunization,ICD_PM
+P56.9,Hydrops fetalis due to other and unspecified haemolytic disease,ICD_PM
+P60,Disseminated intravascular coagulation of fetus and newborn,ICD_PM
+P61,Other perinatal haematological disorders,ICD_PM
+P61.3,Congenital anaemia from fetal blood loss,ICD_PM
+P61.4,"Other congenital anaemias, not elsewhere classified",ICD_PM
+P61.8,Other specified perinatal haematological disorders,ICD_PM
+P61.9,"Perinatal haematological disorder, unspecified",ICD_PM
+P75,Meconium ileus in cystic fibrosis,ICD_PM
+P77,Necrotizing enterocolitis of fetus and newborn,ICD_PM
+P83,Other conditions of integument specific to fetus and newborn,ICD_PM
+P83.2,Hydrops fetalis not due to haemolytic disease,ICD_PM
+P83.3,Other and unspecified oedema specific to fetus and newborn,ICD_PM
+P83.8,Other specified conditions of integument specific to fetus and newborn,ICD_PM
+P83.9,"Condition of integument specific to fetus and newborn, unspecified",ICD_PM
+P96,Other conditions originating in the perinatal period,ICD_PM
+P96.0,Congenital renal failure,ICD_PM
+P96.4,"Termination of pregnancy, affecting fetus and newborn",ICD_PM
+P96.5,"Complications of intrauterine procedures, not elsewhere classified",ICD_PM
+P96.8,Other specified conditions originating in the perinatal period,ICD_PM
+P96.9,"Condition originating in the perinatal period, unspecified",ICD_PM
+A5,Disorders related to length of gestation and fetal growth,
+P05,Slow fetal growth and fetal malnutrition,ICD_PM
+P05.0,Light for gestational age,ICD_PM
+P05.1,Small for gestational age,ICD_PM
+P05.2,Fetal malnutrition without mention of light or small for gestational age,ICD_PM
+P05.9,"Slow fetal growth, unspecified",ICD_PM
+P08,Disorders related to long gestation and high birth weight,ICD_PM
+P08.0,Exceptionally large baby,ICD_PM
+P08.1,Other heavy for gestational age infants,ICD_PM
+P08.2,"Post-term infant, not heavy for gestational age",ICD_PM
+A6,Fetal death of unspecified cause / Antepartum death of unspecified cause,
+P95,Fetal death of unspecified cause,ICD_PM
+I,INTRAPARTUM DEATH,
+I1,"Congenital malformations, deformations and chromosomal abnormalities",
+Q00-Q07 ,Congenital malformations of the nervous system,
+Q00,Anencephaly and similar malformations,ICD_PM
+Q01,Encephalocele,ICD_PM
+Q02,Microcephaly,ICD_PM
+Q03,Congenital hydrocephalus,ICD_PM
+Q04,Other congenital malformations of brain,ICD_PM
+Q05,Spina bifida,ICD_PM
+Q06,Other congenital malformations of spinal cord,ICD_PM
+Q07,Other congenital malformations of nervous system,ICD_PM
+Q10-Q18 ,"Congenital malformations of eye, ear, face and neck",
+Q10,"Congenital malformations of eyelid, lacrimal apparatus and orbit",ICD_PM
+Q11,"Anophthalmos, microphthalmos and macrophthalmos",ICD_PM
+Q12,Congenital lens malformations,ICD_PM
+Q13,Congenital malformations of anterior segment of eye,ICD_PM
+Q14,Congenital malformations of posterior segment of eye,ICD_PM
+Q15,Other congenital malformations of eye,ICD_PM
+Q16,Congenital malformations of ear causing impairment of hearing,ICD_PM
+Q17,Other congenital malformations of ear,ICD_PM
+Q18,Other congenital malformations of face and neck,ICD_PM
+Q20-Q28 ,Congenital malformations of the circulatory system,
+Q20,Congenital malformations of cardiac chambers and connections,ICD_PM
+Q21,Congenital malformations of cardiac septa,ICD_PM
+Q22,Congenital malformations of pulmonary and tricuspid valves,ICD_PM
+Q23,Congenital malformations of aortic and mitral valves,ICD_PM
+Q24,Other congenital malformations of heart,ICD_PM
+Q25,Congenital malformations of great arteries,ICD_PM
+Q26,Congenital malformations of great veins,ICD_PM
+Q27,Other congenital malformations of peripheral vascular system,ICD_PM
+Q28,Other congenital malformations of circulatory system,ICD_PM
+Q30-Q34 ,Congenital malformations of the respiratory system,
+Q30,Congenital malformations of nose,ICD_PM
+Q31,Congenital malformations of larynx,ICD_PM
+Q32,Congenital malformations of trachea and bronchus,ICD_PM
+Q33,Congenital malformations of lung,ICD_PM
+Q34,Other congenital malformations of respiratory system,ICD_PM
+Q36-Q37 ,Cleft lip and cleft palate,
+Q36,Cleft lip,ICD_PM
+Q37,Cleft palate with cleft lip,ICD_PM
+Q38-Q45 ,Other congenital malformations of the digestive system,
+Q38,"Other congenital malformations of tongue, mouth and pharynx",ICD_PM
+Q39,Congenital malformations of oesophagus,ICD_PM
+Q40,Other congenital malformations of upper alimentary tract,ICD_PM
+Q41,"Congenital absence, atresia and stenosis of small intestine",ICD_PM
+Q42,"Congenital absence, atresia and stenosis of large intestine",ICD_PM
+Q43,Other congenital malformations of intestine,ICD_PM
+Q44,"Congenital malformations of gallbladder, bile ducts and liver",ICD_PM
+Q45,Other congenital malformations of digestive system,ICD_PM
+Q50-Q56 ,Congenital malformations of genital organs,
+Q50,"Congenital malformations of ovaries, fallopian tubes and broad ligame",ICD_PM
+Q51,Congenital malformations of uterus and cervix,ICD_PM
+Q52,Other congenital malformations of female genitalia,ICD_PM
+Q53,Undescended testicle,ICD_PM
+Q54,Hypospadias,ICD_PM
+Q55,Other congenital malformations of male genital organs,ICD_PM
+Q56,Indeterminate sex and pseudohermaphroditism,ICD_PM
+Q60-Q64,Congenital malformations of the urinary system,
+Q60,Renal agenesis and other reduction defects of kidney,ICD_PM
+Q61,Cystic kidney disease,ICD_PM
+Q62,Congenital obstructive defects of renal pelvis and congenital malform,ICD_PM
+Q63,Other congenital malformations of kidney,ICD_PM
+Q64,Other congenital malformations of urinary system,ICD_PM
+Q65-Q79 ,Congenital malformations and deformations of the musculoskeletal system,
+Q65,Congenital deformities of hip,ICD_PM
+Q66,Congenital deformities of feet,ICD_PM
+Q67,"Congenital musculoskeletal deformities of head, face, spine and chest",ICD_PM
+Q68,Other congenital musculoskeletal deformities,ICD_PM
+Q69,Polydactyly,ICD_PM
+Q70,Syndactyly,ICD_PM
+Q71,Reduction defects of upper limb,ICD_PM
+Q72,Reduction defects of lower limb,ICD_PM
+Q73,Reduction defects of unspecified limb,ICD_PM
+Q74,Other congenital malformations of limb(s),ICD_PM
+Q75,Other congenital malformations of skull and face bones,ICD_PM
+Q76,Congenital malformations of spine and bony thorax,ICD_PM
+Q77,Osteochondrodysplasia with defects of growth of tubular bones and spi,ICD_PM
+Q78,Other osteochondrodysplasias,ICD_PM
+Q79,"Congenital malformations of the musculoskeletal system, not elsewhere",ICD_PM
+Q80-Q89 ,Other congenital malformations,
+Q80,Congenital ichthyosis,ICD_PM
+Q81,Epidermolysis bullosa,ICD_PM
+Q82,Other congenital malformations of skin,ICD_PM
+Q83,Congenital malformations of breast,ICD_PM
+Q84,Other congenital malformations of integument,ICD_PM
+Q85,"Phakomatoses, not elsewhere classified",ICD_PM
+Q86,"Congenital malformation syndromes due to known exogenous causes, not",ICD_PM
+Q87,Other specified congenital malformation syndromes affecting multiple,ICD_PM
+Q89,"Other congenital malformations, not elsewhere classified",ICD_PM
+Q90-Q99 ,"Chromosomal abnormalities, not elsewhere classified",
+Q90,Down syndrome,ICD_PM
+Q91,Edwards syndrome and Patau syndrome,ICD_PM
+Q92,"Other trisomies and partial trisomies of the autosomes, not elsewhere",ICD_PM
+Q93,"Monosomies and deletions from the autosomes, not elsewhere classified",ICD_PM
+Q95,"Balanced rearrangements and structural markers, not elsewhere classif",ICD_PM
+Q96,Turner syndrome,ICD_PM
+Q97,"Other sex chromosome abnormalities, female phenotype, not elsewhere classified",ICD_PM
+Q98,"Other sex chromosome abnormalities, male phenotype, not elsewhere classified",ICD_PM
+Q99,"Other chromosome abnormalities, not elsewhere classified",ICD_PM
+I2,Disorders related to length of gestation and fetal growth ,
+P10,Intracranial laceration and haemorrhage due to birth injury,ICD_PM
+P10.0,Subdural haemorrhage due to birth injury,ICD_PM
+P10.1,Cerebral haemorrhage due to birth injury,ICD_PM
+P10.2,Intraventricular haemorrhage due to birth injury,ICD_PM
+P10.3,Subarachnoid haemorrhage due to birth injury,ICD_PM
+P10.4,Tentorial tear due to birth injury,ICD_PM
+P10.8,Other intracranial lacerations and haemorrhages due to birth injury,ICD_PM
+P10.9,Unspecified intracranial laceration and haemorrhage due to birth injury,ICD_PM
+P11,Other birth injuries to central nervous system,ICD_PM
+P11.0,Cerebral oedema due to birth injury,ICD_PM
+P11.1,Other specified brain damage due to birth injury,ICD_PM
+P11.2,Unspecified brain damage due to birth injury,ICD_PM
+P11.5,Birth injury to spine and spinal cord,ICD_PM
+P11.9,"Birth injury to central nervous system, unspecified",ICD_PM
+P12,Birth injury to scalp,ICD_PM
+P12.0,Cephalhaematoma due to birth injury,ICD_PM
+P12.1,Chignon due to birth injury,ICD_PM
+P12.2,Epicranial subaponeurotic haemorrhage due to birth injury,ICD_PM
+P12.3,Bruising of scalp due to birth injury,ICD_PM
+P12.4,Monitoring injury of scalp of newborn,ICD_PM
+P12.8,Other birth injuries to scalp,ICD_PM
+P12.9,"Birth injury to scalp, unspecified",ICD_PM
+P13,Birth injury to skeleton,ICD_PM
+P13.0,Fracture of skull due to birth injury,ICD_PM
+P13.1,Other birth injuries to skull,ICD_PM
+P13.2,Birth injury to femur,ICD_PM
+P13.3,Birth injury to other long bones,ICD_PM
+P13.4,Fracture of clavicle due to birth injury,ICD_PM
+P13.8,Birth injuries to other parts of skeleton,ICD_PM
+P13.9,"Birth injury to skeleton, unspecified",ICD_PM
+P15,Other birth injuries,ICD_PM
+P15.0,Birth injury to liver,ICD_PM
+P15.1,Birth injury to spleen,ICD_PM
+P15.2,Sternomastoid injury due to birth injury,ICD_PM
+P15.8,Other specified birth injuries,ICD_PM
+P15.9,"Birth injury, unspecified",ICD_PM
+I3,Acute intrapartum event,
+P20,Intrauterine hypoxia,ICD_PM
+P20.1,Intrauterine hypoxia first noted during labour and delivery,ICD_PM
+P20.9,"Intrauterine hypoxia, unspecified",ICD_PM
+I4,Infection,
+P35,Congenital viral diseases,ICD_PM
+P35.0,Congenital rubella syndrome,ICD_PM
+P35.1,Congenital cytomegalovirus infection,ICD_PM
+P35.2,Congenital herpesviral [herpes simplex] infection,ICD_PM
+P35.3,Congenital viral hepatitis,ICD_PM
+P35.8,Other congenital viral diseases,ICD_PM
+P35.9,"Congenital viral disease, unspecified",ICD_PM
+P37,Other congenital infectious and parasitic diseases,ICD_PM
+P37.0,Congenital tuberculosis,ICD_PM
+P37.1,Congenital toxoplasmosis,ICD_PM
+P37.3,Congenital falciparum malaria,ICD_PM
+P37.4,Other congenital malaria,ICD_PM
+P37.8,Other specified congenital infectious and parasitic diseases,ICD_PM
+P37.9,"Congenital infectious and parasitic disease, unspecified",ICD_PM
+P39,Other infections specific to the perinatal period,ICD_PM
+P39.2,"Intra-amniotic infection of fetus, not elsewhere classified",ICD_PM
+P39.8,Other specified infections specific to the perinatal period,ICD_PM
+P39.9,"Infection specific to the perinatal period, unspecified",ICD_PM
+I5,Other specified intrapartum disorder,
+P50,Fetal blood loss,ICD_PM
+P50.0,Fetal blood loss from vasa praevia,ICD_PM
+P50.1,Fetal blood loss from ruptured cord,ICD_PM
+P50.2,Fetal blood loss from placenta,ICD_PM
+P50.3,Haemorrhage into co-twin,ICD_PM
+P50.4,Haemorrhage into maternal circulation,ICD_PM
+P50.5,Fetal blood loss from cut end of co-twin’s cord,ICD_PM
+P50.8,Other fetal blood loss,ICD_PM
+P50.9,"Fetal blood loss, unspecified",ICD_PM
+P52,Intracranial nontraumatic haemorrhage of fetus and newborn,ICD_PM
+P52.0,"Intraventricular (nontraumatic) haemorrhage, grade 1, of fetus and newborn",ICD_PM
+P52.1,"Intraventricular (nontraumatic) haemorrhage, grade 2, of fetus and newborn",ICD_PM
+P52.2,"Intraventricular (nontraumatic) haemorrhage, grade 3 and grade 4, of fetus and newborn",ICD_PM
+P52.3,Unspecified intraventricular (nontraumatic) haemorrhage of fetus and newborn,ICD_PM
+P52.4,Intracerebral (nontraumatic) haemorrhage of fetus and newborn,ICD_PM
+P52.5,Subarachnoid (nontraumatic) haemorrhage of fetus and newborn,ICD_PM
+P52.6,Cerebellar (nontraumatic) and posterior fossa haemorrhage of fetus and newborn,ICD_PM
+P52.8,Other intracranial (nontraumatic) haemorrhages of fetus and newborn,ICD_PM
+P52.9,"Intracranial (nontraumatic) haemorrhage of fetus and newborn, unspecified",ICD_PM
+P55,Haemolytic disease of fetus and newborn,ICD_PM
+P55.0,Rhesus isoimmunization of fetus and newborn,ICD_PM
+P55.1,ABO isoimmunization of fetus and newborn,ICD_PM
+P55.8,Other haemolytic diseases of fetus and newborn,ICD_PM
+P55.9,"Haemolytic disease of fetus and newborn, unspecified",ICD_PM
+P56,Hydrops fetalis due to haemolytic disease,ICD_PM
+P56.0,Hydrops fetalis due to isoimmunization,ICD_PM
+P56.9,Hydrops fetalis due to other and unspecified haemolytic disease,ICD_PM
+P60,Disseminated intravascular coagulation of fetus and newborn,ICD_PM
+P61,Other perinatal haematological disorders,ICD_PM
+P61.3,Congenital anaemia from fetal blood loss,ICD_PM
+P61.4,"Other congenital anaemias, not elsewhere classified",ICD_PM
+P61.8,Other specified perinatal haematological disorders,ICD_PM
+P61.9,"Perinatal haematological disorder, unspecified",ICD_PM
+P96,Other conditions originating in the perinatal period,ICD_PM
+P96.0,Congenital renal failure,ICD_PM
+P96.4,"Termination of pregnancy, affecting fetus and newborn",ICD_PM
+P96.5,"Complications of intrauterine procedures, not elsewhere classified",ICD_PM
+P96.8,Other specified conditions originating in the perinatal period,ICD_PM
+P96.9,"Condition originating in the perinatal period, unspecified",ICD_PM
+I6,Disorders related to fetal growth,
+P05,Slow fetal growth and fetal malnutrition,ICD_PM
+P05.0,Light for gestational age,ICD_PM
+P05.1,Small for gestational age,ICD_PM
+P05.2,Fetal malnutrition without mention of light or small for gestational age,ICD_PM
+P05.9,"Slow fetal growth, unspecified",ICD_PM
+P07,"Disorders related to short gestation and low birth weight, not elsewhere classified",ICD_PM
+P07.0,Extremely low birth weight,ICD_PM
+P07.1,Other low birth weight,ICD_PM
+P07.2,Extreme immaturity,ICD_PM
+P07.3,Other preterm infants,ICD_PM
+P08,Disorders related to long gestation and high birth weight,ICD_PM
+P08.0,Exceptionally large baby,ICD_PM
+P08.1,Other heavy for gestational age infants,ICD_PM
+P08.2,"Post-term infant, not heavy for gestational age",ICD_PM
+I7,Intrapartum death of unspecified cause,
+P95,Fetal death of unspecified cause,ICD_PM
+N,NEONATAL DEATH,
+N1,"Congenital malformations, deformations and chromosomal abnormalities",
+Q00,Anencephaly and similar malformations,ICD_PM
+Q01,Encephalocele,ICD_PM
+Q02,Microcephaly,ICD_PM
+Q03,Congenital hydrocephalus,ICD_PM
+Q04,Other congenital malformations of brain,ICD_PM
+Q05,Spina bifida,ICD_PM
+Q06,Other congenital malformations of spinal cord,ICD_PM
+Q07,Other congenital malformations of nervous system,ICD_PM
+Q10,"Congenital malformations of eyelid, lacrimal apparatus and orbit",ICD_PM
+Q11,"Anophthalmos, microphthalmos and macrophthalmos",ICD_PM
+Q12,Congenital lens malformations,ICD_PM
+Q13,Congenital malformations of anterior segment of eye,ICD_PM
+Q14,Congenital malformations of posterior segment of eye,ICD_PM
+Q15,Other congenital malformations of eye,ICD_PM
+Q16,Congenital malformations of ear causing impairment of hearing,ICD_PM
+Q17,Other congenital malformations of ear,ICD_PM
+Q18,Other congenital malformations of face and neck,ICD_PM
+Q20,Congenital malformations of cardiac chambers and connections,ICD_PM
+Q21,Congenital malformations of cardiac septa,ICD_PM
+Q22,Congenital malformations of pulmonary and tricuspid valves,ICD_PM
+Q23,Congenital malformations of aortic and mitral valves,ICD_PM
+Q24,Other congenital malformations of heart,ICD_PM
+Q25,Congenital malformations of great arteries,ICD_PM
+Q26,Congenital malformations of great veins,ICD_PM
+Q27,Other congenital malformations of peripheral vascular system,ICD_PM
+Q28,Other congenital malformations of circulatory system,ICD_PM
+Q30,Congenital malformations of nose,ICD_PM
+Q31,Congenital malformations of larynx,ICD_PM
+Q32,Congenital malformations of trachea and bronchus,ICD_PM
+Q33,Congenital malformations of lung,ICD_PM
+Q34,Other congenital malformations of respiratory system,ICD_PM
+Q36,Cleft lip,ICD_PM
+Q37,Cleft palate with cleft lip,ICD_PM
+Q38,"Other congenital malformations of tongue, mouth and pharynx",ICD_PM
+Q39,Congenital malformations of oesophagus,ICD_PM
+Q40,Other congenital malformations of upper alimentary tract,ICD_PM
+Q41,"Congenital absence, atresia and stenosis of small intestine",ICD_PM
+Q42,"Congenital absence, atresia and stenosis of large intestine",ICD_PM
+Q43,Other congenital malformations of intestine,ICD_PM
+Q44,"Congenital malformations of gallbladder, bile ducts and liver",ICD_PM
+Q45,Other congenital malformations of digestive system,ICD_PM
+Q50,"Congenital malformations of ovaries, fallopian tubes and broad ligame",ICD_PM
+Q51,Congenital malformations of uterus and cervix,ICD_PM
+Q52,Other congenital malformations of female genitalia,ICD_PM
+Q53,Undescended testicle,ICD_PM
+Q54,Hypospadias,ICD_PM
+Q55,Other congenital malformations of male genital organs,ICD_PM
+Q56,Indeterminate sex and pseudohermaphroditism,ICD_PM
+Q60,Renal agenesis and other reduction defects of kidney,ICD_PM
+Q61,Cystic kidney disease,ICD_PM
+Q62,Congenital obstructive defects of renal pelvis and congenital malform,ICD_PM
+Q63,Other congenital malformations of kidney,ICD_PM
+Q64,Other congenital malformations of urinary system,ICD_PM
+Q65,Congenital deformities of hip,ICD_PM
+Q66,Congenital deformities of feet,ICD_PM
+Q67,"Congenital musculoskeletal deformities of head, face, spine and chest",ICD_PM
+Q68,Other congenital musculoskeletal deformities,ICD_PM
+Q69,Polydactyly,ICD_PM
+Q70,Syndactyly,ICD_PM
+Q71,Reduction defects of upper limb,ICD_PM
+Q72,Reduction defects of lower limb,ICD_PM
+Q73,Reduction defects of unspecified limb,ICD_PM
+Q74,Other congenital malformations of limb(s),ICD_PM
+Q75,Other congenital malformations of skull and face bones,ICD_PM
+Q76,Congenital malformations of spine and bony thorax,ICD_PM
+Q77,Osteochondrodysplasia with defects of growth of tubular bones and spi,ICD_PM
+Q78,Other osteochondrodysplasias,ICD_PM
+Q79,"Congenital malformations of the musculoskeletal system, not elsewhere",ICD_PM
+Q80,Congenital ichthyosis,ICD_PM
+Q81,Epidermolysis bullosa,ICD_PM
+Q82,Other congenital malformations of skin,ICD_PM
+Q83,Congenital malformations of breast,ICD_PM
+Q84,Other congenital malformations of integument,ICD_PM
+Q85,"Phakomatoses, not elsewhere classified",ICD_PM
+Q86,"Congenital malformation syndromes due to known exogenous causes, not",ICD_PM
+Q87,Other specified congenital malformation syndromes affecting multiple,ICD_PM
+Q89,"Other congenital malformations, not elsewhere classified",ICD_PM
+Q90,Down syndrome,ICD_PM
+Q91,Edwards syndrome and Patau syndrome,ICD_PM
+Q92,"Other trisomies and partial trisomies of the autosomes, not elsewhere",ICD_PM
+Q93,"Monosomies and deletions from the autosomes, not elsewhere classified",ICD_PM
+Q95,"Balanced rearrangements and structural markers, not elsewhere classif",ICD_PM
+Q96,Turner syndrome,ICD_PM
+Q97,"Other sex chromosome abnormalities, female phenotype, not elsewhere classified",ICD_PM
+Q98,"Other sex chromosome abnormalities, male phenotype, not elsewhere classified",ICD_PM
+Q99,"Other chromosome abnormalities, not elsewhere classified",ICD_PM
+N2,Disorders related to length of gestation and fetal growth ,
+P05,Slow fetal growth and fetal malnutrition,ICD_PM
+P05.0,Light for gestational age,ICD_PM
+P05.1,Small for gestational age,ICD_PM
+P05.2,Fetal malnutrition without mention of light or small for gestational age,ICD_PM
+P05.9,"Slow fetal growth, unspecified",ICD_PM
+P08,Disorders related to long gestation and high birth weight,ICD_PM
+P08.0,Exceptionally large baby,ICD_PM
+P08.1,Other heavy for gestational age infants,ICD_PM
+P08.2,"Post-term infant, not heavy for gestational age",ICD_PM
+N3,Birth trauma,
+P10,Intracranial laceration and haemorrhage due to birth injury,ICD_PM
+P10.0,Subdural haemorrhage due to birth injury,ICD_PM
+P10.1,Cerebral haemorrhage due to birth injury,ICD_PM
+P10.2,Intraventricular haemorrhage due to birth injury,ICD_PM
+P10.3,Subarachnoid haemorrhage due to birth injury,ICD_PM
+P10.4,Tentorial tear due to birth injury,ICD_PM
+P10.8,Other intracranial lacerations and haemorrhages due to birth injury,ICD_PM
+P10.9,Unspecified intracranial laceration and haemorrhage due to birth injury,ICD_PM
+P11,Other birth injuries to central nervous system,ICD_PM
+P11.0,Cerebral oedema due to birth injury,ICD_PM
+P11.1,Other specified brain damage due to birth injury,ICD_PM
+P11.2,Unspecified brain damage due to birth injury,ICD_PM
+P11.5,Birth injury to spine and spinal cord,ICD_PM
+P11.9,"Birth injury to central nervous system, unspecified",ICD_PM
+P12,Birth injury to scalp,ICD_PM
+P12.0,Cephalhaematoma due to birth injury,ICD_PM
+P12.1,Chignon due to birth injury,ICD_PM
+P12.2,Epicranial subaponeurotic haemorrhage due to birth injury,ICD_PM
+P12.3,Bruising of scalp due to birth injury,ICD_PM
+P12.4,Monitoring injury of scalp of newborn,ICD_PM
+P12.8,Other birth injuries to scalp,ICD_PM
+P12.9,"Birth injury to scalp, unspecified",ICD_PM
+P13,Birth injury to skeleton,ICD_PM
+P13.0,Fracture of skull due to birth injury,ICD_PM
+P13.1,Other birth injuries to skull,ICD_PM
+P13.2,Birth injury to femur,ICD_PM
+P13.3,Birth injury to other long bones,ICD_PM
+P13.4,Fracture of clavicle due to birth injury,ICD_PM
+P13.8,Birth injuries to other parts of skeleton,ICD_PM
+P13.9,"Birth injury to skeleton, unspecified",ICD_PM
+P14,Birth injury to peripheral nervous system,ICD_PM
+P14.0,Erb paralysis due to birth injury,ICD_PM
+P14.1,Klumpke paralysis due to birth injury,ICD_PM
+P14.2,Phrenic nerve paralysis due to birth injury,ICD_PM
+P14.3,Other brachial plexus birth injuries,ICD_PM
+P14.8,Birth injuries to other parts of peripheral nervous system,ICD_PM
+P14.9,"Birth injury to peripheral nervous system, unspecified",ICD_PM
+P15,Other birth injuries,ICD_PM
+P15.0,Birth injury to liver,ICD_PM
+P15.1,Birth injury to spleen,ICD_PM
+P15.2,Sternomastoid injury due to birth injury,ICD_PM
+P15.3,Birth injury to eye,ICD_PM
+P15.4,Birth injury to face,ICD_PM
+P15.5,Birth injury to external genitalia,ICD_PM
+P15.6,Subcutaneous fat necrosis due to birth injury,ICD_PM
+P15.8,Other specified birth injuries,ICD_PM
+P15.9,"Birth injury, unspecified",ICD_PM
+N4,Complications of intrapartum events,
+P20,Intrauterine hypoxia,ICD_PM
+P20.1,Intrauterine hypoxia first noted during labour and delivery,ICD_PM
+P20.9,"Intrauterine hypoxia, unspecified",ICD_PM
+P21,Birth asphyxia,ICD_PM
+P21.0,Severe birth asphyxia,ICD_PM
+P21.1,Mild and moderate birth asphyxia,ICD_PM
+P21.9,"Birth asphyxia, unspecified",ICD_PM
+N5,Convulsions and disorders of cerebral status,
+P90,Convulsions of newborn,ICD_PM
+P91,Other disturbances of cerebral status of newborn,ICD_PM
+P91.0,Neonatal cerebral ischaemia,ICD_PM
+P91.1,Acquired periventricular cysts of newborn,ICD_PM
+P91.2,Neonatal cerebral leukomalacia,ICD_PM
+P91.3,Neonatal cerebral irritability,ICD_PM
+P91.4,Neonatal cerebral depression,ICD_PM
+P91.5,Neonatal coma,ICD_PM
+P91.6,Hypoxic ischaemic encephalopathy of newborn,ICD_PM
+P91.8,Other specified disturbances of cerebral status of newborn,ICD_PM
+P91.9,"Disturbance of cerebral status of newborn, unspecified",ICD_PM
+N6,Infection,
+A33,Tetanus neonatorum,ICD_PM
+A50,Congenital syphilis,ICD_PM
+A50.0,"Early congenital syphilis, symptomatic",ICD_PM
+A50.1,"Early congenital syphilis, latent",ICD_PM
+A50.2,"Early congenital syphilis, unspecified",ICD_PM
+A50.9,"Congenital syphilis, unspecified",ICD_PM
+G00,"Bacterial meningitis, not elsewhere classified",ICD_PM
+G00.0,Haemophilus meningitis,ICD_PM
+G00.1,Pneumococcal meningitis,ICD_PM
+G00.2,Streptococcal meningitis,ICD_PM
+G00.3,Staphylococcal meningitis,ICD_PM
+G00.8,Other bacterial meningitis,ICD_PM
+G00.9,"Bacterial meningitis, unspecified",ICD_PM
+G01,Meningitis in bacterial diseases classified elsewhere,ICD_PM
+G02,Meningitis in other infectious and parasitic diseases classified elsewhere,ICD_PM
+G02.0,Meningitis in viral diseases classified elsewhere,ICD_PM
+G02.1,Meningitis in mycoses,ICD_PM
+G02.8,Meningitis in other specified infectious and parasitic diseases classified elsewhere,ICD_PM
+G03,Meningitis due to other and unspecified causes,ICD_PM
+G03.0,Nonpyogenic meningitis,ICD_PM
+G03.1,Chronic meningitis,ICD_PM
+G03.2,Benign recurrent meningitis [Mollaret],ICD_PM
+G03.8,Meningitis due to other specified causes,ICD_PM
+G03.9,"Meningitis, unspecified",ICD_PM
+G04,"Encephalitis, myelitis and encephalomyelitis",ICD_PM
+G04.0,Acute disseminated encephalitis,ICD_PM
+G04.1,Tropical spastic paraplegia,ICD_PM
+G04.2,"Bacterial meningoencephalitis and meningomyelitis, not elsewhere classified",ICD_PM
+G04.8,"Other encephalitis, myelitis and encephalomyelitis",ICD_PM
+G04.9,"Encephalitis, myelitis and encephalomyelitis, unspecified",ICD_PM
+G05,"Encephalitis, myelitis and encephalomyelitis in diseases classified elsewhere",ICD_PM
+G05.0,"Encephalitis, myelitis and encephalomyelitis in bacterial diseases classified elsewhere",ICD_PM
+G05.1,"Encephalitis, myelitis and encephalomyelitis in viral diseases classified elsewhere",ICD_PM
+G05.2,"Encephalitis, myelitis and encephalomyelitis in other infectious and parasitic diseases classified elsewhere",ICD_PM
+G06,Intracranial and intraspinal abscess and granuloma,ICD_PM
+G06.0,Intracranial abscess and granuloma,ICD_PM
+G06.1,Intraspinal abscess and granuloma,ICD_PM
+G06.2,"Extradural and subdural abscess, unspecified",ICD_PM
+G07,Intracranial and intraspinal abscess and granuloma in diseases classified elsewhere,ICD_PM
+G08,Intracranial and intraspinal phlebitis and thrombophlebitis,ICD_PM
+G09,Sequelae of inflammatory diseases of central nervous system,ICD_PM
+P23,Congenital pneumonia,ICD_PM
+P23.0,Congenital pneumonia due to viral agent,ICD_PM
+P23.1,Congenital pneumonia due to Chlamydia,ICD_PM
+P23.2,Congenital pneumonia due to staphylococcus,ICD_PM
+P23.3,"Congenital pneumonia due to streptococcus, group B",ICD_PM
+P23.4,Congenital pneumonia due to Escherichia coli,ICD_PM
+P23.5,Congenital pneumonia due to Pseudomonas,ICD_PM
+P23.6,Congenital pneumonia due to other bacterial agents,ICD_PM
+P23.8,Congenital pneumonia due to other organisms,ICD_PM
+P23.9,"Congenital pneumonia, unspecified",ICD_PM
+P35,Congenital viral diseases,ICD_PM
+P35.0,Congenital rubella syndrome,ICD_PM
+P35.1,Congenital cytomegalovirus infection,ICD_PM
+P35.2,Congenital herpesviral [herpes simplex] infection,ICD_PM
+P35.3,Congenital viral hepatitis,ICD_PM
+P35.8,Other congenital viral diseases,ICD_PM
+P35.9,"Congenital viral disease, unspecified",ICD_PM
+P36,Bacterial sepsis of newborn,ICD_PM
+P36.0,"Sepsis of newborn due to streptococcus, group B",ICD_PM
+P36.1,Sepsis of newborn due to other and unspecified streptococci,ICD_PM
+P36.2,Sepsis of newborn due to Staphylococcus aureus,ICD_PM
+P36.3,Sepsis of newborn due to other and unspecified staphylococci,ICD_PM
+P36.4,Sepsis of newborn due to Escherichia coli,ICD_PM
+P36.5,Sepsis of newborn due to anaerobes,ICD_PM
+P36.8,Other bacterial sepsis of newborn,ICD_PM
+P36.9,"Bacterial sepsis of newborn, unspecified",ICD_PM
+P37,Other congenital infectious and parasitic diseases,ICD_PM
+P37.0,Congenital tuberculosis,ICD_PM
+P37.1,Congenital toxoplasmosis,ICD_PM
+P37.2,Neonatal (disseminated) listeriosis,ICD_PM
+P37.3,Congenital falciparum malaria,ICD_PM
+P37.4,Other congenital malaria,ICD_PM
+P37.5,Neonatal candidiasis,ICD_PM
+P37.8,Other specified congenital infectious and parasitic diseases,ICD_PM
+P37.9,"Congenital infectious and parasitic disease, unspecified",ICD_PM
+P38,Omphalitis of newborn with or without mild haemorrhage,ICD_PM
+P39,Other infections specific to the perinatal period,ICD_PM
+P39.0,Neonatal infective mastitis,ICD_PM
+P39.1,Neonatal conjunctivitis and dacryocystitis,ICD_PM
+P39.2,"Intra-amniotic infection of fetus, not elsewhere classified",ICD_PM
+P39.3,Neonatal urinary tract infection,ICD_PM
+P39.4,Neonatal skin infection,ICD_PM
+P39.8,Other specified infections specific to the perinatal period,ICD_PM
+P39.9,"Infection specific to the perinatal period, unspecified",ICD_PM
+N7,Respiratory and cardiovascular disorders,
+P22,Respiratory distress of newborn,ICD_PM
+P22.0,Respiratory distress syndrome of newborn,ICD_PM
+P22.1,Transient tachypnoea of newborn,ICD_PM
+P22.8,Other respiratory distress of newborn,ICD_PM
+P22.9,"Respiratory distress of newborn, unspecified",ICD_PM
+P24,Neonatal aspiration syndromes,ICD_PM
+P24.0,Neonatal aspiration of meconium,ICD_PM
+P24.1,Neonatal aspiration of amniotic fluid and mucus,ICD_PM
+P24.2,Neonatal aspiration of blood,ICD_PM
+P24.3,Neonatal aspiration of milk and regurgitated food,ICD_PM
+P24.8,Other neonatal aspiration syndromes,ICD_PM
+P24.9,"Neonatal aspiration syndrome, unspecified",ICD_PM
+P25,Interstitial emphysema and related conditions originating in the perinatal period,ICD_PM
+P25.0,Interstitial emphysema originating in the perinatal period,ICD_PM
+P25.1,Pneumothorax originating in the perinatal period,ICD_PM
+P25.2,Pneumomediastinum originating in the perinatal period,ICD_PM
+P25.3,Pneumopericardium originating in the perinatal period,ICD_PM
+P25.8,Other conditions related to interstitial emphysema originating in the perinatal period,ICD_PM
+P26,Pulmonary haemorrhage originating in the perinatal period,ICD_PM
+P26.0,Tracheobronchial haemorrhage originating in the perinatal period,ICD_PM
+P26.1,Massive pulmonary haemorrhage originating in the perinatal period,ICD_PM
+P26.8,Other pulmonary haemorrhages originating in the perinatal period,ICD_PM
+P26.9,Unspecified pulmonary haemorrhage originating in the perinatal period,ICD_PM
+P27,Chronic respiratory disease originating in the perinatal period,ICD_PM
+P27.0,Wilson-Mikity syndrome,ICD_PM
+P27.1,Bronchopulmonary dysplasia originating in the perinatal period,ICD_PM
+P27.8,Other chronic respiratory diseases originating in the perinatal period,ICD_PM
+P27.9,Unspecified chronic respiratory disease originating in the perinatal period,ICD_PM
+P28,Other respiratory conditions originating in the perinatal period,ICD_PM
+P28.0,Primary atelectasis of newborn,ICD_PM
+P28.1,Other and unspecified atelectasis of newborn,ICD_PM
+P28.2,Cyanotic attacks of newborn,ICD_PM
+P28.3,Primary sleep apnoea of newborn,ICD_PM
+P28.4,Other apnoea of newborn,ICD_PM
+P28.5,Respiratory failure of newborn,ICD_PM
+P28.8,Other specified respiratory conditions of newborn,ICD_PM
+P28.9,"Respiratory condition of newborn, unspecified",ICD_PM
+P29,Cardiovascular disorders originating in the perinatal period,ICD_PM
+P29.0,Neonatal cardiac failure,ICD_PM
+P29.1,Neonatal cardiac dysrhythmia,ICD_PM
+P29.2,Neonatal hypertension,ICD_PM
+P29.3,Persistent fetal circulation,ICD_PM
+P29.4,Transient myocardial ischaemia of newborn,ICD_PM
+P29.8,Other cardiovascular disorders originating in the perinatal period,ICD_PM
+P29.9,"Cardiovascular disorder originating in the perinatal period, unspecified",ICD_PM
+N8,Other neonatal conditions,
+P50,Fetal blood loss,ICD_PM
+P50.0,Fetal blood loss from vasa praevia,ICD_PM
+P50.1,Fetal blood loss from ruptured cord,ICD_PM
+P50.2,Fetal blood loss from placenta,ICD_PM
+P50.3,Haemorrhage into co-twin,ICD_PM
+P50.4,Haemorrhage into maternal circulation,ICD_PM
+P50.5,Fetal blood loss from cut end of co-twin’s cord,ICD_PM
+P50.8,Other fetal blood loss,ICD_PM
+P50.9,"Fetal blood loss, unspecified",ICD_PM
+P51,Umbilical haemorrhage of newborn,ICD_PM
+P51.0,Massive umbilical haemorrhage of newborn,ICD_PM
+P51.8,Other umbilical haemorrhages of newborn,ICD_PM
+P51.9,"Umbilical haemorrhage of newborn, unspecified",ICD_PM
+P52,Intracranial nontraumatic haemorrhage of fetus and newborn,ICD_PM
+P52.0,"Intraventricular (nontraumatic) haemorrhage, grade 1, of fetus and newborn",ICD_PM
+P52.1,"Intraventricular (nontraumatic) haemorrhage, grade 2, of fetus and newborn",ICD_PM
+P52.2,"Intraventricular (nontraumatic) haemorrhage, grade 3, and grade 4 of fetus and newborn",ICD_PM
+P52.3,Unspecified intraventricular (nontraumatic) haemorrhage of fetus and newborn,ICD_PM
+P52.4,Intracerebral (nontraumatic) haemorrhage of fetus and newborn,ICD_PM
+P52.5,Subarachnoid (nontraumatic) haemorrhage of fetus and newborn,ICD_PM
+P52.6,Cerebellar (nontraumatic) and posterior fossa haemorrhage of fetus and newborn,ICD_PM
+P52.8,Other intracranial (nontraumatic) haemorrhages of fetus and newborn,ICD_PM
+P52.9,"Intracranial (nontraumatic) haemorrhage of fetus and newborn, unspecified",ICD_PM
+P53,Haemorrhagic disease of fetus and newborn,ICD_PM
+P54,Other neonatal haemorrhages,ICD_PM
+P54.0,Neonatal haematemesis,ICD_PM
+P54.1,Neonatal melaena,ICD_PM
+P54.2,Neonatal rectal haemorrhage,ICD_PM
+P54.3,Other neonatal gastrointestinal haemorrhage,ICD_PM
+P54.4,Neonatal adrenal haemorrhage,ICD_PM
+P54.5,Neonatal cutaneous haemorrhage,ICD_PM
+P54.6,Neonatal vaginal haemorrhage,ICD_PM
+P54.8,Other specified neonatal haemorrhages,ICD_PM
+P54.9,"Neonatal haemorrhage, unspecified",ICD_PM
+P55,Haemolytic disease of fetus and newborn,ICD_PM
+P55.0,Rhesus isoimmunization of fetus and newborn,ICD_PM
+P55.1,ABO isoimmunization of fetus and newborn,ICD_PM
+P55.8,Other haemolytic diseases of fetus and newborn,ICD_PM
+P55.9,"Haemolytic disease of fetus and newborn, unspecified",ICD_PM
+P56,Hydrops fetalis due to haemolytic disease,ICD_PM
+P56.0,Hydrops fetalis due to isoimmunization,ICD_PM
+P56.9,Hydrops fetalis due to other and unspecified haemolytic disease,ICD_PM
+P57,Kernicterus,ICD_PM
+P57.0,Kernicterus due to isoimmunization,ICD_PM
+P57.8,Other specified kernicterus,ICD_PM
+P57.9,"Kernicterus, unspecified",ICD_PM
+P58,Neonatal jaundice due to other excessive haemolysis,ICD_PM
+P58.0,Neonatal jaundice due to bruising,ICD_PM
+P58.1,Neonatal jaundice due to bleeding,ICD_PM
+P58.2,Neonatal jaundice due to infection,ICD_PM
+P58.3,Neonatal jaundice due to polycythaemia,ICD_PM
+P58.4,Neonatal jaundice due to drugs or toxins transmitted from mother or given to newborn,ICD_PM
+P58.5,Neonatal jaundice due to swallowed maternal blood,ICD_PM
+P58.8,Neonatal jaundice due to other specified excessive haemolysis,ICD_PM
+P58.9,"Neonatal jaundice due to excessive haemolysis, unspecified",ICD_PM
+P59,Neonatal jaundice from other and unspecified causes,ICD_PM
+P59.0,Neonatal jaundice associated with preterm delivery,ICD_PM
+P59.1,Inspissated bile syndrome,ICD_PM
+P59.2,Neonatal jaundice from other and unspecified hepatocellular damage,ICD_PM
+P59.3,Neonatal jaundice from breast-milk inhibitor,ICD_PM
+P59.8,Neonatal jaundice from other specified causes,ICD_PM
+P59.9,"Neonatal jaundice, unspecified",ICD_PM
+P61.0,Transient neonatal thrombocytopenia,ICD_PM
+P61.1,Polycythaemia neonatorum,ICD_PM
+P61.2,Anaemia of prematurity,ICD_PM
+P61.3,Congenital anaemia from fetal blood loss,ICD_PM
+P61.4,"Other congenital anaemias, not elsewhere classified",ICD_PM
+P61.5,Transient neonatal neutropenia,ICD_PM
+P61.6,Other transient neonatal disorders of coagulation,ICD_PM
+P61.8,Other specified perinatal haematological disorders,ICD_PM
+P61.9,"Perinatal haematological disorder, unspecified",ICD_PM
+P75,Meconium ileus in cystic fibrosis,ICD_PM
+P76,Other intestinal obstruction of newborn,ICD_PM
+P76.0,Meconium plug syndrome,ICD_PM
+P76.1,Transitory ileus of newborn,ICD_PM
+P76.2,Intestinal obstruction due to inspissated milk,ICD_PM
+P76.8,Other specified intestinal obstruction of newborn,ICD_PM
+P76.9,"Intestinal obstruction of newborn, unspecified",ICD_PM
+P77,Necrotizing enterocolitis of fetus and newborn,ICD_PM
+P78,Other perinatal digestive system disorders,ICD_PM
+P78.0,Perinatal intestinal perforation,ICD_PM
+P78.1,Other neonatal peritonitis,ICD_PM
+P78.2,Neonatal haematemesis and melaena due to swallowed maternal blood,ICD_PM
+P78.3,Noninfective neonatal diarrhoea,ICD_PM
+P78.8,Other specified perinatal digestive system disorders,ICD_PM
+P78.9,"Perinatal digestive system disorder, unspecified",ICD_PM
+P80,Hypothermia of newborn,ICD_PM
+P80.0,Cold injury syndrome,ICD_PM
+P80.8,Other hypothermia of newborn,ICD_PM
+P81,Other disturbances of temperature regulation of newborn,ICD_PM
+P81.0,Environmental hyperthermia of newborn,ICD_PM
+P81.8,Other specified disturbances of temperature regulation of newborn,ICD_PM
+P81.9,"Disturbance of temperature regulation of newborn, unspecified",ICD_PM
+P83,Other conditions of integument specific to fetus and newborn,ICD_PM
+P83.0,Sclerema neonatorum,ICD_PM
+P83.1,Neonatal erythema toxicum,ICD_PM
+P83.2,Hydrops fetalis not due to haemolytic disease,ICD_PM
+P83.3,Other and unspecified oedema specific to fetus and newborn,ICD_PM
+P83.8,Other specified conditions of integument specific to fetus and newborn,ICD_PM
+P83.9,"Condition of integument specific to fetus and newborn, unspecified",ICD_PM
+P92,Feeding problems of newborn,ICD_PM
+P92.0,Vomiting in newborn,ICD_PM
+P92.1,Regurgitation and rumination in newborn,ICD_PM
+P92.2,Slow feeding of newborn,ICD_PM
+P92.3,Underfeeding of newborn,ICD_PM
+P92.4,Overfeeding of newborn,ICD_PM
+P92.5,Neonatal difficulty in feeding at breast,ICD_PM
+P92.8,Other feeding problems of newborn,ICD_PM
+P92.9,"Feeding problem of newborn, unspecified",ICD_PM
+P93,Reactions and intoxications due to drugs administered to fetus and newborn,ICD_PM
+P94,Disorders of muscle tone of newborn,ICD_PM
+P94.0,Transient neonatal myasthenia gravis,ICD_PM
+P94.1,Congenital hypertonia,ICD_PM
+P94.2,Congenital hypotonia,ICD_PM
+P94.8,Other disorders of muscle tone of newborn,ICD_PM
+P94.9,"Disorder of muscle tone of newborn, unspecified",ICD_PM
+N9,Low birth weight and prematurity,
+P07,"Disorders related to short gestation and low birth weight, not elsewhere classified",ICD_PM
+P07.0,Extremely low birth weight,ICD_PM
+P07.1,Other low birth weight,ICD_PM
+P07.2,Extreme immaturity,ICD_PM
+P07.3,Other preterm infants,ICD_PM
+N10,Miscellaneous,
+P96.4,"Termination of pregnancy, affecting fetus and newborn",ICD_PM
+N11,Neonatal death of unspecified cause,
+P96,Other conditions originating in the perinatal period,ICD_PM
+P96.0,Congenital renal failure,ICD_PM
+P96.1,Neonatal withdrawal symptoms from maternal use of drugs of addiction,ICD_PM
+P96.2,Withdrawal symptoms from therapeutic use of drugs in newborn,ICD_PM
+P96.4,"Termination of pregnancy, affecting fetus and newborn",ICD_PM
+P96.5,"Complications of intrauterine procedures, not elsewhere classified",ICD_PM
+P96.8,Other specified conditions originating in the perinatal period,ICD_PM
+P96.9,"Condition originating in the perinatal period, unspecified",ICD_PM
+M,MATERNAL CONDITION,
+M1,"Complications of placenta, cord and membranes",
+P02,"Fetus and newborn affected by complications of placenta, cord and membranes",ICD_PM
+P02.0,Fetus and newborn affected by placenta praevia,ICD_PM
+P02.1,Fetus and newborn affected by other forms of placental separation and haemorrhage,ICD_PM
+P02.2,Fetus and newborn affected by other and unspecified morphological and functional abnormalties of placenta,ICD_PM
+P02.3,Fetus and newborn affected by placental transfusion syndromes,ICD_PM
+P02.4,Fetus and newborn affected by prolapsed cord,ICD_PM
+P02.5,Fetus and newborn affected by other compression of umbilical cord,ICD_PM
+P02.6,Fetus and newborn affected by other and unspecified conditions of umbilical cord,ICD_PM
+P02.7,Fetus and newborn affected by chorioamnionitis,ICD_PM
+P02.8,Fetus and newborn affected by other abnormalities of membranes,ICD_PM
+P02.9,"Fetus and newborn affected by abnormality of membranes, unspecified",ICD_PM
+M2,Maternal complications of pregnancy,
+P01,Fetus and newborn affected by maternal complications of pregnancy,ICD_PM
+P01.0,Fetus and newborn affected by incompetent cervix,ICD_PM
+P01.1,Fetus and newborn affected by premature rupture of membranes,ICD_PM
+P01.2,Fetus and newborn affected by oligohydramnios,ICD_PM
+P01.3,Fetus and newborn affected by polyhydramnios,ICD_PM
+P01.4,Fetus and newborn affected by ectopic pregnancy,ICD_PM
+P01.5,Fetus and newborn affected by multiple pregnancy,ICD_PM
+P01.6,Fetus and newborn affected by maternal death,ICD_PM
+P01.7,Fetus and newborn affected by malpresentation before labour,ICD_PM
+P01.8,Fetus and newborn affected by other maternal complications of pregnancy,ICD_PM
+P01.9,"Fetus and newborn affected by maternal complication of pregnancy, unspecified",ICD_PM
+M3,Other complications of labour and delivery,
+P03,Fetus and newborn affected by other complications of labour and delivery,ICD_PM
+P03.0,Fetus and newborn affected by breech delivery and extraction,ICD_PM
+P03.1,"Fetus and newborn affected by other malpresentation, malposition and disproportion during labour and delivery",ICD_PM
+P03.2,Fetus and newborn affected by forceps delivery,ICD_PM
+P03.3,Fetus and newborn affected by delivery by vacuum extractor [ventouse],ICD_PM
+P03.4,Fetus and newborn affected by caesarean delivery,ICD_PM
+P03.5,Fetus and newborn affected by precipitate delivery,ICD_PM
+P03.6,Fetus and newborn affected by abnormal uterine contractions,ICD_PM
+P03.8,Fetus and newborn affected by other specified complications of labour and delivery,ICD_PM
+P03.9,"Fetus and newborn affected by complication of labour and delivery, unspecified",ICD_PM
+M4,Maternal medical and surgical conditions,
+P00,Fetus and newborn affected by maternal conditions that may be unrelated to present pregnancy,ICD_PM
+P00.0,Fetus and newborn affected by maternal hypertensive disorders,ICD_PM
+P00.1,Fetus and newborn affected by maternal renal and urinary tract diseases,ICD_PM
+P00.2,Fetus and newborn affected by maternal infectious and parasitic diseases,ICD_PM
+P00.3,Fetus and newborn affected by other maternal circulatory and respiratory diseases,ICD_PM
+P00.4,Fetus and newborn affected by maternal nutritional disorders,ICD_PM
+P00.5,Fetus and newborn affected by maternal injury,ICD_PM
+P00.6,Fetus and newborn affected by surgical procedure on mother,ICD_PM
+P00.7,"Fetus and newborn affected by other medical procedures on mother, not else where classified",ICD_PM
+P00.8,Fetus and newborn affected by other maternal conditions,ICD_PM
+P00.9,Fetus and newborn affected by unspecified maternal condition,ICD_PM
+P04,Fetus and newborn affected by noxious influences transmitted via placenta or breast-milk,ICD_PM
+P04.0,"Fetus and newborn affected by maternal anaesthesia and analgesia in pregnancy, labour and delivery",ICD_PM
+P04.1,Fetus and newborn affected by other maternal medication,ICD_PM
+P04.2,Fetus and newborn affected by maternal use of tobacco,ICD_PM
+P04.3,Fetus and newborn affected by maternal use of alcohol,ICD_PM
+P04.4,Fetus and newborn affected by maternal use of drugs of addiction,ICD_PM
+P04.5,Fetus and newborn affected by maternal use of nutritional chemical substances,ICD_PM
+P04.6,Fetus and newborn affected by maternal exposure to environmental chemical substances,ICD_PM
+P04.8,Fetus and newborn affected by other maternal noxious influences,ICD_PM
+P04.9,"Fetus and newborn affected by maternal noxious influence, unspecified",ICD_PM
+M5,No maternal condition identified,

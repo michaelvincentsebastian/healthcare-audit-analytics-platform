@@ -1,0 +1,1324 @@
+CODE,STR,SAB
+C00,LIP,ICDO3_Topography
+C00.0,External upper lip,ICDO3_Topography
+C00.0,Vermilion border of upper lip,ICDO3_Topography
+C00.0,"Upper lip, NOS",ICDO3_Topography
+C00.1,External lower lip,ICDO3_Topography
+C00.1,Vermilion border of lower lip,ICDO3_Topography
+C00.1,"Lower lip, NOS",ICDO3_Topography
+C00.2,"External lip, NOS",ICDO3_Topography
+C00.2,"Vermilion border of lip, NOS",ICDO3_Topography
+C00.3,Mucosa of upper lip,ICDO3_Topography
+C00.3,Frenulum of upper lip,ICDO3_Topography
+C00.3,Inner aspect of upper lip,ICDO3_Topography
+C00.4,Mucosa of lower lip,ICDO3_Topography
+C00.4,Inner aspect of lower lip,ICDO3_Topography
+C00.4,Frenulum of lower lip,ICDO3_Topography
+C00.5,"Mucosa of lip, NOS",ICDO3_Topography
+C00.5,"Inner aspect of lip, NOS",ICDO3_Topography
+C00.5,"Internal lip, NOS",ICDO3_Topography
+C00.5,"Frenulum of lip, NOS",ICDO3_Topography
+C00.5,"Frenulum labii, NOS",ICDO3_Topography
+C00.6,Commissure of lip,ICDO3_Topography
+C00.6,Labial commissure,ICDO3_Topography
+C00.8,Overlapping lesion of lip,ICDO3_Topography
+C00.9,"Lip, NOS",ICDO3_Topography
+C01,BASE OF TONGUE,ICDO3_Topography
+C01.9,"Base of tongue, NOS",ICDO3_Topography
+C01.9,Dorsal surface of base of tongue,ICDO3_Topography
+C01.9,Posterior third of tongue,ICDO3_Topography
+C01.9,"Posterior tongue, NOS",ICDO3_Topography
+C01.9,Root of tongue,ICDO3_Topography
+C02,OTHER AND UNSPECIFIED PARTS OF TONGUE,ICDO3_Topography
+C02.0,"Dorsal surface of tongue, NOS",ICDO3_Topography
+C02.0,"Anterior 2/3 of tongue, dorsal surface",ICDO3_Topography
+C02.0,Midline of tongue,ICDO3_Topography
+C02.0,Dorsal surface of anterior tongue,ICDO3_Topography
+C02.1,Border of tongue,ICDO3_Topography
+C02.1,Tip of tongue,ICDO3_Topography
+C02.2,"Ventral surface of tongue, NOS",ICDO3_Topography
+C02.2,"Anterior 2/3 of tongue, ventral surface",ICDO3_Topography
+C02.2,Frenulum linguae,ICDO3_Topography
+C02.2,"Ventral surface of anterior tongue, NOS",ICDO3_Topography
+C02.3,"Anterior 2/3 of tongue, NOS",ICDO3_Topography
+C02.3,"Anterior tongue, NOS",ICDO3_Topography
+C02.4,Lingual tonsil,ICDO3_Topography
+C02.8,Overlapping lesion of tongue,ICDO3_Topography
+C02.8,Junctional zone of tongue,ICDO3_Topography
+C02.9,"Tongue, NOS",ICDO3_Topography
+C02.9,"Lingual, NOS",ICDO3_Topography
+C03,GUM,ICDO3_Topography
+C03.0,Upper gum,ICDO3_Topography
+C03.0,Maxillary gingiva,ICDO3_Topography
+C03.0,Upper alveolar mucosa,ICDO3_Topography
+C03.0,Upper alveolar ridge mucosa,ICDO3_Topography
+C03.0,Upper alveolus,ICDO3_Topography
+C03.0,Upper gingiva,ICDO3_Topography
+C03.1,Lower gum,ICDO3_Topography
+C03.1,Mandibular gingiva,ICDO3_Topography
+C03.1,Lower alveolar mucosa,ICDO3_Topography
+C03.1,Lower alveolar ridge mucosa,ICDO3_Topography
+C03.1,Lower alveolus,ICDO3_Topography
+C03.1,Lower gingiva,ICDO3_Topography
+C03.9,"Gum, NOS",ICDO3_Topography
+C03.9,"Gingiva, NOS",ICDO3_Topography
+C03.9,"Alveolar mucosa, NOS",ICDO3_Topography
+C03.9,"Alveolar ridge mucosa, NOS",ICDO3_Topography
+C03.9,"Alveolus, NOS",ICDO3_Topography
+C03.9,Periodontal tissue,ICDO3_Topography
+C03.9,Tooth socket,ICDO3_Topography
+C04,FLOOR OF MOUTH,ICDO3_Topography
+C04.0,Anterior floor of mouth,ICDO3_Topography
+C04.1,Lateral floor of mouth,ICDO3_Topography
+C04.8,Overlapping lesion of floor of mouth,ICDO3_Topography
+C04.9,"Floor of mouth, NOS",ICDO3_Topography
+C05,PALATE,ICDO3_Topography
+C05.0,Hard palate,ICDO3_Topography
+C05.1,"Soft palate, NOS",ICDO3_Topography
+C05.2,Uvula,ICDO3_Topography
+C05.8,Overlapping lesion of palate,ICDO3_Topography
+C05.8,Junction of hard and soft palate,ICDO3_Topography
+C05.9,"Palate, NOS",ICDO3_Topography
+C05.9,Roof of mouth,ICDO3_Topography
+C06,OTHER AND UNSPECIFIED PARTS OF MOUTH,ICDO3_Topography
+C06.0,Cheek mucosa,ICDO3_Topography
+C06.0,Buccal mucosa,ICDO3_Topography
+C06.0,Internal cheek,ICDO3_Topography
+C06.1,Vestibule of mouth,ICDO3_Topography
+C06.1,Alveolar sulcus,ICDO3_Topography
+C06.1,Buccal sulcus,ICDO3_Topography
+C06.1,Labial sulcus,ICDO3_Topography
+C06.2,Retromolar area,ICDO3_Topography
+C06.2,Retromolar triangle,ICDO3_Topography
+C06.2,Retromolar trigone,ICDO3_Topography
+C06.8,Overlapping lesion of other and unspecified parts of mouth,ICDO3_Topography
+C06.9,"Mouth, NOS",ICDO3_Topography
+C06.9,Buccal cavity,ICDO3_Topography
+C06.9,Oral cavity,ICDO3_Topography
+C06.9,Oral mucosa,ICDO3_Topography
+C06.9,"Minor salivary gland, NOS",ICDO3_Topography
+C07,PAROTID GLAND,ICDO3_Topography
+C07.9,Parotid gland,ICDO3_Topography
+C07.9,"Parotid, NOS",ICDO3_Topography
+C07.9,Stensen duct,ICDO3_Topography
+C07.9,Parotid gland duct,ICDO3_Topography
+C08,OTHER AND UNSPECIFIED MAJOR SALIVARY GLANDS,ICDO3_Topography
+C08.0,Submandibular gland,ICDO3_Topography
+C08.0,Submaxillary gland,ICDO3_Topography
+C08.0,Wharton duct,ICDO3_Topography
+C08.0,Submaxillary gland duct,ICDO3_Topography
+C08.1,Sublingual gland,ICDO3_Topography
+C08.1,Sublingual gland duct,ICDO3_Topography
+C08.8,Overlapping lesion of major salivary glands,ICDO3_Topography
+C08.9,"Major salivary gland, NOS",ICDO3_Topography
+C08.9,"Salivary gland, NOS",ICDO3_Topography
+C09,TONSIL,ICDO3_Topography
+C09.0,Tonsillar fossa,ICDO3_Topography
+C09.1,Tonsillar pillar,ICDO3_Topography
+C09.1,Faucial pillar,ICDO3_Topography
+C09.1,Glossopalatine fold,ICDO3_Topography
+C09.8,Overlapping lesion of tonsil,ICDO3_Topography
+C09.9,"Tonsil, NOS",ICDO3_Topography
+C09.9,Faucial tonsil,ICDO3_Topography
+C09.9,Palatine tonsil,ICDO3_Topography
+C10,OROPHARYNX,ICDO3_Topography
+C10.0,Vallecula,ICDO3_Topography
+C10.1,Anterior surface of epiglottis,ICDO3_Topography
+C10.2,Lateral wall of oropharynx,ICDO3_Topography
+C10.2,Lateral wall of mesopharynx,ICDO3_Topography
+C10.3,Posterior wall of oropharynx,ICDO3_Topography
+C10.3,Posterior wall of mesopharynx,ICDO3_Topography
+C10.4,Branchial cleft,ICDO3_Topography
+C10.8,Overlapping lesion of oropharynx,ICDO3_Topography
+C10.8,Junctional region of oropharynx,ICDO3_Topography
+C10.9,"Oropharynx, NOS",ICDO3_Topography
+C10.9,"Mesopharynx, NOS",ICDO3_Topography
+C10.9,"Fauces, NOS",ICDO3_Topography
+C11,NASOPHARYNX,ICDO3_Topography
+C11.0,Superior wall of nasopharynx,ICDO3_Topography
+C11.0,Roof of nasopharynx,ICDO3_Topography
+C11.1,Posterior wall of nasopharynx,ICDO3_Topography
+C11.1,Adenoid,ICDO3_Topography
+C11.1,Pharyngeal tonsil,ICDO3_Topography
+C11.2,Lateral wall of nasopharynx,ICDO3_Topography
+C11.2,Fossa of Rosenmuller,ICDO3_Topography
+C11.3,Anterior wall of nasopharynx,ICDO3_Topography
+C11.3,Nasopharyngeal surface of soft palate,ICDO3_Topography
+C11.3,Pharyngeal fornix,ICDO3_Topography
+C11.3,Choana,ICDO3_Topography
+C11.3,Posterior margin of nasal septum,ICDO3_Topography
+C11.8,Overlapping lesion of nasopharynx,ICDO3_Topography
+C11.9,"Nasopharynx, NOS",ICDO3_Topography
+C11.9,Nasopharyngeal wall,ICDO3_Topography
+C12,PYRIFORM SINUS,ICDO3_Topography
+C12.9,Pyriform sinus,ICDO3_Topography
+C12.9,Piriform sinus,ICDO3_Topography
+C12.9,Pyriform fossa,ICDO3_Topography
+C12.9,Piriform fossa,ICDO3_Topography
+C13,HYPOPHARYNX,ICDO3_Topography
+C13.0,Postcricoid region,ICDO3_Topography
+C13.0,Cricopharynx,ICDO3_Topography
+C13.0,"Cricoid, NOS",ICDO3_Topography
+C13.1,Hypopharyngeal aspect of aryepiglottic fold,ICDO3_Topography
+C13.1,"Aryepiglottic fold, NOS",ICDO3_Topography
+C13.1,Arytenoid fold,ICDO3_Topography
+C13.2,Posterior wall of hypopharynx,ICDO3_Topography
+C13.8,Overlapping lesion of hypopharynx,ICDO3_Topography
+C13.9,"Hypopharynx, NOS",ICDO3_Topography
+C13.9,Hypopharyngeal wall,ICDO3_Topography
+C13.9,Laryngopharynx,ICDO3_Topography
+C14,"OTHER AND ILL-DEFINED SITES IN LIP, ORAL CAVITY AND PHARYNX",ICDO3_Topography
+C14.0,"Pharynx, NOS",ICDO3_Topography
+C14.0,"Pharyngeal wall, NOS",ICDO3_Topography
+C14.0,"Wall of pharynx, NOS",ICDO3_Topography
+C14.0,"Lateral wall of pharynx, NOS",ICDO3_Topography
+C14.0,"Posterior wall of pharynx, NOS",ICDO3_Topography
+C14.0,Retropharynx,ICDO3_Topography
+C14.0,Throat,ICDO3_Topography
+C14.2,Waldeyer ring,ICDO3_Topography
+C14.8,"Overlapping lesion of lip, oral cavity and pharynx",ICDO3_Topography
+C15,ESOPHAGUS,ICDO3_Topography
+C15.0,Cervical esophagus,ICDO3_Topography
+C15.1,Thoracic esophagus,ICDO3_Topography
+C15.2,Abdominal esophagus,ICDO3_Topography
+C15.3,Upper third of esophagus,ICDO3_Topography
+C15.3,Proximal third of esophagus,ICDO3_Topography
+C15.4,Middle third of esophagus,ICDO3_Topography
+C15.5,Lower third of esophagus,ICDO3_Topography
+C15.5,Distal third of esophagus,ICDO3_Topography
+C15.8,Overlapping lesion of esophagus,ICDO3_Topography
+C15.9,"Esophagus, NOS",ICDO3_Topography
+C16,STOMACH,ICDO3_Topography
+C16.0,"Cardia, NOS",ICDO3_Topography
+C16.0,Gastric cardia,ICDO3_Topography
+C16.0,Cardioesophageal junction,ICDO3_Topography
+C16.0,Esophagogastric junction,ICDO3_Topography
+C16.0,Gastroesophageal junction,ICDO3_Topography
+C16.1,Fundus of stomach,ICDO3_Topography
+C16.1,Gastric fundus,ICDO3_Topography
+C16.2,Body of stomach,ICDO3_Topography
+C16.2,Corpus of stomach,ICDO3_Topography
+C16.2,Gastric corpus,ICDO3_Topography
+C16.3,Gastric antrum,ICDO3_Topography
+C16.3,Antrum of stomach,ICDO3_Topography
+C16.3,Pyloric antrum,ICDO3_Topography
+C16.4,Pylorus,ICDO3_Topography
+C16.4,Pyloric canal,ICDO3_Topography
+C16.4,Prepylorus,ICDO3_Topography
+C16.5,"Lesser curvature of stomach, NOS",ICDO3_Topography
+C16.6,"Greater curvature of stomach, NOS",ICDO3_Topography
+C16.8,Overlapping lesion of stomach,ICDO3_Topography
+C16.8,"Anterior wall of stomach, NOS",ICDO3_Topography
+C16.8,"Posterior wall of stomach, NOS",ICDO3_Topography
+C16.9,"Stomach, NOS",ICDO3_Topography
+C16.9,"Gastric, NOS",ICDO3_Topography
+C17,SMALL INTESTINE,ICDO3_Topography
+C17.0,Duodenum,ICDO3_Topography
+C17.1,Jejunum,ICDO3_Topography
+C17.2,Ileum,ICDO3_Topography
+C17.3,Meckel diverticulum,ICDO3_Topography
+C17.8,Overlapping lesion of small intestine,ICDO3_Topography
+C17.9,"Small intestine, NOS",ICDO3_Topography
+C17.9,"Small bowel, NOS",ICDO3_Topography
+C18,COLON,ICDO3_Topography
+C18.0,Cecum,ICDO3_Topography
+C18.0,Ileocecal valve,ICDO3_Topography
+C18.0,Ileocecal junction,ICDO3_Topography
+C18.1,Appendix,ICDO3_Topography
+C18.2,Ascending colon,ICDO3_Topography
+C18.2,Right colon,ICDO3_Topography
+C18.3,Hepatic flexure of colon,ICDO3_Topography
+C18.4,Transverse colon,ICDO3_Topography
+C18.5,Splenic flexure of colon,ICDO3_Topography
+C18.6,Descending colon,ICDO3_Topography
+C18.6,Left colon,ICDO3_Topography
+C18.7,Sigmoid colon,ICDO3_Topography
+C18.7,"Sigmoid, NOS",ICDO3_Topography
+C18.7,Sigmoid flexure of colon,ICDO3_Topography
+C18.7,Pelvic colon,ICDO3_Topography
+C18.8,Overlapping lesion of colon,ICDO3_Topography
+C18.9,"Colon, NOS",ICDO3_Topography
+C18.9,Large intestine,ICDO3_Topography
+C18.9,"Large bowel, NOS",ICDO3_Topography
+C19,RECTOSIGMOID JUNCTION,ICDO3_Topography
+C19.9,Rectosigmoid junction,ICDO3_Topography
+C19.9,"Rectosigmoid, NOS",ICDO3_Topography
+C19.9,Rectosigmoid colon,ICDO3_Topography
+C19.9,Colon and rectum,ICDO3_Topography
+C19.9,Pelvirectal junction,ICDO3_Topography
+C20,RECTUM,ICDO3_Topography
+C20.9,"Rectum, NOS",ICDO3_Topography
+C20.9,Rectal ampulla,ICDO3_Topography
+C21,ANUS AND ANAL CANAL,ICDO3_Topography
+C21.0,"Anus, NOS",ICDO3_Topography
+C21.1,Anal canal,ICDO3_Topography
+C21.1,Anal sphincter,ICDO3_Topography
+C21.2,Cloacogenic zone,ICDO3_Topography
+C21.8,"Overlapping lesion of rectum, anus and anal canal",ICDO3_Topography
+C21.8,Anorectal junction,ICDO3_Topography
+C21.8,Anorectum,ICDO3_Topography
+C22,LIVER AND INTRAHEPATIC BILE DUCTS,ICDO3_Topography
+C22.0,Liver,ICDO3_Topography
+C22.0,"Hepatic, NOS",ICDO3_Topography
+C22.1,Intrahepatic bile duct,ICDO3_Topography
+C22.1,Biliary canaliculus,ICDO3_Topography
+C22.1,Cholangiole,ICDO3_Topography
+C23,GALLBLADDER,ICDO3_Topography
+C23.9,Gallbladder,ICDO3_Topography
+C24,OTHER AND UNSPECIFIED PARTS OF BILIARY TRACT,ICDO3_Topography
+C24.0,Extrahepatic bile duct,ICDO3_Topography
+C24.0,"Bile duct, NOS",ICDO3_Topography
+C24.0,"Biliary duct, NOS",ICDO3_Topography
+C24.0,Choledochal duct,ICDO3_Topography
+C24.0,Common bile duct,ICDO3_Topography
+C24.0,Common duct,ICDO3_Topography
+C24.0,Cystic bile duct,ICDO3_Topography
+C24.0,Cystic duct,ICDO3_Topography
+C24.0,Hepatic bile duct,ICDO3_Topography
+C24.0,Hepatic duct,ICDO3_Topography
+C24.0,Sphincter of Oddi,ICDO3_Topography
+C24.1,Ampulla of Vater,ICDO3_Topography
+C24.1,Periampullary,ICDO3_Topography
+C24.8,Overlapping lesion of biliary tract,ICDO3_Topography
+C24.9,"Biliary tract, NOS",ICDO3_Topography
+C25,PANCREAS,ICDO3_Topography
+C25.0,Head of pancreas,ICDO3_Topography
+C25.1,Body of pancreas,ICDO3_Topography
+C25.2,Tail of pancreas,ICDO3_Topography
+C25.3,Pancreatic duct,ICDO3_Topography
+C25.3,Duct of Santorini,ICDO3_Topography
+C25.3,Duct of Wirsung,ICDO3_Topography
+C25.4,Islets of Langerhans,ICDO3_Topography
+C25.4,Islands of Langerhans,ICDO3_Topography
+C25.4,Endocrine pancreas,ICDO3_Topography
+C25.7,Other specified parts of pancreas,ICDO3_Topography
+C25.7,Neck of pancreas,ICDO3_Topography
+C25.8,Overlapping lesion of pancreas,ICDO3_Topography
+C25.9,"Pancreas, NOS",ICDO3_Topography
+C26,OTHER AND ILL-DEFINED DIGESTIVE ORGANS,ICDO3_Topography
+C26.0,"Intestinal tract, NOS",ICDO3_Topography
+C26.0,"Bowel, NOS",ICDO3_Topography
+C26.0,"Intestine, NOS",ICDO3_Topography
+C26.8,Overlapping lesion of digestive system,ICDO3_Topography
+C26.9,"Gastrointestinal tract, NOS",ICDO3_Topography
+C26.9,"Alimentary tract, NOS",ICDO3_Topography
+C26.9,"Digestive organs, NOS",ICDO3_Topography
+C30,NASAL CAVITY AND MIDDLE EAR,ICDO3_Topography
+C30.0,Nasal cavity,ICDO3_Topography
+C30.0,Internal nose,ICDO3_Topography
+C30.0,Naris,ICDO3_Topography
+C30.0,Nasal cartilage,ICDO3_Topography
+C30.0,Nasal mucosa,ICDO3_Topography
+C30.0,"Nasal septum, NOS",ICDO3_Topography
+C30.0,Nasal turbinate,ICDO3_Topography
+C30.0,Nostril,ICDO3_Topography
+C30.0,Vestibule of nose,ICDO3_Topography
+C30.1,Middle ear,ICDO3_Topography
+C30.1,Inner ear,ICDO3_Topography
+C30.1,Auditory tube,ICDO3_Topography
+C30.1,Eustachian tube,ICDO3_Topography
+C30.1,Mastoid antrum,ICDO3_Topography
+C30.1,Tympanic cavity,ICDO3_Topography
+C31,ACCESSORY SINUSES,ICDO3_Topography
+C31.0,Maxillary sinus,ICDO3_Topography
+C31.0,Maxillary antrum,ICDO3_Topography
+C31.0,"Antrum, NOS",ICDO3_Topography
+C31.1,Ethmoid sinus,ICDO3_Topography
+C31.2,Frontal sinus,ICDO3_Topography
+C31.3,Sphenoid sinus,ICDO3_Topography
+C31.8,Overlapping lesion of sinuses accessory,ICDO3_Topography
+C31.9,"Accessory sinus, NOS",ICDO3_Topography
+C31.9,Accessory nasal sinus,ICDO3_Topography
+C31.9,Paranasal sinus,ICDO3_Topography
+C32,LARYNX,ICDO3_Topography
+C32.0,Glottis,ICDO3_Topography
+C32.0,Intrinsic larynx,ICDO3_Topography
+C32.0,Laryngeal commissure,ICDO3_Topography
+C32.0,"Vocal cord, NOS",ICDO3_Topography
+C32.0,True vocal cord,ICDO3_Topography
+C32.0,True cord,ICDO3_Topography
+C32.1,Supraglottis,ICDO3_Topography
+C32.1,"Epiglottis, NOS",ICDO3_Topography
+C32.1,Extrinsic larynx,ICDO3_Topography
+C32.1,Laryngeal aspect of aryepiglottic fold,ICDO3_Topography
+C32.1,Posterior surface of epiglottis,ICDO3_Topography
+C32.1,Ventricular band of larynx,ICDO3_Topography
+C32.1,False vocal cord,ICDO3_Topography
+C32.1,False cord,ICDO3_Topography
+C32.2,Subglottis,ICDO3_Topography
+C32.3,Laryngeal cartilage,ICDO3_Topography
+C32.3,Arytenoid cartilage,ICDO3_Topography
+C32.3,Cricoid cartilage,ICDO3_Topography
+C32.3,Cuneiform cartilage,ICDO3_Topography
+C32.3,Thyroid cartilage,ICDO3_Topography
+C32.8,Overlapping lesion of larynx,ICDO3_Topography
+C32.9,"Larynx, NOS",ICDO3_Topography
+C33,TRACHEA,ICDO3_Topography
+C33.9,Trachea,ICDO3_Topography
+C34,BRONCHUS AND LUNG,ICDO3_Topography
+C34.0,Main bronchus,ICDO3_Topography
+C34.0,Carina,ICDO3_Topography
+C34.0,Hilus of lung,ICDO3_Topography
+C34.1,"Upper lobe, lung",ICDO3_Topography
+C34.1,Lingula of lung,ICDO3_Topography
+C34.1,"Upper lobe, bronchus",ICDO3_Topography
+C34.2,"Middle lobe, lung",ICDO3_Topography
+C34.2,"Middle lobe, bronchus",ICDO3_Topography
+C34.3,"Lower lobe, lung",ICDO3_Topography
+C34.3,"Lower lobe, bronchus",ICDO3_Topography
+C34.8,Overlapping lesion of lung,ICDO3_Topography
+C34.9,"Lung, NOS",ICDO3_Topography
+C34.9,"Bronchus, NOS",ICDO3_Topography
+C34.9,Bronchiole,ICDO3_Topography
+C34.9,Bronchogenic,ICDO3_Topography
+C34.9,"Pulmonary, NOS",ICDO3_Topography
+C37,THYMUS,ICDO3_Topography
+C37.9,Thymus,ICDO3_Topography
+C38,"HEART, MEDIASTINUM, AND PLEURA",ICDO3_Topography
+C38.0,Heart,ICDO3_Topography
+C38.0,Endocardium,ICDO3_Topography
+C38.0,Epicardium,ICDO3_Topography
+C38.0,Myocardium,ICDO3_Topography
+C38.0,Pericardium,ICDO3_Topography
+C38.0,Cardiac ventricle,ICDO3_Topography
+C38.0,Cardiac atrium,ICDO3_Topography
+C38.1,Anterior mediastinum,ICDO3_Topography
+C38.2,Posterior mediastinum,ICDO3_Topography
+C38.3,"Mediastinum, NOS",ICDO3_Topography
+C38.4,"Pleura, NOS",ICDO3_Topography
+C38.4,Parietal pleura,ICDO3_Topography
+C38.4,Visceral pleura,ICDO3_Topography
+C38.8,"Overlapping lesion of heart, mediastinum and pleura",ICDO3_Topography
+C39,OTHER AND ILL-DEFINED SITES WITHIN RESPIRATORY SYSTEM AND INTRATHORACIC ORGANS,ICDO3_Topography
+C39.0,"Upper respiratory tract, NOS",ICDO3_Topography
+C39.8,Overlapping lesion of respiratory system and intrathoracic organs,ICDO3_Topography
+C39.9,Ill-defined sites within respiratory system,ICDO3_Topography
+C39.9,"Respiratory tract, NOS",ICDO3_Topography
+C40,"BONES, JOINTS AND ARTICULAR CARTILAGE OF LIMBS",ICDO3_Topography
+C40.0,"Long bones of upper limb, scapula and associated joints",ICDO3_Topography
+C40.0,Acromioclavicular joint,ICDO3_Topography
+C40.0,Bone of arm,ICDO3_Topography
+C40.0,Bone of forearm,ICDO3_Topography
+C40.0,Bone of shoulder,ICDO3_Topography
+C40.0,Elbow joint,ICDO3_Topography
+C40.0,Humerus,ICDO3_Topography
+C40.0,Radius,ICDO3_Topography
+C40.0,Scapula,ICDO3_Topography
+C40.0,Shoulder girdle,ICDO3_Topography
+C40.0,Shoulder joint,ICDO3_Topography
+C40.0,Ulna,ICDO3_Topography
+C40.1,Short bones of upper limb and associated joints,ICDO3_Topography
+C40.1,Bone of finger,ICDO3_Topography
+C40.1,Bone of hand,ICDO3_Topography
+C40.1,Bone of thumb,ICDO3_Topography
+C40.1,Bone of wrist,ICDO3_Topography
+C40.1,Carpal bone,ICDO3_Topography
+C40.1,Hand joint,ICDO3_Topography
+C40.1,Metacarpal bone,ICDO3_Topography
+C40.1,Phalanx of hand,ICDO3_Topography
+C40.1,Wrist joint,ICDO3_Topography
+C40.2,Long bones of lower limb and associated joints,ICDO3_Topography
+C40.2,Bone of leg,ICDO3_Topography
+C40.2,Femur,ICDO3_Topography
+C40.2,Fibula,ICDO3_Topography
+C40.2,"Knee joint, NOS",ICDO3_Topography
+C40.2,Semilunar cartilage,ICDO3_Topography
+C40.2,Lateral meniscus of knee joint,ICDO3_Topography
+C40.2,Medial meniscus of knee joint,ICDO3_Topography
+C40.2,Tibia,ICDO3_Topography
+C40.3,Short bones of lower limb and associated joints,ICDO3_Topography
+C40.3,Ankle joint,ICDO3_Topography
+C40.3,Bone of ankle,ICDO3_Topography
+C40.3,Bone of foot,ICDO3_Topography
+C40.3,Bone of heel,ICDO3_Topography
+C40.3,Bone of toe,ICDO3_Topography
+C40.3,Foot joint,ICDO3_Topography
+C40.3,Metatarsal bone,ICDO3_Topography
+C40.3,Patella,ICDO3_Topography
+C40.3,Phalanx of foot,ICDO3_Topography
+C40.3,Tarsal bone,ICDO3_Topography
+C40.8,"Overlapping lesion of bones, joints and articular cartilage of limbs",ICDO3_Topography
+C40.9,"Bone of limb, NOS",ICDO3_Topography
+C40.9,"Cartilage of limb, NOS",ICDO3_Topography
+C40.9,"Joint of limb, NOS",ICDO3_Topography
+C40.9,"Articular cartilage of limb, NOS",ICDO3_Topography
+C41,"BONES, JOINTS AND ARTICULAR CARTILAGE OF OTHER AND UNSPECIFIED SITES",ICDO3_Topography
+C41.0,Bones of skull and face and associated joints,ICDO3_Topography
+C41.0,Calvarium,ICDO3_Topography
+C41.0,Cranial bone,ICDO3_Topography
+C41.0,Ethmoid bone,ICDO3_Topography
+C41.0,Facial bone,ICDO3_Topography
+C41.0,Frontal bone,ICDO3_Topography
+C41.0,Hyoid bone,ICDO3_Topography
+C41.0,Maxilla,ICDO3_Topography
+C41.0,Upper jaw bone,ICDO3_Topography
+C41.0,Nasal bone,ICDO3_Topography
+C41.0,Occipital bone,ICDO3_Topography
+C41.0,Orbital bone,ICDO3_Topography
+C41.0,Parietal bone,ICDO3_Topography
+C41.0,"Skull, NOS",ICDO3_Topography
+C41.0,Sphenoid bone,ICDO3_Topography
+C41.0,Temporal bone,ICDO3_Topography
+C41.0,Zygomatic bone,ICDO3_Topography
+C41.1,Mandible,ICDO3_Topography
+C41.1,"Jaw bone, NOS",ICDO3_Topography
+C41.1,Lower jaw bone,ICDO3_Topography
+C41.1,Temporomandibular joint,ICDO3_Topography
+C41.2,Vertebral column,ICDO3_Topography
+C41.2,Atlas,ICDO3_Topography
+C41.2,Axis,ICDO3_Topography
+C41.2,Bone of back,ICDO3_Topography
+C41.2,Intervertebral disc,ICDO3_Topography
+C41.2,Nucleus pulposus,ICDO3_Topography
+C41.2,Spinal column,ICDO3_Topography
+C41.2,Spine,ICDO3_Topography
+C41.2,Vertebra,ICDO3_Topography
+C41.3,"Rib, sternum, clavicle and associated joints",ICDO3_Topography
+C41.3,Costal cartilage,ICDO3_Topography
+C41.3,Costovertebral joint,ICDO3_Topography
+C41.3,Sternocostal joint,ICDO3_Topography
+C41.4,"Pelvic bones, sacrum, coccyx and associated joints",ICDO3_Topography
+C41.4,Acetabulum,ICDO3_Topography
+C41.4,Bone of hip,ICDO3_Topography
+C41.4,Coccyx,ICDO3_Topography
+C41.4,Hip joint,ICDO3_Topography
+C41.4,Ilium,ICDO3_Topography
+C41.4,Innominate bone,ICDO3_Topography
+C41.4,Ischium,ICDO3_Topography
+C41.4,Pelvic bone,ICDO3_Topography
+C41.4,Pubic bone,ICDO3_Topography
+C41.4,Sacrum,ICDO3_Topography
+C41.4,Symphysis pubis,ICDO3_Topography
+C41.8,"Overlapping lesion of bones, joints and articular cartilage",ICDO3_Topography
+C41.9,"Bone, NOS",ICDO3_Topography
+C41.9,"Joint, NOS",ICDO3_Topography
+C41.9,"Cartilage, NOS",ICDO3_Topography
+C41.9,Skeletal bone,ICDO3_Topography
+C41.9,"Articular cartilage, NOS",ICDO3_Topography
+C42,HEMATOPOIETIC AND RETICULOENDOTHELIAL SYSTEMS,ICDO3_Topography
+C42.0,Blood,ICDO3_Topography
+C42.1,Bone marrow,ICDO3_Topography
+C42.2,Spleen,ICDO3_Topography
+C42.3,"Reticuloendothelial system, NOS",ICDO3_Topography
+C42.4,"Hematopoietic system, NOS",ICDO3_Topography
+C44,SKIN,ICDO3_Topography
+C44.0,"Skin of lip, NOS",ICDO3_Topography
+C44.0,Skin of lower lip,ICDO3_Topography
+C44.0,Skin of upper lip,ICDO3_Topography
+C44.1,Eyelid,ICDO3_Topography
+C44.1,"Lid, NOS",ICDO3_Topography
+C44.1,Palpebra,ICDO3_Topography
+C44.1,"Canthus, NOS",ICDO3_Topography
+C44.1,Inner canthus,ICDO3_Topography
+C44.1,Lower lid,ICDO3_Topography
+C44.1,Meibomian gland,ICDO3_Topography
+C44.1,Outer canthus,ICDO3_Topography
+C44.1,Upper lid,ICDO3_Topography
+C44.2,External ear,ICDO3_Topography
+C44.2,"Auricle, NOS",ICDO3_Topography
+C44.2,Pinna,ICDO3_Topography
+C44.2,Ceruminal gland,ICDO3_Topography
+C44.2,Concha,ICDO3_Topography
+C44.2,"Ear, NOS",ICDO3_Topography
+C44.2,Ear lobule,ICDO3_Topography
+C44.2,Earlobe,ICDO3_Topography
+C44.2,External auditory canal,ICDO3_Topography
+C44.2,"Auditory canal, NOS",ICDO3_Topography
+C44.2,"Auricular canal, NOS",ICDO3_Topography
+C44.2,External auricular canal,ICDO3_Topography
+C44.2,Ear canal,ICDO3_Topography
+C44.2,External auditory meatus,ICDO3_Topography
+C44.2,Helix,ICDO3_Topography
+C44.2,Skin of auricle,ICDO3_Topography
+C44.2,"Skin of ear, NOS",ICDO3_Topography
+C44.2,Tragus,ICDO3_Topography
+C44.3,Skin of other and unspecified parts of face,ICDO3_Topography
+C44.3,Skin of cheek,ICDO3_Topography
+C44.3,Skin of chin,ICDO3_Topography
+C44.3,Skin of face,ICDO3_Topography
+C44.3,Skin of forehead,ICDO3_Topography
+C44.3,Skin of jaw,ICDO3_Topography
+C44.3,Skin of nose,ICDO3_Topography
+C44.3,Skin of temple,ICDO3_Topography
+C44.3,Ala nasi,ICDO3_Topography
+C44.3,"Chin, NOS",ICDO3_Topography
+C44.3,Columnella,ICDO3_Topography
+C44.3,Eyebrow,ICDO3_Topography
+C44.3,Brow,ICDO3_Topography
+C44.3,External cheek,ICDO3_Topography
+C44.3,External nose,ICDO3_Topography
+C44.3,"Forehead, NOS",ICDO3_Topography
+C44.3,"Temple, NOS",ICDO3_Topography
+C44.3,"Skin of head, NOS",ICDO3_Topography
+C44.4,Skin of scalp and neck,ICDO3_Topography
+C44.4,Skin of neck,ICDO3_Topography
+C44.4,Skin of scalp,ICDO3_Topography
+C44.4,"Scalp, NOS",ICDO3_Topography
+C44.4,Skin of cervical region,ICDO3_Topography
+C44.4,Skin of supraclavicular region,ICDO3_Topography
+C44.5,Skin of trunk,ICDO3_Topography
+C44.5,Skin of abdomen,ICDO3_Topography
+C44.5,Skin of abdominal wall,ICDO3_Topography
+C44.5,Skin of anus,ICDO3_Topography
+C44.5,Skin of axilla,ICDO3_Topography
+C44.5,Skin of back,ICDO3_Topography
+C44.5,Skin of breast,ICDO3_Topography
+C44.5,Skin of buttock,ICDO3_Topography
+C44.5,Skin of chest,ICDO3_Topography
+C44.5,Skin of chest wall,ICDO3_Topography
+C44.5,Skin of flank,ICDO3_Topography
+C44.5,Skin of groin,ICDO3_Topography
+C44.5,Skin of perineum,ICDO3_Topography
+C44.5,Skin of thoracic wall,ICDO3_Topography
+C44.5,Skin of thorax,ICDO3_Topography
+C44.5,Skin of trunk,ICDO3_Topography
+C44.5,Skin of umbilicus,ICDO3_Topography
+C44.5,Skin of gluteal region,ICDO3_Topography
+C44.5,Skin of infraclavicular region,ICDO3_Topography
+C44.5,Skin of inguinal region,ICDO3_Topography
+C44.5,Skin of sacrococcygeal region,ICDO3_Topography
+C44.5,Skin of scapular region,ICDO3_Topography
+C44.5,Perianal skin,ICDO3_Topography
+C44.5,"Umbilicus, NOS",ICDO3_Topography
+C44.6,Skin of upper limb and shoulder,ICDO3_Topography
+C44.6,Skin of antecubital space,ICDO3_Topography
+C44.6,Skin of arm,ICDO3_Topography
+C44.6,Skin of elbow,ICDO3_Topography
+C44.6,Skin of finger,ICDO3_Topography
+C44.6,Skin of forearm,ICDO3_Topography
+C44.6,Skin of hand,ICDO3_Topography
+C44.6,Skin of palm,ICDO3_Topography
+C44.6,Skin of shoulder,ICDO3_Topography
+C44.6,Skin of thumb,ICDO3_Topography
+C44.6,Skin of upper limb,ICDO3_Topography
+C44.6,Skin of wrist,ICDO3_Topography
+C44.6,Finger nail,ICDO3_Topography
+C44.6,Palmar skin,ICDO3_Topography
+C44.7,Skin of lower limb and hip,ICDO3_Topography
+C44.7,Skin of ankle,ICDO3_Topography
+C44.7,Skin of calf,ICDO3_Topography
+C44.7,Skin of foot,ICDO3_Topography
+C44.7,Skin of heel,ICDO3_Topography
+C44.7,Skin of hip,ICDO3_Topography
+C44.7,Skin of knee,ICDO3_Topography
+C44.7,Skin of leg,ICDO3_Topography
+C44.7,Skin of lower limb,ICDO3_Topography
+C44.7,Skin of popliteal space,ICDO3_Topography
+C44.7,Skin of thigh,ICDO3_Topography
+C44.7,Skin of toe,ICDO3_Topography
+C44.7,Plantar skin,ICDO3_Topography
+C44.7,Sole of foot,ICDO3_Topography
+C44.7,Toe nail,ICDO3_Topography
+C44.8,Overlapping lesion of skin,ICDO3_Topography
+C44.9,"Skin, NOS",ICDO3_Topography
+C47,PERIPHERAL NERVES AND AUTONOMIC NERVOUS SYSTEM,ICDO3_Topography
+C47.0,"Peripheral nerves and autonomic nervous system of head, face, and neck",ICDO3_Topography
+C47.0,Peripheral nerves and autonomic nervous system of cheek,ICDO3_Topography
+C47.0,Peripheral nerves and autonomic nervous system of chin,ICDO3_Topography
+C47.0,Peripheral nerves and autonomic nervous system of face,ICDO3_Topography
+C47.0,Peripheral nerves and autonomic nervous system of forehead,ICDO3_Topography
+C47.0,Peripheral nerves and autonomic nervous system of head,ICDO3_Topography
+C47.0,Peripheral nerves and autonomic nervous system of neck,ICDO3_Topography
+C47.0,Peripheral nerves and autonomic nervous system of scalp,ICDO3_Topography
+C47.0,Peripheral nerves and autonomic nervous system of temple,ICDO3_Topography
+C47.0,Peripheral nerves and autonomic nervous system of cervical region,ICDO3_Topography
+C47.0,Peripheral nerves and autonomic nervous system of pterygoid fossa,ICDO3_Topography
+C47.0,Peripheral nerves and autonomic nervous system of supraclavicular region,ICDO3_Topography
+C47.0,Cervical plexus,ICDO3_Topography
+C47.1,Peripheral nerves and autonomic nervous system of upper limb and shoulder,ICDO3_Topography
+C47.1,Peripheral nerves and autonomic nervous system of antecubital space,ICDO3_Topography
+C47.1,Peripheral nerves and autonomic nervous system of arm,ICDO3_Topography
+C47.1,Peripheral nerves and autonomic nervous system of elbow,ICDO3_Topography
+C47.1,Peripheral nerves and autonomic nervous system of finger,ICDO3_Topography
+C47.1,Peripheral nerves and autonomic nervous system of forearm,ICDO3_Topography
+C47.1,Peripheral nerves and autonomic nervous system of hand,ICDO3_Topography
+C47.1,Peripheral nerves and autonomic nervous system of shoulder,ICDO3_Topography
+C47.1,Peripheral nerves and autonomic nervous system of thumb,ICDO3_Topography
+C47.1,Peripheral nerves and autonomic nervous system of wrist,ICDO3_Topography
+C47.1,Brachial nerve,ICDO3_Topography
+C47.1,Brachial plexus,ICDO3_Topography
+C47.1,Median nerve,ICDO3_Topography
+C47.1,Radial nerve,ICDO3_Topography
+C47.1,Ulnar nerve,ICDO3_Topography
+C47.2,Peripheral nerves and autonomic nervous system of lower limb and hip,ICDO3_Topography
+C47.2,Peripheral nerves and autonomic nervous system of ankle,ICDO3_Topography
+C47.2,Peripheral nerves and autonomic nervous system of calf,ICDO3_Topography
+C47.2,Peripheral nerves and autonomic nervous system of foot,ICDO3_Topography
+C47.2,Peripheral nerves and autonomic nervous system of heel,ICDO3_Topography
+C47.2,Peripheral nerves and autonomic nervous system of hip,ICDO3_Topography
+C47.2,Peripheral nerves and autonomic nervous system of knee,ICDO3_Topography
+C47.2,Peripheral nerves and autonomic nervous system of leg,ICDO3_Topography
+C47.2,Peripheral nerves and autonomic nervous system of popliteal space,ICDO3_Topography
+C47.2,Peripheral nerves and autonomic nervous system of thigh,ICDO3_Topography
+C47.2,Peripheral nerves and autonomic nervous system of toe,ICDO3_Topography
+C47.2,Femoral nerve,ICDO3_Topography
+C47.2,Obturator nerve,ICDO3_Topography
+C47.2,Sciatic nerve,ICDO3_Topography
+C47.3,Peripheral nerves and autonomic nervous system of thorax,ICDO3_Topography
+C47.3,Peripheral nerves and autonomic nervous system of axilla,ICDO3_Topography
+C47.3,Peripheral nerves and autonomic nervous system of chest,ICDO3_Topography
+C47.3,Peripheral nerves and autonomic nervous system of chest wall,ICDO3_Topography
+C47.3,Peripheral nerves and autonomic nervous system of thoracic wall,ICDO3_Topography
+C47.3,Peripheral nerves and autonomic nervous system of infraclavicular region,ICDO3_Topography
+C47.3,Peripheral nerves and autonomic nervous system of scapular region,ICDO3_Topography
+C47.3,Intercostal nerve,ICDO3_Topography
+C47.4,Peripheral nerves and autonomic nervous system of abdomen,ICDO3_Topography
+C47.4,Peripheral nerves and autonomic nervous system of abdominal wall,ICDO3_Topography
+C47.4,Peripheral nerves and autonomic nervous system of umbilicus,ICDO3_Topography
+C47.5,Peripheral nerves and autonomic nervous system of pelvis,ICDO3_Topography
+C47.5,Peripheral nerves and autonomic nervous system of buttock,ICDO3_Topography
+C47.5,Peripheral nerves and autonomic nervous system of groin,ICDO3_Topography
+C47.5,Peripheral nerves and autonomic nervous system of perineum,ICDO3_Topography
+C47.5,Peripheral nerves and autonomic nervous system of gluteal region,ICDO3_Topography
+C47.5,Peripheral nerves and autonomic nervous system of inguinal region,ICDO3_Topography
+C47.5,Peripheral nerves and autonomic nervous system of sacrococcygeal region,ICDO3_Topography
+C47.5,Lumbosacral plexus,ICDO3_Topography
+C47.5,Sacral nerve,ICDO3_Topography
+C47.5,Sacral plexus,ICDO3_Topography
+C47.6,"Peripheral nerves and autonomic nervous system of trunk, NOS",ICDO3_Topography
+C47.6,Peripheral nerves and autonomic nervous system of back,ICDO3_Topography
+C47.6,Peripheral nerves and autonomic nervous system of flank,ICDO3_Topography
+C47.6,Peripheral nerves and autonomic nervous system of trunk,ICDO3_Topography
+C47.6,Lumbar nerve,ICDO3_Topography
+C47.8,Overlapping lesion of peripheral nerves and autonomic nervous system,ICDO3_Topography
+C47.9,"Autonomic nervous system, NOS",ICDO3_Topography
+C47.9,"Ganglia, NOS",ICDO3_Topography
+C47.9,"Nerve, NOS",ICDO3_Topography
+C47.9,"Parasympathetic nervous system, NOS",ICDO3_Topography
+C47.9,"Peripheral nerve, NOS",ICDO3_Topography
+C47.9,"Spinal nerve, NOS",ICDO3_Topography
+C47.9,"Sympathetic nervous system, NOS",ICDO3_Topography
+C48,RETROPERITONEUM AND PERITONEUM,ICDO3_Topography
+C48.0,Retroperitoneum,ICDO3_Topography
+C48.0,Periadrenal tissue,ICDO3_Topography
+C48.0,Perinephric tissue,ICDO3_Topography
+C48.0,Peripancreatic tissue,ICDO3_Topography
+C48.0,Perirenal tissue,ICDO3_Topography
+C48.0,Retrocecal tissue,ICDO3_Topography
+C48.0,Retroperitoneal tissue,ICDO3_Topography
+C48.1,Specified parts of peritoneum,ICDO3_Topography
+C48.1,Mesentery,ICDO3_Topography
+C48.1,Mesoappendix,ICDO3_Topography
+C48.1,Mesocolon,ICDO3_Topography
+C48.1,Omentum,ICDO3_Topography
+C48.1,Pelvic peritoneum,ICDO3_Topography
+C48.1,Rectouterine pouch,ICDO3_Topography
+C48.1,Cul de sac,ICDO3_Topography
+C48.1,Pouch of Douglas,ICDO3_Topography
+C48.2,"Peritoneum, NOS",ICDO3_Topography
+C48.2,Peritoneal cavity,ICDO3_Topography
+C48.8,Overlapping lesion of retroperitoneum and peritoneum,ICDO3_Topography
+C49,"CONNECTIVE, SUBCUTANEOUS AND OTHER SOFT TISSUES",ICDO3_Topography
+C49.0,"Connective, subcutaneous and other soft tissues of head, face, and neck",ICDO3_Topography
+C49.0,"Connective, subcutaneous and other soft tissues of cheek",ICDO3_Topography
+C49.0,"Connective, subcutaneous and other soft tissues of chin",ICDO3_Topography
+C49.0,"Connective, subcutaneous and other soft tissues of face",ICDO3_Topography
+C49.0,"Connective, subcutaneous and other soft tissues of forehead",ICDO3_Topography
+C49.0,"Connective, subcutaneous and other soft tissues of head",ICDO3_Topography
+C49.0,"Connective, subcutaneous and other soft tissues of neck",ICDO3_Topography
+C49.0,"Connective, subcutaneous and other soft tissues of scalp",ICDO3_Topography
+C49.0,"Connective, subcutaneous and other soft tissues of temple",ICDO3_Topography
+C49.0,"Connective, subcutaneous and other soft tissues of cervical region",ICDO3_Topography
+C49.0,"Connective, subcutaneous and other soft tissues of pterygoid fossa",ICDO3_Topography
+C49.0,"Connective, subcutaneous and other soft tissues of supraclavicular region",ICDO3_Topography
+C49.0,Auricular cartilage,ICDO3_Topography
+C49.0,Cartilage of ear,ICDO3_Topography
+C49.0,Carotid artery,ICDO3_Topography
+C49.0,Masseter muscle,ICDO3_Topography
+C49.0,Sternocleidomastoid muscle,ICDO3_Topography
+C49.1,"Connective, subcutaneous and other soft tissues of upper limb and shoulder",ICDO3_Topography
+C49.1,"Connective, subcutaneous and other soft tissues of antecubital space",ICDO3_Topography
+C49.1,"Connective, subcutaneous and other soft tissues of arm",ICDO3_Topography
+C49.1,"Connective, subcutaneous and other soft tissues of elbow",ICDO3_Topography
+C49.1,"Connective, subcutaneous and other soft tissues of finger",ICDO3_Topography
+C49.1,"Connective, subcutaneous and other soft tissues of forearm",ICDO3_Topography
+C49.1,"Connective, subcutaneous and other soft tissues of hand",ICDO3_Topography
+C49.1,"Connective, subcutaneous and other soft tissues of shoulder",ICDO3_Topography
+C49.1,"Connective, subcutaneous and other soft tissues of thumb",ICDO3_Topography
+C49.1,"Connective, subcutaneous and other soft tissues of wrist",ICDO3_Topography
+C49.1,Biceps brachii muscle,ICDO3_Topography
+C49.1,Brachialis muscle,ICDO3_Topography
+C49.1,Coracobrachialis muscle,ICDO3_Topography
+C49.1,Deltoideus muscle,ICDO3_Topography
+C49.1,Palmar aponeurosis,ICDO3_Topography
+C49.1,Palmar fascia,ICDO3_Topography
+C49.1,Radial artery,ICDO3_Topography
+C49.1,Triceps brachii muscle,ICDO3_Topography
+C49.1,Ulnar artery,ICDO3_Topography
+C49.2,"Connective, subcutaneous and other soft tissues of lower limb and hip",ICDO3_Topography
+C49.2,"Connective, subcutaneous and other soft tissues of ankle",ICDO3_Topography
+C49.2,"Connective, subcutaneous and other soft tissues of calf",ICDO3_Topography
+C49.2,"Connective, subcutaneous and other soft tissues of foot",ICDO3_Topography
+C49.2,"Connective, subcutaneous and other soft tissues of heel",ICDO3_Topography
+C49.2,"Connective, subcutaneous and other soft tissues of hip",ICDO3_Topography
+C49.2,"Connective, subcutaneous and other soft tissues of knee",ICDO3_Topography
+C49.2,"Connective, subcutaneous and other soft tissues of leg",ICDO3_Topography
+C49.2,"Connective, subcutaneous and other soft tissues of popliteal space",ICDO3_Topography
+C49.2,"Connective, subcutaneous and other soft tissues of thigh",ICDO3_Topography
+C49.2,"Connective, subcutaneous and other soft tissues of toe",ICDO3_Topography
+C49.2,Biceps femoris muscle,ICDO3_Topography
+C49.2,Femoral artery,ICDO3_Topography
+C49.2,Gastrocnemius muscle,ICDO3_Topography
+C49.2,Plantar aponeurosis,ICDO3_Topography
+C49.2,Plantar fascia,ICDO3_Topography
+C49.2,Quadriceps femoris muscle,ICDO3_Topography
+C49.3,"Connective, subcutaneous and other soft tissues of thorax",ICDO3_Topography
+C49.3,"Connective, subcutaneous and other soft tissues of axilla",ICDO3_Topography
+C49.3,"Connective, subcutaneous and other soft tissues of chest",ICDO3_Topography
+C49.3,"Connective, subcutaneous and other soft tissues of chest wall",ICDO3_Topography
+C49.3,"Connective, subcutaneous and other soft tissues of thorax",ICDO3_Topography
+C49.3,"Connective, subcutaneous and other soft tissues of thoracic wall",ICDO3_Topography
+C49.3,"Connective, subcutaneous and other soft tissues of infraclavicular region",ICDO3_Topography
+C49.3,"Connective, subcutaneous and other soft tissues of scapular region",ICDO3_Topography
+C49.3,"Aorta, NOS",ICDO3_Topography
+C49.3,Axillary artery,ICDO3_Topography
+C49.3,Diaphragm,ICDO3_Topography
+C49.3,Intercostal muscle,ICDO3_Topography
+C49.3,Internal mammary artery,ICDO3_Topography
+C49.3,Latissimus dorsi muscle,ICDO3_Topography
+C49.3,Pectoralis major muscle,ICDO3_Topography
+C49.3,Subclavian artery,ICDO3_Topography
+C49.3,Superior vena cava,ICDO3_Topography
+C49.3,Thoracic duct,ICDO3_Topography
+C49.3,Trapezius muscle,ICDO3_Topography
+C49.4,"Connective, subcutaneous and other soft tissues of abdomen",ICDO3_Topography
+C49.4,"Connective, subcutaneous and other soft tissues of abdomen",ICDO3_Topography
+C49.4,"Connective, subcutaneous and other soft tissues of abdominal wall",ICDO3_Topography
+C49.4,"Connective, subcutaneous and other soft tissues of umbilicus",ICDO3_Topography
+C49.4,Abdominal aorta,ICDO3_Topography
+C49.4,Abdominal vena cava,ICDO3_Topography
+C49.4,Abdominal wall muscle,ICDO3_Topography
+C49.4,Celiac artery,ICDO3_Topography
+C49.4,Iliopsoas muscle,ICDO3_Topography
+C49.4,Inferior vena cava,ICDO3_Topography
+C49.4,Mesenteric artery,ICDO3_Topography
+C49.4,Psoas muscle,ICDO3_Topography
+C49.4,Rectus abdominis muscle,ICDO3_Topography
+C49.4,Renal artery,ICDO3_Topography
+C49.4,"Vena cava, NOS",ICDO3_Topography
+C49.5,"Connective, subcutaneous and other soft tissues of pelvis",ICDO3_Topography
+C49.5,"Connective, subcutaneous and other soft tissues of buttock",ICDO3_Topography
+C49.5,"Connective, subcutaneous and other soft tissues of groin",ICDO3_Topography
+C49.5,"Connective, subcutaneous and other soft tissues of perineum",ICDO3_Topography
+C49.5,"Connective, subcutaneous and other soft tissues of gluteal region",ICDO3_Topography
+C49.5,"Connective, subcutaneous and other soft tissues of inguinal region",ICDO3_Topography
+C49.5,"Connective, subcutaneous and other soft tissues of sacrococcygeal region",ICDO3_Topography
+C49.5,Gluteus maximus muscle,ICDO3_Topography
+C49.5,Iliac artery,ICDO3_Topography
+C49.5,Iliac vein,ICDO3_Topography
+C49.6,"Connective, subcutaneous and other soft tissues of trunk NOS",ICDO3_Topography
+C49.6,"Connective, subcutaneous and other soft tissues of back",ICDO3_Topography
+C49.6,"Connective, subcutaneous and other soft tissues of flank",ICDO3_Topography
+C49.6,"Connective, subcutaneous and other soft tissues of trunk",ICDO3_Topography
+C49.8,"Overlapping lesion of connective, subcutaneous and other soft tissues",ICDO3_Topography
+C49.9,"Connective, subcutaneous and other soft tissues, NOS",ICDO3_Topography
+C49.9,"Adipose tissue, NOS",ICDO3_Topography
+C49.9,"Aponeurosis, NOS",ICDO3_Topography
+C49.9,"Artery, NOS",ICDO3_Topography
+C49.9,"Blood vessel, NOS",ICDO3_Topography
+C49.9,"Bursa, NOS",ICDO3_Topography
+C49.9,"Connective tissue, NOS",ICDO3_Topography
+C49.9,"Fascia, NOS",ICDO3_Topography
+C49.9,"Fatty tissue, NOS",ICDO3_Topography
+C49.9,"Fibrous tissue, NOS",ICDO3_Topography
+C49.9,"Ligament, NOS",ICDO3_Topography
+C49.9,"Lymphatic, NOS",ICDO3_Topography
+C49.9,"Muscle, NOS",ICDO3_Topography
+C49.9,"Skeletal muscle, NOS",ICDO3_Topography
+C49.9,"Subcutaneous tissue, NOS",ICDO3_Topography
+C49.9,"Synovia, NOS",ICDO3_Topography
+C49.9,"Tendon, NOS",ICDO3_Topography
+C49.9,"Tendon sheath, NOS",ICDO3_Topography
+C49.9,"Vein, NOS",ICDO3_Topography
+C49.9,"Vessel, NOS",ICDO3_Topography
+C50,BREAST,ICDO3_Topography
+C50.0,Nipple,ICDO3_Topography
+C50.0,Areola,ICDO3_Topography
+C50.1,Central portion of breast,ICDO3_Topography
+C50.2,Upper-inner quadrant of breast,ICDO3_Topography
+C50.3,Lower-inner quadrant of breast,ICDO3_Topography
+C50.4,Upper-outer quadrant of breast,ICDO3_Topography
+C50.5,Lower-outer quadrant of breast,ICDO3_Topography
+C50.6,Axillary tail of breast,ICDO3_Topography
+C50.6,"Tail of breast, NOS",ICDO3_Topography
+C50.8,Overlapping lesion of breast,ICDO3_Topography
+C50.8,Inner breast,ICDO3_Topography
+C50.8,Lower breast,ICDO3_Topography
+C50.8,Midline of breast,ICDO3_Topography
+C50.8,Outer breast,ICDO3_Topography
+C50.8,Upper breast,ICDO3_Topography
+C50.9,"Breast, NOS",ICDO3_Topography
+C50.9,Mammary gland,ICDO3_Topography
+C51-C58,FEMALE GENITAL ORGANS,ICDO3_Topography
+C51,VULVA,ICDO3_Topography
+C51.0,Labium majus,ICDO3_Topography
+C51.0,"Labia majora, NOS",ICDO3_Topography
+C51.0,Bartholin gland,ICDO3_Topography
+C51.0,Skin of labia majora,ICDO3_Topography
+C51.1,Labium minus,ICDO3_Topography
+C51.1,Labia minora,ICDO3_Topography
+C51.2,Clitoris,ICDO3_Topography
+C51.8,Overlapping lesion of vulva,ICDO3_Topography
+C51.9,"Vulva, NOS",ICDO3_Topography
+C51.9,External female genitalia,ICDO3_Topography
+C51.9,Fourchette,ICDO3_Topography
+C51.9,"Labia, NOS",ICDO3_Topography
+C51.9,"Labium, NOS",ICDO3_Topography
+C51.9,Mons pubis,ICDO3_Topography
+C51.9,Mons veneris,ICDO3_Topography
+C51.9,Pudendum,ICDO3_Topography
+C51.9,Skin of vulva,ICDO3_Topography
+C52,VAGINA,ICDO3_Topography
+C52.9,"Vagina, NOS",ICDO3_Topography
+C52.9,Vaginal vault,ICDO3_Topography
+C52.9,Fornix of vagina,ICDO3_Topography
+C52.9,Gartner duct,ICDO3_Topography
+C52.9,Hymen,ICDO3_Topography
+C53,CERVIX UTERI,ICDO3_Topography
+C53.0,Endocervix,ICDO3_Topography
+C53.0,Internal os,ICDO3_Topography
+C53.0,Cervical canal,ICDO3_Topography
+C53.0,Endocervical canal,ICDO3_Topography
+C53.0,Endocervical gland,ICDO3_Topography
+C53.0,Nabothian gland,ICDO3_Topography
+C53.1,Exocervix,ICDO3_Topography
+C53.1,External os,ICDO3_Topography
+C53.8,Overlapping lesion of cervix uteri,ICDO3_Topography
+C53.8,Cervical stump,ICDO3_Topography
+C53.8,Squamocolumnar junction of cervix,ICDO3_Topography
+C53.9,Cervix uteri,ICDO3_Topography
+C53.9,"Cervix, NOS",ICDO3_Topography
+C53.9,Uterine cervix,ICDO3_Topography
+C54,CORPUS UTERI,ICDO3_Topography
+C54.0,Isthmus uteri,ICDO3_Topography
+C54.0,Lower uterine segment,ICDO3_Topography
+C54.1,Endometrium,ICDO3_Topography
+C54.1,Endometrial gland,ICDO3_Topography
+C54.1,Endometrial stroma,ICDO3_Topography
+C54.2,Myometrium,ICDO3_Topography
+C54.3,Fundus uteri,ICDO3_Topography
+C54.8,Overlapping lesion of corpus uteri,ICDO3_Topography
+C54.9,Corpus uteri,ICDO3_Topography
+C54.9,Body of uterus,ICDO3_Topography
+C55,"UTERUS, NOS",ICDO3_Topography
+C55.9,"Uterus, NOS",ICDO3_Topography
+C55.9,"Uterine, NOS",ICDO3_Topography
+C56,OVARY,ICDO3_Topography
+C56.9,Ovary,ICDO3_Topography
+C57,OTHER AND UNSPECIFIED FEMALE GENITAL ORGANS,ICDO3_Topography
+C57.0,Fallopian tube,ICDO3_Topography
+C57.0,Uterine tube,ICDO3_Topography
+C57.1,Broad ligament,ICDO3_Topography
+C57.1,Mesovarium,ICDO3_Topography
+C57.1,Parovarian region,ICDO3_Topography
+C57.2,Round ligament,ICDO3_Topography
+C57.3,Parametrium,ICDO3_Topography
+C57.3,Uterine ligament,ICDO3_Topography
+C57.3,Uterosacral ligament,ICDO3_Topography
+C57.3,Uterine adnexa,ICDO3_Topography
+C57.3,"Adnexa, NOS",ICDO3_Topography
+C57.4,Uterine adnexa,ICDO3_Topography
+C57.4,"Adnexa, NOS",ICDO3_Topography
+C57.7,Other specified parts of female genital organs,ICDO3_Topography
+C57.7,Wolffian body,ICDO3_Topography
+C57.7,Wolffian duct,ICDO3_Topography
+C57.8,Overlapping lesion of female genital organs,ICDO3_Topography
+C57.8,Tubo-ovarian,ICDO3_Topography
+C57.8,Utero-ovarian,ICDO3_Topography
+C57.9,"Female genital tract, NOS",ICDO3_Topography
+C57.9,"Female genital organs, NOS",ICDO3_Topography
+C57.9,"Female genitourinary tract, NOS",ICDO3_Topography
+C57.9,Urethrovaginal septum,ICDO3_Topography
+C57.9,Vesicocervical tissue,ICDO3_Topography
+C57.9,Vesicovaginal septum,ICDO3_Topography
+C58,PLACENTA,ICDO3_Topography
+C58.9,Placenta,ICDO3_Topography
+C58.9,Fetal membranes,ICDO3_Topography
+C60,PENIS,ICDO3_Topography
+C60.0,Prepuce,ICDO3_Topography
+C60.0,Foreskin,ICDO3_Topography
+C60.1,Glans penis,ICDO3_Topography
+C60.2,Body of penis,ICDO3_Topography
+C60.2,Corpus cavernosum,ICDO3_Topography
+C60.2,Corpus of penis,ICDO3_Topography
+C60.8,Overlapping lesion of penis,ICDO3_Topography
+C60.9,"Penis, NOS",ICDO3_Topography
+C60.9,Skin of penis,ICDO3_Topography
+C61,PROSTATE GLAND,ICDO3_Topography
+C61.9,Prostate gland,ICDO3_Topography
+C61.9,"Prostate, NOS",ICDO3_Topography
+C62,TESTIS,ICDO3_Topography
+C62.0,Undescended testis,ICDO3_Topography
+C62.0,Retained testis,ICDO3_Topography
+C62.0,Ectopic testis,ICDO3_Topography
+C62.1,Descended testis,ICDO3_Topography
+C62.1,Scrotal testis,ICDO3_Topography
+C62.9,"Testis, NOS",ICDO3_Topography
+C62.9,"Testicle, NOS",ICDO3_Topography
+C63,OTHER AND UNSPECIFIED MALE GENITAL ORGANS,ICDO3_Topography
+C63.0,Epididymis,ICDO3_Topography
+C63.1,Spermatic cord,ICDO3_Topography
+C63.1,Vas deferens,ICDO3_Topography
+C63.2,"Scrotum, NOS",ICDO3_Topography
+C63.2,Skin of scrotum,ICDO3_Topography
+C63.7,Other specified parts of male genital organs,ICDO3_Topography
+C63.7,Seminal vesicle,ICDO3_Topography
+C63.7,Tunica vaginalis,ICDO3_Topography
+C63.8,Overlapping lesion of male genital organs,ICDO3_Topography
+C63.9,"Male genital organs, NOS",ICDO3_Topography
+C63.9,"Male genital tract, NOS",ICDO3_Topography
+C63.9,"Male genitourinary tract, NOS",ICDO3_Topography
+C64,KIDNEY,ICDO3_Topography
+C64.9,"Kidney, NOS",ICDO3_Topography
+C64.9,"Renal, NOS",ICDO3_Topography
+C64.9,Kidney parenchyma,ICDO3_Topography
+C65,RENAL PELVIS,ICDO3_Topography
+C65.9,Renal pelvis,ICDO3_Topography
+C65.9,Pelvis of kidney,ICDO3_Topography
+C65.9,Renal calyces,ICDO3_Topography
+C65.9,Renal calyx,ICDO3_Topography
+C65.9,Pelviureteric junction,ICDO3_Topography
+C66,URETER,ICDO3_Topography
+C66.9,Ureter,ICDO3_Topography
+C67,BLADDER,ICDO3_Topography
+C67.0,Trigone of bladder,ICDO3_Topography
+C67.1,Dome of bladder,ICDO3_Topography
+C67.2,Lateral wall of bladder,ICDO3_Topography
+C67.3,Anterior wall of bladder,ICDO3_Topography
+C67.4,Posterior wall of bladder,ICDO3_Topography
+C67.5,Bladder neck,ICDO3_Topography
+C67.5,Internal urethral orifice,ICDO3_Topography
+C67.6,Ureteric orifice,ICDO3_Topography
+C67.7,Urachus,ICDO3_Topography
+C67.8,Overlapping lesion of bladder,ICDO3_Topography
+C67.9,"Bladder, NOS",ICDO3_Topography
+C67.9,"Bladder wall, NOS",ICDO3_Topography
+C67.9,"Urinary bladder, NOS",ICDO3_Topography
+C68,OTHER AND UNSPECIFIED URINARY ORGANS,ICDO3_Topography
+C68.0,Urethra,ICDO3_Topography
+C68.0,Urethral gland,ICDO3_Topography
+C68.0,Cowper gland,ICDO3_Topography
+C68.0,Prostatic utricle,ICDO3_Topography
+C68.1,Paraurethral gland,ICDO3_Topography
+C68.8,Overlapping lesion of urinary organs,ICDO3_Topography
+C68.9,"Urinary system, NOS",ICDO3_Topography
+C69,EYE AND ADNEXA,ICDO3_Topography
+C69.0,Conjunctiva,ICDO3_Topography
+C69.1,"Cornea, NOS",ICDO3_Topography
+C69.1,Limbus of cornea,ICDO3_Topography
+C69.2,Retina,ICDO3_Topography
+C69.3,Choroid,ICDO3_Topography
+C69.3,Crystalline lens,ICDO3_Topography
+C69.4,Ciliary body,ICDO3_Topography
+C69.4,Iris,ICDO3_Topography
+C69.4,Sclera,ICDO3_Topography
+C69.4,Uveal tract,ICDO3_Topography
+C69.4,Intraocular,ICDO3_Topography
+C69.4,Eyeball,ICDO3_Topography
+C69.5,Lacrimal gland,ICDO3_Topography
+C69.5,"Lacrimal duct, NOS",ICDO3_Topography
+C69.5,Nasal lacrimal duct,ICDO3_Topography
+C69.5,Nasolacrimal duct,ICDO3_Topography
+C69.5,Lacrimal sac,ICDO3_Topography
+C69.6,"Orbit, NOS",ICDO3_Topography
+C69.6,Autonomic nervous system of orbit,ICDO3_Topography
+C69.6,Connective tissue of orbit,ICDO3_Topography
+C69.6,Extraocular muscle,ICDO3_Topography
+C69.6,Peripheral nerves of orbit,ICDO3_Topography
+C69.6,Retrobulbar tissue,ICDO3_Topography
+C69.6,Soft tissue of orbit,ICDO3_Topography
+C69.8,Overlapping lesion of eye and adnexa,ICDO3_Topography
+C69.9,"Eye, NOS",ICDO3_Topography
+C70,MENINGES,ICDO3_Topography
+C70.0,Cerebral meninges,ICDO3_Topography
+C70.0,Cranial dura mater,ICDO3_Topography
+C70.0,Cranial meninges,ICDO3_Topography
+C70.0,Cranial pia mater,ICDO3_Topography
+C70.0,Falx cerebelli,ICDO3_Topography
+C70.0,Falx cerebri,ICDO3_Topography
+C70.0,"Falx, NOS",ICDO3_Topography
+C70.0,Intracranial meninges,ICDO3_Topography
+C70.0,Intracranial arachnoid,ICDO3_Topography
+C70.0,Tentorium cerebelli,ICDO3_Topography
+C70.0,"Tentorium, NOS",ICDO3_Topography
+C70.1,Spinal meninges,ICDO3_Topography
+C70.1,Spinal arachnoid,ICDO3_Topography
+C70.1,Spinal dura mater,ICDO3_Topography
+C70.1,Spinal pia mater,ICDO3_Topography
+C70.9,"Meninges, NOS",ICDO3_Topography
+C70.9,"Arachnoid, NOS",ICDO3_Topography
+C70.9,"Dura, NOS",ICDO3_Topography
+C70.9,"Dura mater, NOS",ICDO3_Topography
+C70.9,"Pia mater, NOS",ICDO3_Topography
+C71,BRAIN,ICDO3_Topography
+C71.0,Cerebrum,ICDO3_Topography
+C71.0,Basal ganglia,ICDO3_Topography
+C71.0,Central white matter,ICDO3_Topography
+C71.0,Cerebral cortex,ICDO3_Topography
+C71.0,Cerebral hemisphere,ICDO3_Topography
+C71.0,Cerebral white matter,ICDO3_Topography
+C71.0,Corpus striatum,ICDO3_Topography
+C71.0,Globus pallidus,ICDO3_Topography
+C71.0,Hypothalamus,ICDO3_Topography
+C71.0,Insula,ICDO3_Topography
+C71.0,Internal capsule,ICDO3_Topography
+C71.0,Island of Reil,ICDO3_Topography
+C71.0,Operculum,ICDO3_Topography
+C71.0,Pallium,ICDO3_Topography
+C71.0,Putamen,ICDO3_Topography
+C71.0,Rhinencephalon,ICDO3_Topography
+C71.0,"Supratentorial brain, NOS",ICDO3_Topography
+C71.0,Thalamus,ICDO3_Topography
+C71.1,Frontal lobe,ICDO3_Topography
+C71.1,Frontal pole,ICDO3_Topography
+C71.2,Temporal lobe,ICDO3_Topography
+C71.2,Hippocampus,ICDO3_Topography
+C71.2,Uncus,ICDO3_Topography
+C71.3,Parietal lobe,ICDO3_Topography
+C71.4,Occipital lobe,ICDO3_Topography
+C71.4,Occipital pole,ICDO3_Topography
+C71.5,"Ventricle, NOS",ICDO3_Topography
+C71.5,Cerebral ventricle,ICDO3_Topography
+C71.5,"Choroid plexus, NOS",ICDO3_Topography
+C71.5,Choroid plexus of lateral ventricle,ICDO3_Topography
+C71.5,Choroid plexus of third ventricle,ICDO3_Topography
+C71.5,Ependyma,ICDO3_Topography
+C71.5,"Lateral ventricle, NOS",ICDO3_Topography
+C71.5,"Third ventricle, NOS",ICDO3_Topography
+C71.6,"Cerebellum, NOS",ICDO3_Topography
+C71.6,Cerebellopontine angle,ICDO3_Topography
+C71.6,Vermis of cerebellum,ICDO3_Topography
+C71.7,Brain stem,ICDO3_Topography
+C71.7,Cerebral peduncle,ICDO3_Topography
+C71.7,Basis pedunculi,ICDO3_Topography
+C71.7,Choroid plexus of fourth ventricle,ICDO3_Topography
+C71.7,"Fourth ventricle, NOS",ICDO3_Topography
+C71.7,"Infratentorial brain, NOS",ICDO3_Topography
+C71.7,Medulla oblongata,ICDO3_Topography
+C71.7,Midbrain,ICDO3_Topography
+C71.7,Olive,ICDO3_Topography
+C71.7,Pons,ICDO3_Topography
+C71.7,Pyramid,ICDO3_Topography
+C71.8,Overlapping lesion of brain,ICDO3_Topography
+C71.8,Corpus callosum,ICDO3_Topography
+C71.8,Tapetum,ICDO3_Topography
+C71.9,"Brain, NOS",ICDO3_Topography
+C71.9,Intracranial site,ICDO3_Topography
+C71.9,"Cranial fossa, NOS",ICDO3_Topography
+C71.9,Anterior cranial fossa,ICDO3_Topography
+C71.9,Middle cranial fossa,ICDO3_Topography
+C71.9,Posterior cranial fossa,ICDO3_Topography
+C71.9,Suprasellar,ICDO3_Topography
+C72,"SPINAL CORD, CRANIAL NERVES, AND OTHER PARTS OF CENTRAL NERVOUS SYSTEM",ICDO3_Topography
+C72.0,Spinal cord,ICDO3_Topography
+C72.0,Cervical cord,ICDO3_Topography
+C72.0,Conus medullaris,ICDO3_Topography
+C72.0,Filum terminale,ICDO3_Topography
+C72.0,Lumbar cord,ICDO3_Topography
+C72.0,Sacral cord,ICDO3_Topography
+C72.0,Thoracic cord,ICDO3_Topography
+C72.1,Cauda equina,ICDO3_Topography
+C72.2,Olfactory nerve,ICDO3_Topography
+C72.3,Optic nerve,ICDO3_Topography
+C72.3,Optic chiasm,ICDO3_Topography
+C72.3,Optic tract,ICDO3_Topography
+C72.4,Acoustic nerve,ICDO3_Topography
+C72.5,"Cranial nerve, NOS",ICDO3_Topography
+C72.5,Abducens nerve,ICDO3_Topography
+C72.5,"Accessory nerve, NOS",ICDO3_Topography
+C72.5,Spinal accessory nerve,ICDO3_Topography
+C72.5,Facial nerve,ICDO3_Topography
+C72.5,Glossopharyngeal nerve,ICDO3_Topography
+C72.5,Hypoglossal nerve,ICDO3_Topography
+C72.5,Oculomotor nerve,ICDO3_Topography
+C72.5,Trigeminal nerve,ICDO3_Topography
+C72.5,Trochlear nerve,ICDO3_Topography
+C72.5,Vagus nerve,ICDO3_Topography
+C72.8,Overlapping lesion of brain and central nervous system,ICDO3_Topography
+C72.9,"Nervous system, NOS",ICDO3_Topography
+C72.9,Central nervous system,ICDO3_Topography
+C72.9,Epidural,ICDO3_Topography
+C72.9,Extradural,ICDO3_Topography
+C72.9,Parasellar,ICDO3_Topography
+C73,THYROID GLAND,ICDO3_Topography
+C73.9,Thyroid gland,ICDO3_Topography
+C73.9,"Thyroid, NOS",ICDO3_Topography
+C73.9,Thyroglossal duct,ICDO3_Topography
+C74,ADRENAL GLAND,ICDO3_Topography
+C74.0,Cortex of adrenal gland,ICDO3_Topography
+C74.1,Medulla of adrenal gland,ICDO3_Topography
+C74.9,"Adrenal gland, NOS",ICDO3_Topography
+C74.9,Suprarenal gland,ICDO3_Topography
+C74.9,"Adrenal, NOS",ICDO3_Topography
+C75,OTHER ENDOCRINE GLANDS AND RELATED STRUCTURES,ICDO3_Topography
+C75.0,Parathyroid gland,ICDO3_Topography
+C75.1,Pituitary gland,ICDO3_Topography
+C75.1,"Pituitary, NOS",ICDO3_Topography
+C75.1,Hypophysis,ICDO3_Topography
+C75.1,Rathke pouch,ICDO3_Topography
+C75.1,Sella turcica,ICDO3_Topography
+C75.1,Pituitary fossa,ICDO3_Topography
+C75.2,Craniopharyngeal duct,ICDO3_Topography
+C75.3,Pineal gland,ICDO3_Topography
+C75.4,Carotid body,ICDO3_Topography
+C75.5,Aortic body and other paraganglia,ICDO3_Topography
+C75.5,Coccygeal body,ICDO3_Topography
+C75.5,Coccygeal glomus,ICDO3_Topography
+C75.5,Glomus jugulare,ICDO3_Topography
+C75.5,Para-aortic body,ICDO3_Topography
+C75.5,Organ of Zuckerkandl,ICDO3_Topography
+C75.5,Paraganglion,ICDO3_Topography
+C75.8,Overlapping lesion of endocrine glands and related structures,ICDO3_Topography
+C75.8,Multiple endocrine glands,ICDO3_Topography
+C75.8,Pluriglandular,ICDO3_Topography
+C75.9,"Endocrine gland, NOS",ICDO3_Topography
+C76,OTHER AND ILL-DEFINED SITES,ICDO3_Topography
+C76.0,"Head, face or neck, NOS",ICDO3_Topography
+C76.0,"Cheek, NOS",ICDO3_Topography
+C76.0,"Jaw, NOS",ICDO3_Topography
+C76.0,"Nose, NOS",ICDO3_Topography
+C76.0,"Cervical region, NOS",ICDO3_Topography
+C76.0,"Supraclavicular region, NOS",ICDO3_Topography
+C76.1,"Thorax, NOS",ICDO3_Topography
+C76.1,"Axilla, NOS",ICDO3_Topography
+C76.1,"Chest, NOS",ICDO3_Topography
+C76.1,"Chest wall, NOS",ICDO3_Topography
+C76.1,"Intrathoracic site, NOS",ICDO3_Topography
+C76.1,"Thoracic wall, NOS",ICDO3_Topography
+C76.1,"Infraclavicular region, NOS",ICDO3_Topography
+C76.1,"Scapular region, NOS",ICDO3_Topography
+C76.2,"Abdomen, NOS",ICDO3_Topography
+C76.2,"Abdominal wall, NOS",ICDO3_Topography
+C76.2,"Intra-abdominal site, NOS",ICDO3_Topography
+C76.3,"Pelvis, NOS",ICDO3_Topography
+C76.3,"Buttock, NOS",ICDO3_Topography
+C76.3,"Groin, NOS",ICDO3_Topography
+C76.3,Ischiorectal fossa,ICDO3_Topography
+C76.3,"Pelvic wall, NOS",ICDO3_Topography
+C76.3,"Perineum, NOS",ICDO3_Topography
+C76.3,Rectovaginal septum,ICDO3_Topography
+C76.3,Rectovesical septum,ICDO3_Topography
+C76.3,"Gluteal region, NOS",ICDO3_Topography
+C76.3,"Inguinal region, NOS",ICDO3_Topography
+C76.3,"Perirectal region, NOS",ICDO3_Topography
+C76.3,"Presacral region, NOS",ICDO3_Topography
+C76.3,"Sacrococcygeal region, NOS",ICDO3_Topography
+C76.4,"Upper limb, NOS",ICDO3_Topography
+C76.4,"Antecubital space, NOS",ICDO3_Topography
+C76.4,"Arm, NOS",ICDO3_Topography
+C76.4,"Elbow, NOS",ICDO3_Topography
+C76.4,"Finger, NOS",ICDO3_Topography
+C76.4,"Forearm, NOS",ICDO3_Topography
+C76.4,"Hand, NOS",ICDO3_Topography
+C76.4,"Shoulder, NOS",ICDO3_Topography
+C76.4,"Thumb, NOS",ICDO3_Topography
+C76.4,"Wrist, NOS",ICDO3_Topography
+C76.5,"Lower limb, NOS",ICDO3_Topography
+C76.5,"Ankle, NOS",ICDO3_Topography
+C76.5,"Calf, NOS",ICDO3_Topography
+C76.5,"Foot, NOS",ICDO3_Topography
+C76.5,"Heel, NOS",ICDO3_Topography
+C76.5,"Hip, NOS",ICDO3_Topography
+C76.5,"Knee, NOS",ICDO3_Topography
+C76.5,"Leg, NOS",ICDO3_Topography
+C76.5,"Popliteal space, NOS",ICDO3_Topography
+C76.5,"Thigh, NOS",ICDO3_Topography
+C76.5,"Toe, NOS",ICDO3_Topography
+C76.7,Other ill-defined sites,ICDO3_Topography
+C76.7,"Back, NOS",ICDO3_Topography
+C76.7,"Flank, NOS",ICDO3_Topography
+C76.7,"Trunk, NOS",ICDO3_Topography
+C76.8,Overlapping lesion of ill-defined sites,ICDO3_Topography
+C77,LYMPH NODES,ICDO3_Topography
+C77.0,"Lymph nodes of head, face and neck",ICDO3_Topography
+C77.0,Auricular lymph node,ICDO3_Topography
+C77.0,Cervical lymph node,ICDO3_Topography
+C77.0,Facial lymph node,ICDO3_Topography
+C77.0,Jugular lymph node,ICDO3_Topography
+C77.0,Mandibular lymph node,ICDO3_Topography
+C77.0,Occipital lymph node,ICDO3_Topography
+C77.0,Parotid lymph node,ICDO3_Topography
+C77.0,Preauricular lymph node,ICDO3_Topography
+C77.0,Prelaryngeal lymph node,ICDO3_Topography
+C77.0,Pretracheal lymph node,ICDO3_Topography
+C77.0,Retropharyngeal lymph node,ICDO3_Topography
+C77.0,Scalene lymph node,ICDO3_Topography
+C77.0,Sublingual lymph node,ICDO3_Topography
+C77.0,Submandibular lymph node,ICDO3_Topography
+C77.0,Submaxillary lymph node,ICDO3_Topography
+C77.0,Submental lymph node,ICDO3_Topography
+C77.0,Supraclavicular lymph node,ICDO3_Topography
+C77.1,Intrathoracic lymph nodes,ICDO3_Topography
+C77.1,Bronchial lymph node,ICDO3_Topography
+C77.1,Bronchopulmonary lymph node,ICDO3_Topography
+C77.1,Diaphragmatic lymph node,ICDO3_Topography
+C77.1,Esophageal lymph node,ICDO3_Topography
+C77.1,"Hilar lymph node, NOS",ICDO3_Topography
+C77.1,Innominate lymph node,ICDO3_Topography
+C77.1,Intercostal lymph node,ICDO3_Topography
+C77.1,Mediastinal lymph node,ICDO3_Topography
+C77.1,Parasternal lymph node,ICDO3_Topography
+C77.1,Pulmonary hilar lymph node,ICDO3_Topography
+C77.1,"Pulmonary lymph node, NOS",ICDO3_Topography
+C77.1,Thoracic lymph node,ICDO3_Topography
+C77.1,Tracheal lymph node,ICDO3_Topography
+C77.1,Tracheobronchial lymph node,ICDO3_Topography
+C77.2,Intra-abdominal lymph nodes,ICDO3_Topography
+C77.2,Abdominal lymph node,ICDO3_Topography
+C77.2,Aortic lymph node,ICDO3_Topography
+C77.2,Celiac lymph node,ICDO3_Topography
+C77.2,Colic lymph node,ICDO3_Topography
+C77.2,Common duct lymph node,ICDO3_Topography
+C77.2,Gastric lymph node,ICDO3_Topography
+C77.2,Hepatic lymph node,ICDO3_Topography
+C77.2,Ileocolic lymph node,ICDO3_Topography
+C77.2,Inferior mesenteric lymph node,ICDO3_Topography
+C77.2,Intestinal lymph node,ICDO3_Topography
+C77.2,Lumbar lymph node,ICDO3_Topography
+C77.2,"Mesenteric lymph node, NOS",ICDO3_Topography
+C77.2,Midcolic lymph node,ICDO3_Topography
+C77.2,"Pancreatic lymph node, NOS",ICDO3_Topography
+C77.2,Para-aortic lymph node,ICDO3_Topography
+C77.2,Periaortic lymph node,ICDO3_Topography
+C77.2,Peripancreatic lymph node,ICDO3_Topography
+C77.2,Porta hepatis lymph node,ICDO3_Topography
+C77.2,Portal lymph node,ICDO3_Topography
+C77.2,Pyloric lymph node,ICDO3_Topography
+C77.2,Retroperitoneal lymph node,ICDO3_Topography
+C77.2,Splenic hilar lymph node,ICDO3_Topography
+C77.2,"Splenic lymph node, NOS",ICDO3_Topography
+C77.2,Superior mesenteric lymph node,ICDO3_Topography
+C77.3,Lymph nodes of axilla or arm,ICDO3_Topography
+C77.3,Axillary lymph node,ICDO3_Topography
+C77.3,Brachial lymph node,ICDO3_Topography
+C77.3,Cubital lymph node,ICDO3_Topography
+C77.3,Epitrochlear lymph node,ICDO3_Topography
+C77.3,Infraclavicular lymph node,ICDO3_Topography
+C77.3,Lymph node of upper limb,ICDO3_Topography
+C77.3,Pectoral lymph node,ICDO3_Topography
+C77.3,Subclavicular lymph node,ICDO3_Topography
+C77.3,Subscapular lymph node,ICDO3_Topography
+C77.4,Lymph nodes of inguinal region or leg,ICDO3_Topography
+C77.4,Femoral lymph node,ICDO3_Topography
+C77.4,Inguinal lymph node,ICDO3_Topography
+C77.4,Lymph node of Cloquet,ICDO3_Topography
+C77.4,Lymph node of groin,ICDO3_Topography
+C77.4,Lymph node of lower limb,ICDO3_Topography
+C77.4,Lymph node of Rosenmuller,ICDO3_Topography
+C77.4,Popliteal lymph node,ICDO3_Topography
+C77.4,Subinguinal lymph node,ICDO3_Topography
+C77.4,Tibial lymph node,ICDO3_Topography
+C77.5,Pelvic lymph nodes,ICDO3_Topography
+C77.5,Hypogastric lymph node,ICDO3_Topography
+C77.5,Iliac lymph node,ICDO3_Topography
+C77.5,Inferior epigastric lymph node,ICDO3_Topography
+C77.5,Intrapelvic lymph node,ICDO3_Topography
+C77.5,Obturator lymph node,ICDO3_Topography
+C77.5,Paracervical lymph node,ICDO3_Topography
+C77.5,Parametrial lymph node,ICDO3_Topography
+C77.5,Presymphysial lymph node,ICDO3_Topography
+C77.5,Sacral lymph node,ICDO3_Topography
+C77.8,Lymph nodes of multiple regions,ICDO3_Topography
+C77.9,"Lymph node, NOS",ICDO3_Topography
+C80,UNKNOWN PRIMARY SITE,ICDO3_Topography
+C80.9,Unknown primary site,ICDO3_Topography

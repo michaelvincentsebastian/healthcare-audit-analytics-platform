@@ -40,6 +40,13 @@ try:
     con.execute("INSTALL ducklake; LOAD ducklake;")
 
     con.execute(f"ATTACH 'ducklake:{POSTGRES_CONNECTION}' AS lakehouse;")
+    
+    check_patientuid = con.sql("""
+        SELECT uid
+        FROM lakehouse.bronze__dev.tabPatient
+    """)
+    
+    print(check_patientuid)
 
     # ==========================================================
     # Export Bronze
