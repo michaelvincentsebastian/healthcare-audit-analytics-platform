@@ -8,9 +8,10 @@ tabel-tabel gold yang di-whitelist sebagai view read-only, serve lewat
 semua sudah selesai di layer SQLMesh (model gold). Gold-server murni "jendela
 baca" ke hasil akhir yang sudah jadi.
 
-⚠️ **Bukan tempat bronze-bridge.** Bridge MariaDB→bronze ada di repo Frappe
-terpisah (lihat dokumen 01 §1.2) — tidak ada file/service untuk itu di
-folder ini.
+⚠️ **Bukan tempat bronze-bridge.** Bridge MariaDB→bronze ada di
+[`clinic-satusehat`](https://github.com/rakhaafd/clinic-satusehat) (Frappe
+app, repo terpisah — lihat dokumen 01 §1.2) — tidak ada file/service untuk
+itu di folder ini.
 
 ## 4.2 Isi Folder
 

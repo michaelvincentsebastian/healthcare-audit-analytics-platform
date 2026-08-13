@@ -6,7 +6,7 @@
 |---|---|---|---|
 | `POSTGRES_PASSWORD` | Postgres container, gold-server, SQLMesh, `lakehouse-setup/` | Auth ke database metadata catalog & state SQLMesh | Tidak |
 | `MINIO_SECRET_KEY` | MinIO container, gold-server, SQLMesh, `lakehouse-setup/` | Auth ke object storage | Tidak |
-| `QUACK_SOURCE_TOKEN` | Bronze-bridge (repo Frappe), model bronze (`macros/quack_bridge.py`) | Client di repo ini autentikasi ke bronze-bridge | Tidak |
+| `QUACK_SOURCE_TOKEN` | Bronze-bridge (`clinic-satusehat`), model bronze (`macros/quack_bridge.py`) | Client di repo ini autentikasi ke bronze-bridge | Tidak |
 | `QUACK_SERVING_TOKEN` | Gold-server (`serving/serve.py`), dashboard backend (`app/backend/main.py`) | Dashboard backend autentikasi ke gold-server (server-to-server) | **Tidak — tidak pernah** |
 | `BACKEND_API_TOKEN` | Dashboard backend, frontend (disuntik runtime via `/config.js`) | Browser autentikasi ke dashboard backend | **Ya, by design** (endpoint internal-only) |
 

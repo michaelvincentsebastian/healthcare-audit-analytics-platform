@@ -17,27 +17,30 @@ lewat jaringan (bukan lewat kode yang di-share):
 
 | Repo | Isi | Ada di dokumentasi ini? |
 |---|---|---|
-| **Repo Frappe app** (terpisah) | Aplikasi RME (MariaDB) + "bronze-bridge": DuckDB instance yang ATTACH ke MariaDB dan expose tabel raw lewat `quack_serve` di port `9494` pada mesinnya sendiri. | **Tidak** — di luar scope repo ini, cuma disebut sebagai sumber data eksternal. |
+| **[`rakhaafd/clinic-satusehat`](https://github.com/rakhaafd/clinic-satusehat)** — app Frappe utama, sumber data | Aplikasi RME klinik (Frappe app, `clinic_satusehat`, MariaDB sebagai storage-nya) — ini **sumber data utama** seluruh pipeline. Bronze-bridge (DuckDB instance yang ATTACH ke MariaDB dan expose tabel raw lewat `quack_serve` di port `9494`) hidup menempel ke app ini. | **Tidak** — di luar scope repo ini, cuma disebut sebagai sumber data eksternal. Repo-nya standar scaffold Frappe app (`bench get-app`/`bench install-app`), README publiknya belum mendokumentasikan detail bronze-bridge secara eksplisit — kalau butuh detail exact lokasi script bridge-nya, cek langsung ke repo tsb atau tanya pemegangnya. |
 | **Repo ini** (`lakehouse`) | SQLMesh project (bronze/silver/gold models), gold-server (`/serving/`), dashboard (`/app/`), infra Postgres+MinIO. | Ya, seluruhnya. |
 
 Konsekuensi paling penting dari pemisahan ini: **model bronze di repo ini
-adalah CLIENT dari bronze-bridge di repo Frappe**, bukan yang menjalankan
-bridge itu. `sqlmesh run` di repo ini akan gagal kalau bronze-bridge di
-repo Frappe tidak sedang jalan dan reachable di `quack:localhost:9494` (atau
-host lain sesuai `QUACK_URI` yang dipakai macro `quack_token()`).
+adalah CLIENT dari bronze-bridge di `clinic-satusehat`**, bukan yang
+menjalankan bridge itu. `sqlmesh run` di repo ini akan gagal kalau
+bronze-bridge di `clinic-satusehat` tidak sedang jalan dan reachable di
+`quack:localhost:9494` (atau host lain sesuai `QUACK_URI` yang dipakai macro
+`quack_token()`).
 
 ## 1.3 Diagram Alur Data End-to-End
 
 ```
-┌─────────────────────────────┐
-│  REPO FRAPPE (terpisah)     │
-│                              │
-│  MariaDB (raw Frappe data)  │
-│         │                   │
-│         ▼                   │
-│  bronze-bridge (quack_serve)│
-│  quack:<host>:9494          │
-└──────────────┬───────────────┘
+┌───────────────────────────────────────┐
+│  clinic-satusehat (Frappe app, repo    │
+│  terpisah: github.com/rakhaafd/        │
+│  clinic-satusehat) -- SUMBER DATA UTAMA│
+│                                         │
+│  MariaDB (raw data klinik/RME)         │
+│         │                              │
+│         ▼                              │
+│  bronze-bridge (quack_serve)           │
+│  quack:<host>:9494                     │
+└──────────────┬──────────────────────────┘
                │ ATTACH 'quack:...' (models/frappe/bronze/*.sql,
                │ macro @quack_token() dari QUACK_SOURCE_TOKEN)
                ▼
@@ -88,7 +91,7 @@ tidak bergantung pada SQLMesh runtime.
 Ada 2 titik di arsitektur ini yang pakai protokol `quack` (remote DuckDB
 session lewat jaringan, extension `quack`):
 
-1. **Bronze-bridge → model bronze** (repo Frappe → repo ini): supaya SQLMesh
+1. **Bronze-bridge → model bronze** (`clinic-satusehat` → repo ini): supaya SQLMesh
    di repo ini tidak perlu kredensial MariaDB sama sekali — cukup 1 token
    (`QUACK_SOURCE_TOKEN`) yang scope-nya read-only & terbatas ke tabel
    whitelist di sisi bridge.

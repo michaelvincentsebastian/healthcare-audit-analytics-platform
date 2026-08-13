@@ -7,7 +7,7 @@
 docker compose up -d                          # dari root
 docker compose ps                              # tunggu object-storage healthy
 
-# 2. Bronze-bridge (repo Frappe, terpisah) -- HANYA kalau mau refresh bronze
+# 2. Bronze-bridge (clinic-satusehat, terpisah) -- HANYA kalau mau refresh bronze
 #    Cek reachability dari sini:
 python3 -c "
 import duckdb
@@ -83,9 +83,9 @@ diharapkan, tinggal pastikan port host-nya beda), atau (b) sisa container
 **Gejala**: error koneksi ke `quack:localhost:9494` (atau host lain) saat
 build model `bronze.*`.
 
-**Root cause**: bronze-bridge (di repo Frappe) belum jalan atau tidak
+**Root cause**: bronze-bridge (di `clinic-satusehat`) belum jalan atau tidak
 reachable dari mesin ini. Ini **bukan** bug di repo `lakehouse` — cek status
-bronze-bridge di repo Frappe dulu.
+bronze-bridge di `clinic-satusehat` dulu.
 
 ### 6.3.3 Gold-server log: "N/N tabel gold ... tapi tidak penuh" / dashboard angka 0
 
@@ -159,8 +159,8 @@ tertukar:
 
 ## 6.6 Kontak/Eskalasi Antar-Repo
 
-Kalau masalah ternyata ada di sisi bronze-bridge (repo Frappe, lihat §6.3.2),
+Kalau masalah ternyata ada di sisi bronze-bridge (`clinic-satusehat`, lihat §6.3.2),
 itu di luar kewenangan perbaikan dari repo ini — koordinasikan dengan
-pemegang repo Frappe. Jangan coba "perbaiki" dengan menduplikasi logic
+pemegang `clinic-satusehat`. Jangan coba "perbaiki" dengan menduplikasi logic
 bridge ke repo ini (sudah pernah jadi kesalahan sebelumnya — lihat riwayat
 percakapan implementasi gold-server).

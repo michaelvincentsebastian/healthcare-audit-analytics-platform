@@ -7,7 +7,13 @@ sebelumnya sudah selesai & sehat.
 
 - Python 3.10 / 3.11 / 3.12
 - Docker + Docker Compose plugin, service Docker sedang jalan
-- Akses ke **repo Frappe** terpisah (untuk bronze-bridge) — lihat dokumen 01 §1.2. Kalau Anda hanya kerja di repo ini (mis. develop model gold/dashboard tanpa refresh data bronze baru), langkah bronze-bridge bisa dilewati SELAMA data bronze/silver/gold yang sudah ada di DuckLake cukup untuk kebutuhan Anda.
+- **[`clinic-satusehat`](https://github.com/rakhaafd/clinic-satusehat)** sudah ter-install & jalan — ini app Frappe (`clinic_satusehat`) yang jadi **sumber data utama** seluruh pipeline (lihat dokumen 01 §1.2), plus bronze-bridge yang menempel di app ini. Instalasi standar Frappe app lewat `bench` (dari dalam bench site clinic tsb, **bukan** di repo `lakehouse` ini):
+  ```bash
+  cd $PATH_TO_YOUR_BENCH
+  bench get-app https://github.com/rakhaafd/clinic-satusehat --branch develop
+  bench install-app clinic_satusehat
+  ```
+  ⚠️ Repo `clinic-satusehat` di luar scope dokumentasi ini — untuk detail bronze-bridge di dalamnya (lokasi script, cara jalankannya), rujuk ke repo tsb langsung atau ke pemegangnya. Kalau Anda hanya kerja di repo `lakehouse` ini (mis. develop model gold/dashboard tanpa refresh data bronze baru), langkah bronze-bridge bisa dilewati SELAMA data bronze/silver/gold yang sudah ada di DuckLake cukup untuk kebutuhan Anda.
 - `openssl` atau Python (`secrets.token_hex`) untuk generate token acak.
 
 ## 2.2 Clone & Virtual Environment
@@ -29,8 +35,8 @@ untuk daftar lengkap tiap variable dan siapa yang memakainya. Poin paling
 sering kelewat:
 
 - `QUACK_SOURCE_TOKEN` **harus identik** dengan token yang dipakai
-  bronze-bridge di repo Frappe (token itu di-generate/di-set di sisi sana,
-  bukan di sini — tanyakan ke pemegang repo Frappe kalau belum punya).
+  bronze-bridge di `clinic-satusehat` (token itu di-generate/di-set di sisi sana,
+  bukan di sini — tanyakan ke pemegang repo `clinic-satusehat` kalau belum punya).
 - `QUACK_SERVING_TOKEN` dan `BACKEND_API_TOKEN` **harus 2 nilai yang
   berbeda** (lihat dokumen 07 §"Kesalahan yang pernah terjadi") — generate
   masing-masing dengan:
@@ -98,7 +104,7 @@ sqlmesh init
 # 3. CLI experience?       -> 1
 ```
 
-Jalankan plan (memastikan bronze-bridge di repo Frappe SUDAH hidup &
+Jalankan plan (memastikan bronze-bridge di `clinic-satusehat` SUDAH hidup &
 reachable sebelum langkah ini, kalau Anda butuh refresh bronze):
 ```bash
 sqlmesh plan
@@ -107,7 +113,7 @@ sqlmesh plan
 ⚠️ **Kalau bronze-bridge belum jalan**, `sqlmesh plan` akan gagal di model
 `bronze.*` dengan error koneksi ke `quack:localhost:9494` (atau host lain
 sesuai `QUACK_URI`) — ini bukan bug di repo ini, cek dulu status bronze-bridge
-di sisi repo Frappe.
+di sisi `clinic-satusehat`.
 
 Model gold (`gold.audit_*`) baru punya data setelah model silver yang jadi
 dependensinya (`silver.tabPatient`, `silver.condition_fhir_resource`, dst)
