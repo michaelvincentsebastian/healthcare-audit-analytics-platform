@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compliance Audit — Overview</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <div class="topbar">
+    <div class="brand">
+      <div class="dot">🩺</div>
+      <div>
+        <h1>Healthcare Compliance Audit</h1>
+        <p>Ringkasan temuan audit dari data yang tercatat di lakehouse.</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html" class="active">Overview</a>
+      <a href="findings.html">Findings</a>
+    </nav>
+  </div>
+
+  <div id="summary" class="grid grid-4" style="margin-bottom:16px;">
+    <div class="loading">Memuat ringkasan...</div>
+  </div>
+
+  <div class="grid grid-2" style="margin-bottom:16px;">
+    <div class="card">
+      <h3>Temuan per Domain Audit</h3>
+      <table id="domain-table"><tbody><tr><td class="loading">Memuat...</td></tr></tbody></table>
+    </div>
+    <div class="card">
+      <h3>Rule Paling Sering Muncul</h3>
+      <table id="rules-table"><tbody><tr><td class="loading">Memuat...</td></tr></tbody></table>
+    </div>
+  </div>
+
+  <div class="card" id="run-info-card"></div>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script>
+async function render() {
+  try {
+    const [summary, overview, byDomain, topRules] = await Promise.all([
+      callAction("findings_summary"),
+      callAction("audit_overview"),
+      callAction("findings_by_domain"),
+      callAction("top_recurring_rules", { limit: 8 }),
+    ]);
+    const s = summary[0] || {};
+    const o = overview[0] || {};
+
+    document.getElementById("summary").innerHTML = `
+      <div class="card dark stat-card" onclick="goToFindings({})">
+        <div class="stat-label">Total Findings</div>
+        <div class="stat-value">${s.total ?? 0}</div>
+      </div>
+      <div class="card stat-card" onclick="goToFindings({status:'OPEN'})">
+        <div class="stat-label">Open</div>
+        <div class="stat-value">${s.open ?? 0}</div>
+      </div>
+      <div class="card stat-card" onclick="goToFindings({severity:'HIGH'})">
+        <div class="stat-label">High Severity</div>
+        <div class="stat-value">${s.high_severity ?? 0}</div>
+      </div>
+      <div class="card">
+        <div class="stat-label">Applicable Checks (rule ACTIVE)</div>
+        <div class="stat-value">${o.applicable_checks ?? "-"} <span style="font-size:14px;color:var(--muted)">/ ${o.total_rules_in_registry ?? "-"} terdaftar</span></div>
+      </div>
+    `;
+
+    const domainRows = (byDomain || []).map(r => `
+      <tr class="clickable" onclick="goToFindings({domain:'${esc(r.audit_domain)}'})">
+        <td>${esc(r.audit_domain)}</td>
+        <td>${r.total_findings}</td>
+        <td>${badge(r.high_severity_findings > 0 ? "HIGH" : "LOW")} ${r.high_severity_findings} high</td>
+      </tr>`).join("") || `<tr><td class="empty">Belum ada temuan.</td></tr>`;
+    document.getElementById("domain-table").innerHTML = `
+      <thead><tr><th>Domain</th><th>Total</th><th>Severity tinggi</th></tr></thead>
+      <tbody>${domainRows}</tbody>`;
+
+    const ruleRows = (topRules || []).map(r => `
+      <tr class="clickable" onclick="goToFindings({rule_id:'${esc(r.rule_id)}'})">
+        <td>${esc(r.rule_name || r.rule_id)}</td>
+        <td>${badge(r.severity)}</td>
+        <td>${r.finding_count}</td>
+      </tr>`).join("") || `<tr><td class="empty">Belum ada temuan.</td></tr>`;
+    document.getElementById("rules-table").innerHTML = `
+      <thead><tr><th>Rule</th><th>Severity</th><th>Jumlah</th></tr></thead>
+      <tbody>${ruleRows}</tbody>`;
+
+    document.getElementById("run-info-card").innerHTML = `
+      <h3>Cakupan Audit Terkini</h3>
+      <div class="kv">
+        <dt>Records scanned</dt><dd>${o.records_scanned ?? "-"} (gabungan Patient + Condition/Observation/Procedure/Encounter yang dievaluasi check aktif)</dd>
+        <dt>Rule set version</dt><dd>${esc(o.rule_set_version)}</dd>
+        <dt>Data snapshot (watermark)</dt><dd>${esc(o.data_snapshot)}</dd>
+        <dt>Status run</dt><dd>${badge(o.status === "SUCCESS" ? "RESOLVED" : o.status)} ${esc(o.status)}</dd>
+      </div>
+      <p class="caption">
+        Angka ini mencerminkan kondisi compliance TERKINI (bukan histori tiap eksekusi
+        suite) -- audit_run_id diturunkan deterministik dari data + rule set yang
+        dievaluasi. "Applicable checks" berarti rule berstatus ACTIVE yang benar-benar
+        menghasilkan check, bukan seluruh rule yang tercatat di registry.
+      </p>
+    `;
+  } catch (e) {
+    document.getElementById("summary").innerHTML = `<div class="card"><p style="color:var(--high)">Gagal memuat data: ${esc(e.message)}</p></div>`;
+  }
+}
+render();
+</script>
+</body>
+</html>

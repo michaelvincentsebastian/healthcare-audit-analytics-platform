@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compliance Audit — Findings</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <div class="topbar">
+    <div class="brand">
+      <div class="dot">🩺</div>
+      <div>
+        <h1>Findings</h1>
+        <p>Daftar temuan audit, bisa difilter per domain / rule / severity / status.</p>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Overview</a>
+      <a href="findings.html" class="active">Findings</a>
+    </nav>
+  </div>
+
+  <div class="filters">
+    <select id="f-domain"><option value="">Semua domain</option></select>
+    <select id="f-severity">
+      <option value="">Semua severity</option>
+      <option value="HIGH">HIGH</option>
+      <option value="MEDIUM">MEDIUM</option>
+      <option value="LOW">LOW</option>
+    </select>
+    <select id="f-status">
+      <option value="">Semua status</option>
+      <option value="OPEN">OPEN</option>
+      <option value="UNDER_REVIEW">UNDER_REVIEW</option>
+      <option value="RESOLVED">RESOLVED</option>
+    </select>
+    <input id="f-rule" placeholder="rule_id (mis. CTL-TERM-ICD10-001)">
+    <button class="btn" onclick="applyFilters()">Terapkan</button>
+  </div>
+
+  <div class="card">
+    <table id="findings-table"><tbody><tr><td class="loading">Memuat...</td></tr></tbody></table>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script>
+function currentFilters() {
+  return {
+    audit_domain: document.getElementById("f-domain").value || null,
+    severity: document.getElementById("f-severity").value || null,
+    status: document.getElementById("f-status").value || null,
+    rule_id: document.getElementById("f-rule").value || null,
+  };
+}
+
+function applyFilters() {
+  const f = currentFilters();
+  const usp = new URLSearchParams();
+  Object.entries(f).forEach(([k, v]) => { if (v) usp.set(k, v); });
+  window.history.replaceState({}, "", `findings.html?${usp.toString()}`);
+  loadFindings(f);
+}
+
+async function loadFindings(filters) {
+  document.getElementById("findings-table").innerHTML = `<tbody><tr><td class="loading">Memuat...</td></tr></tbody>`;
+  try {
+    const rows = await callAction("list_findings", { ...filters, limit: 100, offset: 0 });
+    if (!rows || rows.length === 0) {
+      document.getElementById("findings-table").innerHTML = `<tbody><tr><td class="empty">Tidak ada temuan untuk filter ini.</td></tr></tbody>`;
+      return;
+    }
+    const body = rows.map(r => `
+      <tr class="clickable" onclick="goToDetail('${esc(r.finding_id)}')">
+        <td>${badge(r.severity)}</td>
+        <td>${esc(r.rule_id)}</td>
+        <td>${esc(r.audit_domain)}</td>
+        <td>${esc(r.entity_type)} · ${esc(r.entity_id)}</td>
+        <td>${badge(r.status)}</td>
+        <td>${fmtDate(r.detected_at)}</td>
+      </tr>`).join("");
+    document.getElementById("findings-table").innerHTML = `
+      <thead><tr><th>Severity</th><th>Rule</th><th>Domain</th><th>Entity</th><th>Status</th><th>Terdeteksi</th></tr></thead>
+      <tbody>${body}</tbody>`;
+  } catch (e) {
+    document.getElementById("findings-table").innerHTML = `<tbody><tr><td style="color:var(--high)">Gagal memuat: ${esc(e.message)}</td></tr></tbody>`;
+  }
+}
+
+async function populateDomainFilter(selected) {
+  try {
+    const rows = await callAction("findings_by_domain");
+    const sel = document.getElementById("f-domain");
+    (rows || []).forEach(r => {
+      const opt = document.createElement("option");
+      opt.value = r.audit_domain; opt.textContent = r.audit_domain;
+      if (r.audit_domain === selected) opt.selected = true;
+      sel.appendChild(opt);
+    });
+  } catch (e) { /* non-fatal, filter dropdown tetap kosong */ }
+}
+
+(async function init() {
+  const initial = {
+    audit_domain: qs("domain"), severity: qs("severity"),
+    status: qs("status"), rule_id: qs("rule_id"),
+  };
+  if (initial.severity) document.getElementById("f-severity").value = initial.severity;
+  if (initial.status) document.getElementById("f-status").value = initial.status;
+  if (initial.rule_id) document.getElementById("f-rule").value = initial.rule_id;
+  await populateDomainFilter(initial.audit_domain);
+  loadFindings(initial);
+})();
+</script>
+</body>
+</html>

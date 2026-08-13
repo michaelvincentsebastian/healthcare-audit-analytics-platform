@@ -1,0 +1,35 @@
+services:
+  # Dashboard backend (FastAPI) + frontend statis dalam satu container.
+  # Client dari gold-server di ../serving/ (lihat serving/docker-compose.yaml,
+  # service `gold-server`, container_name analytics_quack_gold_server) --
+  # WAJIB jalan di docker network yang sama supaya bisa saling terhubung.
+  dashboard:
+    build: .
+    container_name: analytics_dashboard
+    env_file:
+      - ../.env
+    environment:
+      # Override QUACK_HOST dari root .env (default "127.0.0.1", untuk tools
+      # yang jalan di host) ke nama container gold-server + PORT INTERNAL
+      # container (9494 -- bukan 9495/QUACK_SERVER_HOST_PORT yang di-mapping
+      # ke host). Nama container HARUS sama dengan container_name di
+      # serving/docker-compose.yaml.
+      QUACK_HOST: analytics_quack_gold_server
+      QUACK_PORT: "9494"
+    # restart: unless-stopped + lifespan() yang fail-fast di backend/main.py
+    # (SystemExit/exception kalau gold-server belum bisa dikontak) = kalau
+    # gold-server di /serving/ belum `docker compose up` duluan, container
+    # ini akan terus restart sampai gold-server hidup -- BUKAN diam dengan
+    # data kosong. Compose tidak bisa depends_on ke service di file compose
+    # lain (gold-server ada di serving/docker-compose.yaml), jadi ini
+    # pengganti yang paling sederhana untuk urutan startup.
+    restart: unless-stopped
+    networks:
+      - lakehouse-network
+    ports:
+      - "${DASHBOARD_HOST_PORT:-8000}:8000"
+
+networks:
+  lakehouse-network:
+    external: true
+    name: ${LAKEHOUSE_CONNECTION_NETWORK:-lakehouse-network}

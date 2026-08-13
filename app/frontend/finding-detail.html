@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compliance Audit — Finding Detail</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+  <a href="javascript:history.back()" class="back-link">&larr; Kembali</a>
+  <div id="content"><div class="card"><p class="loading">Memuat detail temuan...</p></div></div>
+</div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+<script>
+async function render() {
+  const id = qs("id");
+  if (!id) {
+    document.getElementById("content").innerHTML = `<div class="card"><p class="empty">finding_id tidak ada di URL.</p></div>`;
+    return;
+  }
+  try {
+    const rows = await callAction("finding_detail", { finding_id: id });
+    if (!rows || rows.length === 0) {
+      document.getElementById("content").innerHTML = `<div class="card"><p class="empty">Finding tidak ditemukan: ${esc(id)}</p></div>`;
+      return;
+    }
+    const f = rows[0];
+    const authority = f.authority_reference
+      ? `<a href="${esc(f.authority_reference)}" target="_blank" rel="noopener">${esc(f.authority_name || f.authority_reference)}</a>`
+      : esc(f.authority_name);
+
+    document.getElementById("content").innerHTML = `
+      <div class="topbar">
+        <div>
+          <h1 style="margin-bottom:6px;">${esc(f.rule_name || f.rule_id)}</h1>
+          <p>${badge(f.severity)} ${badge(f.status)} <span style="color:var(--muted)">· ${esc(f.audit_domain)} / ${esc(f.focus_area)}</span></p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-bottom:16px;">
+        <h3>Actual vs Expected</h3>
+        <div class="compare">
+          <div class="box"><div class="label">ACTUAL</div>${esc(f.actual_value)}</div>
+          <div class="box expected"><div class="label">EXPECTED</div>${esc(f.expected_value)}</div>
+        </div>
+        <p class="caption">${esc(f.explanation)}</p>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <h3>Rule &amp; Basis</h3>
+          <div class="kv">
+            <dt>Rule ID</dt><dd>${esc(f.rule_id)}</dd>
+            <dt>Rule basis</dt><dd>${esc(f.rule_basis)}</dd>
+            <dt>Authority</dt><dd>${authority || "-"}</dd>
+            <dt>Standard</dt><dd>${esc(f.standard_name)} ${esc(f.standard_version)}</dd>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Entitas &amp; Sumber</h3>
+          <div class="kv">
+            <dt>Entity</dt><dd>${esc(f.entity_type)} · ${esc(f.entity_id)}</dd>
+            <dt>Patient ID</dt><dd>${esc(f.patient_id)}</dd>
+            <dt>Encounter ID</dt><dd>${esc(f.encounter_id)}</dd>
+            <dt>Source system</dt><dd>${esc(f.source_system)}</dd>
+            <dt>Source record</dt><dd>${esc(f.source_record_id)}</dd>
+            <dt>Evidence</dt><dd>${esc(f.evidence_reference)}</dd>
+            <dt>Terdeteksi</dt><dd>${fmtDate(f.detected_at)}</dd>
+            <dt>Diselesaikan</dt><dd>${fmtDate(f.resolved_at)}</dd>
+          </div>
+        </div>
+      </div>
+
+      <p class="caption" style="margin-top:16px;">
+        finding_id: ${esc(f.finding_id)} — hanya menampilkan data milik finding ini,
+        tidak ada data pasien lain yang dimuat di halaman ini.
+      </p>
+    `;
+  } catch (e) {
+    document.getElementById("content").innerHTML = `<div class="card"><p style="color:var(--high)">Gagal memuat: ${esc(e.message)}</p></div>`;
+  }
+}
+render();
+</script>
+</body>
+</html>
