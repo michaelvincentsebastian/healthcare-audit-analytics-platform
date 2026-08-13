@@ -41,14 +41,6 @@ try:
 
     con.execute(f"ATTACH 'ducklake:{POSTGRES_CONNECTION}' AS lakehouse;")
     
-    check_patientuid = con.sql("""
-        SELECT *
-        FROM lakehouse.reference__dev.icd_10
-        LIMIT 5;
-    """)
-    
-    print(check_patientuid)
-
     # ==========================================================
     # Export Bronze
     # ==========================================================

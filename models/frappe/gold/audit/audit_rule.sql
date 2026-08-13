@@ -43,4 +43,4 @@ SELECT
   CAST(version AS INTEGER) AS version,
   CAST(created_at AS TIMESTAMP) AS created_at,
   CAST(updated_at AS TIMESTAMP) AS updated_at
-FROM read_csv('seeds/audit/rule_registry.csv')
+FROM read_csv('seeds/audit/rule_registry.csv') AS src(rule_id, rule_name, description, audit_domain, focus_area, rule_basis, authority_name, authority_reference, standard_name, standard_version, rule_expression, severity, effective_from, effective_to, status, version, created_at, updated_at)
