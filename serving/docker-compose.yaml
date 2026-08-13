@@ -1,0 +1,40 @@
+services:
+  # Gold server: DuckLake catalog (schema `gold`) -> quack.
+  # Konsumennya adalah client dashboard (mis. `analytics_backend.py`, akan
+  # dibuat terpisah) -- BUKAN model bronze. Bridge MariaDB->bronze ada di
+  # repo lain yang menempel ke Frappe app, tidak disentuh/didup-likasi di sini.
+  gold-server:
+    build: .
+    container_name: analytics_quack_gold_server
+    env_file:
+      # Semua var yang dibutuhkan (POSTGRES_*, MINIO_*, TABULAR_*,
+      # QUACK_BIND_HOST, QUACK_PORT, QUACK_SERVING_TOKEN, dst) sudah ada di
+      # .env ROOT project, blok "-- Lakehouse Initiation --" dan
+      # "--- Data Serving ---".
+      - ../.env
+    environment:
+      # Override 2 value host-oriented dari root .env (nilainya "localhost",
+      # untuk tools yang jalan di host) supaya resolve ke nama container di
+      # dalam network docker. Nama di sini HARUS sama dengan container_name
+      # service postgres & minio di root docker-compose.yaml.
+      POSTGRES_HOST: metadata-catalog
+      MINIO_ENDPOINT: object-storage:9000
+    restart: unless-stopped
+    networks:
+      # Network yang sama dengan container postgres & minio (lihat root
+      # docker-compose.yaml -> networks.lakehouse-network).
+      - lakehouse-network
+    ports:
+      - "${QUACK_SERVER_HOST:-127.0.0.1}:${QUACK_SERVER_HOST_PORT:-9494}:9494"
+    healthcheck:
+      test: ["CMD", "python", "healthcheck.py"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+networks:
+  lakehouse-network:
+    external: true
+    # HARUS sama dengan nama network di root docker-compose.yaml.
+    name: ${LAKEHOUSE_CONNECTION_NETWORK:-lakehouse-network}
