@@ -92,6 +92,7 @@ def flatten_bronze(
     dtype_overrides: Optional[dict[str, str]] = None,
     idx_column: Optional[str] = None,
     column_renames: Optional[dict[str, str]] = None,
+    expected_columns: Optional[list[str]] = None,
 ) -> pd.DataFrame:
     """
     Flatten a bronze DataFrame's JSON payload column into a silver DataFrame,
@@ -164,6 +165,14 @@ def flatten_bronze(
                 rows.append(merged)
 
     result = pd.DataFrame(rows)
+
+    # If every bronze row got filtered out (missing/invalid payload, or a
+    # resourceType mismatch) `rows` is [] and pd.DataFrame([]) has NO columns
+    # at all -- not just zero rows. SQLMesh can't build a source/insert query
+    # from a DataFrame with no schema, so preserve the expected columns here
+    # the same way the caller already does for the "bronze_df is empty" case.
+    if result.empty and expected_columns is not None:
+        return pd.DataFrame(columns=expected_columns)
 
     if column_renames:
         result = result.rename(columns=column_renames)

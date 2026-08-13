@@ -57,4 +57,5 @@ def execute(context, start, end, execution_time, **kwargs):
         idx_column=_CFG["idx_column"],
         dtype_overrides={k: v for k, v in _CFG["fhir_columns"].items() if v != "TEXT"},
         column_renames=_CFG["column_renames"],
+        expected_columns=list(_CFG["passthrough_columns"]) + list(_CFG["fhir_columns"]),
     )
