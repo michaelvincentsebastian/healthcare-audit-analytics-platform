@@ -24,7 +24,7 @@ _CFG = FHIR_RESOURCE_REGISTRY["encounter"]
     },
     cron="@daily",
     grain='frappe_doc_name',
-    columns={'frappe_doc_name': 'TEXT', 'modified': 'TIMESTAMP', 'docstatus': 'INT', 'patient': 'TEXT', 'patient_name': 'TEXT', 'patient_ihs': 'TEXT', 'practitioner': 'TEXT', 'practitioner_name': 'TEXT', 'practitioner_ihs': 'TEXT', 'start_time': 'TIMESTAMP', 'organization_id': 'TEXT', 'location_id': 'TEXT', 'satusehat_id': 'TEXT', 'frappe_status': 'TEXT', 'fhir_id': 'TEXT', 'identifier_value': 'TEXT', 'fhir_status': 'TEXT', 'class_code': 'TEXT', 'class_display': 'TEXT', 'subject_ref': 'TEXT', 'subject_display': 'TEXT', 'period_start': 'TEXT', 'period_end': 'TIMESTAMP', 'location_ref': 'TEXT', 'service_provider_ref': 'TEXT'},
+    columns={'frappe_doc_name': 'TEXT', 'modified': 'TIMESTAMP', 'docstatus': 'INT', 'patient': 'TEXT', 'patient_name': 'TEXT', 'patient_ihs': 'TEXT', 'practitioner': 'TEXT', 'practitioner_name': 'TEXT', 'practitioner_ihs': 'TEXT', 'start_time': 'TIMESTAMP', 'organization_id': 'TEXT', 'location_id': 'TEXT', 'satusehat_id': 'TEXT', 'frappe_status': 'TEXT', 'fhir_id': 'TEXT', 'identifier_value': 'TEXT', 'fhir_status': 'TEXT', 'class_code': 'TEXT', 'class_display': 'TEXT', 'subject_ref': 'TEXT', 'subject_display': 'TEXT', 'period_start': 'TIMESTAMP', 'period_end': 'TIMESTAMP', 'location_ref': 'TEXT', 'service_provider_ref': 'TEXT'},
 )
 def execute(context, start, end, execution_time, **kwargs):
     passthrough_source = _CFG["passthrough_source"]

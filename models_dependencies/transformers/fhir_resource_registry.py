@@ -258,7 +258,7 @@ FHIR_RESOURCE_REGISTRY = {   'allergy_intolerance': {   'bronze_table': 'bronze.
                                          'class_display': 'TEXT',
                                          'subject_ref': 'TEXT',
                                          'subject_display': 'TEXT',
-                                         'period_start': 'TEXT',
+                                         'period_start': 'TIMESTAMP',
                                          'period_end': 'TIMESTAMP',
                                          'location_ref': 'TEXT',
                                          'service_provider_ref': 'TEXT'},
