@@ -9,6 +9,8 @@ services:
       - "${POSTGRES_PORT}:5432"
     volumes:
       - ${POSTGRES_DATA_DIR}
+    networks:
+      - lakehouse-network
 
   minio:
     image: minio/minio:latest
@@ -28,3 +30,13 @@ services:
       interval: 5s
       timeout: 5s
       retries: 5
+    networks:
+      - lakehouse-network
+
+networks:
+  # Named (bukan default anonim) supaya bisa di-join dari compose file lain
+  # sebagai `external: true` -- dipakai oleh serving/docker-compose.yaml
+  # (service gold-server) untuk bisa resolve hostname `metadata-catalog` &
+  # `object-storage` tanpa expose port Postgres/MinIO ke host.
+  lakehouse-network:
+    name: ${LAKEHOUSE_CONNECTION_NETWORK:-lakehouse-network}
