@@ -1,64 +1,31 @@
-# Lakehouse
+# Dokumentasi Teknis — Healthcare Compliance Audit Lakehouse
 
----
+Dokumentasi end-to-end untuk project ini: dari raw data di Frappe/MariaDB
+sampai dashboard audit compliance yang dilihat user akhir. Ditulis
+berdasarkan kode & konfigurasi yang benar-benar ada di repo ini (bukan
+rencana/aspirasi) per commit terakhir yang didokumentasikan.
 
-## Prerequisites
+## Daftar Isi
 
-[V] Python 3.10, 3.11, or 3.12
-[V] Docker installed & running
-[]
+| # | Dokumen | Isinya |
+|---|---|---|
+| 1 | [01-architecture-overview.md](01-architecture-overview.md) | Gambaran besar: medallion layers (bronze/silver/gold), posisi tiap repo, diagram alur data end-to-end |
+| 2 | [02-setup-and-installation.md](02-setup-and-installation.md) | Cara setup dari nol: prasyarat, urutan `docker compose up`, `sqlmesh plan/run`, checklist verifikasi |
+| 3 | [03-data-model-gold-audit.md](03-data-model-gold-audit.md) | Skema `gold.*`: `audit_rule`, `audit_run`, `audit_finding`, daftar 9 rule compliance & status masing-masing |
+| 4 | [04-serving-layer.md](04-serving-layer.md) | Gold-server (`/serving/`) — cara kerja, konfigurasi, whitelist tabel, keamanan |
+| 5 | [05-dashboard.md](05-dashboard.md) | Dashboard (`/app/`) — backend FastAPI, `ACTION_REGISTRY`, frontend, alur auth |
+| 6 | [06-operations-runbook.md](06-operations-runbook.md) | Runbook: urutan start/stop, cara tambah rule baru, troubleshooting masalah yang sudah pernah terjadi |
+| 7 | [07-security-and-secrets.md](07-security-and-secrets.md) | Semua token & kredensial: apa isinya, siapa yang pegang, kenapa dipisah |
 
+## Cara Baca Cepat
 
----
+- **Baru pertama kali pegang project ini?** Mulai dari `01` lalu `02`.
+- **Mau nambah rule audit baru?** Langsung ke `03` (kontrak kolom) lalu `06` (langkah praktis).
+- **Server/dashboard error, butuh debug cepat?** Langsung ke `06`.
+- **Butuh tahu token mana yang boleh dipegang siapa?** `07`.
 
-## Project Root
+## Konvensi Penulisan
 
-```text
-
-```
-
----
-
-## Initial Setup
-
-1. virtual environment init & run
-`python3 -m venv .venv` 
-`source .venv/bin/activate`
-
-2. Install all needed depedencies (requirements.txt)
-`python3 -m pip install -r requirements.txt`
-
-
-3. Run docker compose up (host minio & postgres services on local machine)
-`docker compose up -d`
-
-4. Run `lakehouse-setup.py` for building lakehouse architecture.
-- Choose 9 for full initial setup.
-
-5. SQLMesh Project Initiation
-```text
-- Run `sqlmesh init`
-1. What type of project do you want to set up?
-- [3]
-2. Choose your SQL engine:
-- [1]
-3. Choose your SQLMesh CLI experience:
-- [1]
-```
-
-6. 
-
----
-
-## FLOW Transformasi FHIR
-
-1. Extract & ambil value `payload_json` dari setiap endpoint FHIR resources (`/send satusehat` API docs).
-2. Masukan di dir `flatquack/input/` sebagai `[resources_name].txt`.
-3. Rancang ViewDefinition dari FHIR resources di `flatquack/views/` (supaya flatquack bisa buat SQL Query untuk flatten ndjson fhir nya).
-4. Jalankan program python.
-5. Ambil SQL Query di `flatquack/output/flatten_query.sql`.
-6. Ambil SQL Query tersebut, sesuaikan supaya bisa di baca oleh `SQLMesh + DuckDB` (LLM), lalu paste ke resources yang sesuai (di silver layer).
-7. Jalankan SQLMesh Plan
-
-
-| Note: Disini jika format FHIR berubah dan ingin ingest perubahan itu juga, maka harus rancang ulang/update ViewDefinition. Karena flatquack bukan tools otomatis yang bisa detect perubahan.
+- Kode/perintah persis seperti yang ada di repo — bukan disederhanakan.
+- Bagian yang **belum diverifikasi berjalan end-to-end** (mis. belum pernah dites lewat Docker sungguhan) ditandai eksplisit ⚠️, bukan ditulis seolah-olah sudah pasti berhasil.
+- Istilah teknis yang dipakai bolak-balik Indonesia/Inggris (mis. "grain", "watermark") sengaja tidak diterjemahkan paksa — mengikuti istilah yang dipakai kode & tool aslinya (SQLMesh, DuckDB) supaya gampang di-Google kalau butuh referensi lebih lanjut.
