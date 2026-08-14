@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Compliance Audit — Overview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,7 +43,6 @@
   <div class="card" id="run-info-card"></div>
 </div>
 
-<script src="config.js"></script>
 <script src="app.js"></script>
 <script>
 async function render() {
@@ -56,20 +58,24 @@ async function render() {
 
     document.getElementById("summary").innerHTML = `
       <div class="card dark stat-card" onclick="goToFindings({})">
-        <div class="stat-label">Total Findings</div>
+        <div class="stat-label"><span class="stat-icon">Σ</span> Total Findings</div>
         <div class="stat-value">${s.total ?? 0}</div>
+        <div class="stat-sub">Sejak audit terakhir dijalankan</div>
       </div>
       <div class="card stat-card" onclick="goToFindings({status:'OPEN'})">
-        <div class="stat-label">Open</div>
+        <div class="stat-label"><span class="stat-icon">!</span> Open</div>
         <div class="stat-value">${s.open ?? 0}</div>
+        <div class="stat-sub">Belum direview/diselesaikan</div>
       </div>
       <div class="card stat-card" onclick="goToFindings({severity:'HIGH'})">
-        <div class="stat-label">High Severity</div>
+        <div class="stat-label"><span class="stat-icon">▲</span> High Severity</div>
         <div class="stat-value">${s.high_severity ?? 0}</div>
+        <div class="stat-sub">Prioritas utama auditor</div>
       </div>
       <div class="card">
-        <div class="stat-label">Applicable Checks (rule ACTIVE)</div>
-        <div class="stat-value">${o.applicable_checks ?? "-"} <span style="font-size:14px;color:var(--muted)">/ ${o.total_rules_in_registry ?? "-"} terdaftar</span></div>
+        <div class="stat-label"><span class="stat-icon">✓</span> Applicable Checks</div>
+        <div class="stat-value">${o.applicable_checks ?? "-"} <span style="font-size:15px;color:var(--muted);font-weight:600;">/ ${o.total_rules_in_registry ?? "-"}</span></div>
+        <div class="stat-sub">Rule berstatus ACTIVE dari total terdaftar</div>
       </div>
     `;
 
