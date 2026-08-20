@@ -9,6 +9,15 @@ services:
       - "${POSTGRES_PORT}:5432"
     volumes:
       - ${POSTGRES_DATA_DIR}
+    healthcheck:
+      # pg_isready cek apakah server Postgres sudah bisa menerima koneksi.
+      # -U dan -d dibutuhkan supaya cek dilakukan dengan role yang benar
+      # (default 'postgres' role kalau tidak di-set bisa beda dari POSTGRES_USER).
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
     networks:
       - lakehouse-network
 
@@ -32,6 +41,30 @@ services:
       retries: 5
     networks:
       - lakehouse-network
+
+  lakehouse-setup:
+    build:
+      context: ./lakehouse-setup
+      dockerfile: Dockerfile
+    container_name: lakehouse-setup
+    env_file:
+      - .env
+    environment:
+      # Override nilai .env yang ditujukan untuk akses dari HOST (mis. localhost)
+      # dengan nama container di dalam lakehouse-network, karena service ini
+      # jalan SEBAGAI container, bukan dari host.
+      POSTGRES_HOST: metadata-catalog
+      MINIO_ENDPOINT_URL: "http://object-storage:9000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+    networks:
+      - lakehouse-network
+    # Job sekali-jalan: setup lalu exit, jangan auto-restart.
+    restart: "no"
+    command: ["python", "main.py", "auto"]
 
 networks:
   # Named (bukan default anonim) supaya bisa di-join dari compose file lain

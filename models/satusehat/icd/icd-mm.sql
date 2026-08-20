@@ -1,5 +1,5 @@
 MODEL (
-  name bronze.icd_mm,
+  name reference.icd_mm,
   kind VIEW,
   grain (CODE, VERSION)
 );

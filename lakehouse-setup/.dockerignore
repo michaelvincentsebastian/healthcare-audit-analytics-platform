@@ -1,0 +1,8 @@
+# Jangan pernah ikut ke build context / image, walau ada di dalam folder ini.
+.venv/
+venv/
+__pycache__/
+*.pyc
+.git/
+.env
+*.log

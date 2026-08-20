@@ -76,6 +76,18 @@ ACTIONS = {
 }
 
 
+def run_auto() -> None:
+    """
+    Mode non-interaktif untuk automation (dipanggil dari `docker compose up`).
+    Logic-nya SAMA PERSIS dengan opsi menu 8 (RUN FULL INITIAL SETUP), hanya
+    saja tanpa loop `input()` supaya bisa jalan sebagai container yang
+    exit sendiri begitu setup selesai.
+    """
+    print(MENU)
+    print(">> [AUTO MODE] Running option 8: RUN FULL INITIAL SETUP\n")
+    datalakehouse_initial_setup()
+
+
 def run() -> None:
     while True:
         print(MENU)

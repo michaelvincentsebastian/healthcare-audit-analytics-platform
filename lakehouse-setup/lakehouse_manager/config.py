@@ -8,6 +8,7 @@ di satu tempat.
 """
 
 from dotenv import load_dotenv
+from urllib.parse import urlparse
 import os
 
 load_dotenv()
@@ -21,13 +22,21 @@ PG_CONFIG = {
 }
 
 # --- Koneksi MinIO (S3-compatible) ---
+_MINIO_ENDPOINT_URL = os.getenv("MINIO_ENDPOINT_URL", "http://localhost:9000")
+
 MINIO_CONFIG = {
-    "endpoint_url": os.getenv("MINIO_ENDPOINT_URL"),
+    "endpoint_url": _MINIO_ENDPOINT_URL,
     "aws_access_key_id": os.getenv("MINIO_ACCESS_KEY"),
     "aws_secret_access_key": os.getenv("MINIO_SECRET_KEY"),
-    "use_ssl": os.getenv("MINIO_USE_SSL").lower() == "true",
-    "verify": os.getenv("MINIO_VERIFY_SSL").lower() == "true",
+    "use_ssl": os.getenv("MINIO_USE_SSL", "false").lower() == "true",
+    "verify": os.getenv("MINIO_VERIFY_SSL", "false").lower() == "true",
 }
+
+# --- Host:port MinIO tanpa skema, dipakai oleh DuckDB S3 secret (duck.py) ---
+# Diturunkan dari MINIO_ENDPOINT_URL supaya SATU sumber kebenaran dengan boto3
+# client di atas -- tidak ada lagi hardcode 'localhost:9000' yang gagal saat
+# lakehouse-setup dijalankan sebagai container terpisah di lakehouse-network.
+MINIO_S3_ENDPOINT = urlparse(_MINIO_ENDPOINT_URL).netloc or _MINIO_ENDPOINT_URL
 
 # --- Nama bucket MinIO ---
 TABULAR_BUCKET = os.getenv("TABULAR_BUCKET")

@@ -60,8 +60,7 @@ try:
 
         df = con.sql(f"""
             SELECT *
-            FROM lakehouse.bronze__dev."{table_name}"
-            LIMIT 5;
+            FROM lakehouse.bronze__dev."{table_name}";
         """).to_df()
 
         output_file = BRONZE_OUTPUT / f"{table_name}.csv"
