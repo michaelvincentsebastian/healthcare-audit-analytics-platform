@@ -59,3 +59,13 @@ checks/output/
 # Credentials
 # =========================
 /credentials
+
+# =========================
+# Local Dev Notes
+# =========================
+notes.md
+
+# =========================
+# Exploration
+# =========================
+/notebook/
