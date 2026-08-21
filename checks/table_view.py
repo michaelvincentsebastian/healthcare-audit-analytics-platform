@@ -32,10 +32,7 @@ try:
     con.execute(f"USE lakehouse;")
 
     pd.set_option('display.max_columns', None)
-
-    pe = con.sql("SELECT COUNT(DISTINCT name) FROM bronze__dev.tabPatientEncounter;").df()
-    print(pe)
-
+    
     es = con.sql("SELECT COUNT(DISTINCT name) FROM bronze__dev.tabEncounter_SatuSehat;").df()
     print(es)
     
